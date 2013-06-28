@@ -6,9 +6,10 @@ class Loudmouth < Formula
   version '1.5.0.20121201'
   sha1 '502963c3068f7033bb21d788918c1e5cd14f386e'
 
+  option 'with-openssl', "Use OpenSSL instead of the default GnuTLS"
   depends_on 'pkg-config' => :build
   depends_on 'glib'
-  depends_on 'gnutls'
+  depends_on 'gnutls' if build.without? 'openssl'
   depends_on 'libidn'
 
   # Fix compilation on 10.9. Sent upstream:
@@ -16,9 +17,11 @@ class Loudmouth < Formula
   def patches; DATA; end
 
   def install
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--prefix=#{prefix}"
+    args = ["--disable-debug",
+            "--disable-dependency-tracking",
+            "--prefix=#{prefix}"]
+    args << "--with-ssl=openssl" if build.with? 'openssl'
+    system "./configure", *args
     system "make install"
   end
 end
