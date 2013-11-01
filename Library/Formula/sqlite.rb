@@ -7,6 +7,13 @@ class Sqlite < Formula
   sha1 '294c30e882a0d45877bce09afe72d08ccfc6b650'
 
   bottle do
+    revision 1
+    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
+    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
+    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+  end
+
+  bottle do
     sha1 '453723173f6f2e3c318924e0b750ce5401a81c81' => :mountain_lion
     sha1 '00dab991a57b175a51f1e91d09d052c9ec86210f' => :lion
     sha1 'feb9482fbe4a06133462a16e98c3794e25a7eca1' => :snow_leopard
@@ -25,13 +32,48 @@ class Sqlite < Formula
   resource 'functions' do
     url 'http://www.sqlite.org/contrib/download/extension-functions.c?get=25', :using  => :nounzip
     version '2010-01-06'
+  bottle do
+    revision 1
+    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
+    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
+    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+  end
+
     sha1 'c68fa706d6d9ff98608044c00212473f9c14892f'
+  bottle do
+    revision 1
+    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
+    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
+    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+  end
+
   end
 
   resource 'docs' do
     url 'http://www.sqlite.org/2013/sqlite-doc-3080002.zip'
+  bottle do
+    revision 1
+    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
+    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
+    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+  end
+
     version '3.8.0.2'
+  bottle do
+    revision 1
+    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
+    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
+    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+  end
+
     sha1 '43e314880cee7c97c240131625f6442c2ca7b109'
+  bottle do
+    revision 1
+    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
+    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
+    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+  end
+
   end
 
   def install
