@@ -7,10 +7,9 @@ class Sqlite < Formula
   sha1 '294c30e882a0d45877bce09afe72d08ccfc6b650'
 
   bottle do
-    revision 1
-    sha1 '555ebb8cddde5513ab45b489c651f386539066f0' => :mavericks
-    sha1 '66d0721441ca2565687b13dd1def6a4a99acd169' => :mountain_lion
-    sha1 'dff4162a5474c7c3a568e39b8e11f0142f7f152f' => :lion
+    sha1 '6b76c6c72549ac9e399523e50f2c65f2e36446df' => :mavericks
+    sha1 'e2791c264bae126ed9f5d4e2f0ebd39cff021e06' => :mountain_lion
+    sha1 '3df9bddc26a4f807f6d814beeed228bde6887f84' => :lion
   end
 
   keg_only :provided_by_osx, "OS X provides an older sqlite3."
