@@ -10,6 +10,13 @@ class V8 < Formula
   url 'https://github.com/v8/v8/archive/3.19.18.4.tar.gz'
   sha1 'f44c8eed0fe93b2d04d1d547a1e2640f41161354'
 
+  bottle do
+    cellar :any
+    sha1 '1f4045d0f1b6cf14134a34b416fffcdce7d99d2b' => :mavericks
+    sha1 'ee24ec2ecc5b5074d21a501c73b2a6c33ceeacdc' => :mountain_lion
+    sha1 '51956a7ebbb6261a5996785462864a1fcbc03b33' => :lion
+  end
+
   devel do
     url 'https://github.com/v8/v8/archive/3.20.12.tar.gz'
     sha1 '1463f4b8b33674bfd366e84b739713a727e9f9ac'
