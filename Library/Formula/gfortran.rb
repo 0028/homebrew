@@ -7,9 +7,10 @@ class Gfortran < Formula
   sha1 '810fb70bd721e1d9f446b6503afe0a9088b62986'
 
   bottle do
-    sha1 '4bf29afb128791de733e10f3000bcd479a9e3808' => :mountain_lion
-    sha1 '9814a52f73882e801a92b8bea20ae9475d389306' => :lion
-    sha1 '7d7b7d79b973ff32824d442a79c22a8c2d455467' => :snow_leopard
+    revision 1
+    sha1 '7415fbfb9719110a2af35f6179234d5dac117b69' => :mavericks
+    sha1 'df9243e122b4e1e37ce7ff442ecbba1140b39486' => :mountain_lion
+    sha1 '24f86ac46cf273910041d589b11e633fe2e1556d' => :lion
   end
 
   option 'enable-profiled-build', 'Make use of profile guided optimization when bootstrapping GCC'
