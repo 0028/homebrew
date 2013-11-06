@@ -10,10 +10,10 @@ class Libtool < Formula
   sha1 '22b71a8b5ce3ad86e1094e7285981cae10e6ff88'
 
   bottle do
-    revision 1
-    sha1 '3a025da1e80c2965f0eee2591fca225315f97290' => :mavericks
-    sha1 'bd62a22ee51cceec5e359d33f6b19d217368166d' => :mountain_lion
-    sha1 '0cf484aa89183c6b3228c0f156229c787f996f89' => :lion
+    revision 2
+    sha1 'a601003a4d407ae555e2337ef080a4852a2ca071' => :mavericks
+    sha1 '131c9d4af7d83b9dc8b6efe8ba36554472b512b5' => :mountain_lion
+    sha1 'b3c104beff531294fd5bc9419293abd5d24c5c97' => :lion
   end
 
   if MacOS::Xcode.provides_autotools? or File.file? "/usr/bin/glibtoolize"
