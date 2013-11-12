@@ -3,6 +3,12 @@ require 'formula'
 class Gstreamer < Formula
   homepage 'http://gstreamer.freedesktop.org/'
   url 'http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.2.1.tar.xz'
+  bottle do
+    sha1 '0f080c0f4ed227e81005b5ed611ec112865b1be0' => :mavericks
+    sha1 'b24cd31d094394756b93bd4a0fb8dc4351d4d13f' => :mountain_lion
+    sha1 '8cf536a0d1bf86ee854b0b2c166421e1741a357a' => :lion
+  end
+
   mirror 'http://ftp.osuosl.org/pub/blfs/svn/g/gstreamer-1.2.1.tar.xz'
   sha256 'a4523d2471bca6cd0059a32e3b042f50faa4dadc6439852af8b43ca3f17d1fc9'
 
