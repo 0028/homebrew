@@ -5,6 +5,13 @@ class Groovy < Formula
   url 'http://dist.groovy.codehaus.org/distributions/groovy-binary-2.1.9.zip'
   sha1 '9c68acd20bbd14306f768d6adfbe3b8290c32612'
 
+  bottle do
+    cellar :any
+    sha1 'f91ff3a64de4cba0efb7258247b1e1f22a4b0dc9' => :mavericks
+    sha1 '37a7111237ec78b16d4f08d3df35b6974a0136fe' => :mountain_lion
+    sha1 '18bf1ed0744c71c540d44ff7b821e95448156db4' => :lion
+  end
+
   option 'invokedynamic', "Install the InvokeDynamic version of Groovy (only works with Java 1.7+)"
 
   def install
