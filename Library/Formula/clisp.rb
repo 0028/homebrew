@@ -3,6 +3,12 @@ require 'formula'
 class Clisp < Formula
   homepage 'http://www.clisp.org/'
   url 'http://ftpmirror.gnu.org/clisp/release/2.49/clisp-2.49.tar.bz2'
+  bottle do
+    sha1 'a19d7f458d58ccd147ab7498688de527fea9075c' => :mavericks
+    sha1 '80263fa1f4adcc492ecb35f3603e27758426faed' => :mountain_lion
+    sha1 '8befe85dea85a0975cce747e3659e142634ebf72' => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/clisp/release/2.49/clisp-2.49.tar.bz2'
   sha1 '7e8d585ef8d0d6349ffe581d1ac08681e6e670d4'
 
