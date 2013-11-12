@@ -5,6 +5,13 @@ class Luabind < Formula
   url 'http://downloads.sourceforge.net/project/luabind/luabind/0.9.1/luabind-0.9.1.tar.gz'
   sha1 '2e92a18b8156d2e2948951d429cd3482e7347550'
 
+  bottle do
+    cellar :any
+    sha1 '443ff4a0b3f689419103327d1bc7ab79a2b5a558' => :mavericks
+    sha1 'cb757726a2f732ae0dd138c3ea2358236a22b012' => :mountain_lion
+    sha1 '48fc22d3e2d236d940861502bf94bff0e7b0c377' => :lion
+  end
+
   depends_on 'lua'
   depends_on 'boost'
   depends_on 'boost-build' => :build
