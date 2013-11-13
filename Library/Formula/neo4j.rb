@@ -6,6 +6,12 @@ class Neo4j < Formula
   sha1 '8d3569fdd4f3b396fd8101a7f9f92087cef3ac7f'
   version '1.9.5'
 
+  bottle do
+    sha1 '8b2fe340a15cb0a10e4fa414d73954f9400a581b' => :mavericks
+    sha1 '07bbb296c8ddb192a200c9453d1f0be93888da21' => :mountain_lion
+    sha1 'cf82eeaaef4bcc545af2e82c92577d3ba06c6b1e' => :lion
+  end
+
   devel do
     url 'http://dist.neo4j.org/neo4j-community-2.0.0-M06-unix.tar.gz'
     sha1 'a39ebc5476ace229e4ad5c901238a2e24a6ef0d7'
