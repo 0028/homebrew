@@ -7,6 +7,13 @@ class Libmongoclient < Formula
 
   head 'https://github.com/mongodb/mongo.git'
 
+  bottle do
+    cellar :any
+    sha1 '65cd23a64e276774a3c5f534fdb0849e280f5880' => :mavericks
+    sha1 '43da4b1bc7f518df89a115056259f7f0a9abc98e' => :mountain_lion
+    sha1 'e0fe382b79c7d5ed0c43c3e4c042ae2d3e482f91' => :lion
+  end
+
   depends_on 'scons' => :build
   depends_on 'boost' => :build
 
