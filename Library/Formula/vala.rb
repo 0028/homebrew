@@ -7,6 +7,12 @@ class Vala < Formula
 
   head 'git://git.gnome.org/vala'
 
+  bottle do
+    sha1 'b18de843e919fab80c1ce5c0267f2b61cce3a7ac' => :mavericks
+    sha1 'c59585ce06bb78bbb1ff4d2b19497d5710c11d70' => :mountain_lion
+    sha1 'b46b23508081d7d7d1add6cb4a32296d1356b309' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'xz' => :build
   depends_on 'gettext'
