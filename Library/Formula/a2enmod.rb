@@ -7,6 +7,13 @@ class A2enmod < Formula
 
   head 'https://github.com/rudisimo/a2enmod.git'
 
+  bottle do
+    cellar :any
+    sha1 '25e890d0b23e990c376927f11aeb94aa929fec7b' => :mavericks
+    sha1 '9d6c2a34c581eda03729ac735ded05e2da7c3bcf' => :mountain_lion
+    sha1 '943e104eca57038038d1e6ae290e9dd209ba012a' => :lion
+  end
+
   def install
     ENV['PREFIX'] = prefix
     system "./install.sh"
