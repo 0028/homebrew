@@ -5,6 +5,12 @@ class Strongswan < Formula
   url 'http://download.strongswan.org/strongswan-5.1.1.tar.bz2'
   sha1 'eba9c90e3e910edd18ef4f1e380e59751965258b'
 
+  bottle do
+    sha1 'bf2e717e67c3c83cf7a9dac192677fab1713e4ef' => :mavericks
+    sha1 '08f58e1f7eb313c9f38006a5011e8b914d962187' => :mountain_lion
+    sha1 '750cd53e7e83c950397770037258e8b351a16ba6' => :lion
+  end
+
   option 'with-curl', 'Build with libcurl based fetcher'
   option 'with-suite-b', 'Build with Suite B support (does not use the IPsec implementation provided by the kernel)'
 
