@@ -6,6 +6,12 @@ class Loudmouth < Formula
   version '1.5.0.20121201'
   sha1 '502963c3068f7033bb21d788918c1e5cd14f386e'
 
+  bottle do
+    sha1 '2745e233e13fdfca55edf39166b3f19c160b1376' => :mavericks
+    sha1 '75c663fcf1cc3fe4bae457c4021db197067c86c8' => :mountain_lion
+    sha1 '4fe63532a5a8b5fcb2011ce9aae610699fb18a90' => :lion
+  end
+
   option 'with-openssl', "Use OpenSSL instead of the default GnuTLS"
   depends_on 'pkg-config' => :build
   depends_on 'glib'
