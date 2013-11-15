@@ -17,6 +17,12 @@ class Saltstack < Formula
   url 'https://pypi.python.org/packages/source/s/salt/salt-0.17.2.tar.gz'
   sha1 'd2568cb72a0eab21f273aa8ab36eacd6f1e58dc9'
 
+  bottle do
+    sha1 'd0e267b832cd4ac4c85cf3b72f998d04a85c5ee4' => :mavericks
+    sha1 '0e084353ee919c628c6b8bf71af2f546c6d145e3' => :mountain_lion
+    sha1 '7e267a43be2e6ff5a682fb7b85e5bf1c8cfe1782' => :lion
+  end
+
   head 'https://github.com/saltstack/salt.git', :branch => :develop,
     :using => SaltHeadDownloadStrategy
 
