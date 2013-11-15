@@ -5,6 +5,12 @@ class Csync < Formula
 
   stable do
     url 'https://open.cryptomilk.org/attachments/download/27/csync-0.50.0.tar.xz'
+  bottle do
+    sha1 'e7e02c61129ea844e397484404cfd8a36602d41e' => :mavericks
+    sha1 'f076f049c9477202c188f88098d58fa1754db159' => :mountain_lion
+    sha1 'd039c9e6b87e9f2167a47aed59f84c681dfa4afb' => :lion
+  end
+
     sha1 '8df896be17f7f038260159469a6968a9d563cb3c'
 
     depends_on 'log4c'
