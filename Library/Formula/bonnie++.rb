@@ -5,6 +5,13 @@ class Bonniexx < Formula
   url 'http://www.coker.com.au/bonnie++/experimental/bonnie++-1.97.tgz'
   sha1 '7b0ed205725a6526d34894412edb7e29bb9df7b4'
 
+  bottle do
+    cellar :any
+    sha1 'ebc3a2c353a86ec7b40f5f9d5ffc4d0a30a36cc0' => :mavericks
+    sha1 '5a35912fdb0c98e32307036acf22792ac3b99b29' => :mountain_lion
+    sha1 '1e05de6cde13b5c50c1a978dd92eb8c8a1d32bf7' => :lion
+  end
+
   # Fix use of min/max with clang
   def patches
     DATA
