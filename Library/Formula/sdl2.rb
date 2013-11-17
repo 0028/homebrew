@@ -5,6 +5,13 @@ class Sdl2 < Formula
   url 'http://libsdl.org/release/SDL2-2.0.1.tar.gz'
   sha1 'e40051311b648e4e60ed1683f62a948d93a0a49f'
 
+  bottle do
+    cellar :any
+    sha1 '5b7762fa4688d061a3553d55d0b070c021da82dc' => :mavericks
+    sha1 'beb28fe46d3dd38d2c611b842125069cc44825ee' => :mountain_lion
+    sha1 'f883160a3b1ef13818b547b83c7e0388a33cee93' => :lion
+  end
+
   head do
     url 'http://hg.libsdl.org/SDL', :using => :hg
 
