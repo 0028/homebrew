@@ -5,6 +5,12 @@ class Jython < Formula
   url 'http://search.maven.org/remotecontent?filepath=org/python/jython-installer/2.5.3/jython-installer-2.5.3.jar'
   sha1 '6b6ac4354733b6d68d51acf2f3d5c823a10a4ce4'
 
+  bottle do
+    sha1 'cac295a1b8535e356f9cb2319c3d15f0c10f0f90' => :mavericks
+    sha1 'e9bf5e67197b3fbba8ca8845ca1efd4db1700a2e' => :mountain_lion
+    sha1 '226a61a1fb9b2bcb3c936f2efd92df1664dc0e72' => :lion
+  end
+
   devel do
     url 'http://search.maven.org/remotecontent?filepath=org/python/jython-installer/2.7-b1/jython-installer-2.7-b1.jar'
     version '2.7-b1'
