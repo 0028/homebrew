@@ -5,6 +5,12 @@ class Mapnik < Formula
   url 'http://mapnik.s3.amazonaws.com/dist/v2.2.0/mapnik-v2.2.0.tar.bz2'
   sha1 'e493ad87ca83471374a3b080f760df4b25f7060d'
 
+  bottle do
+    sha1 'a8850fd881fd2c9319a796d0cb3ac2fbd9b86a6d' => :mavericks
+    sha1 '1d45771bf7c9f976764f28837b1b0059159f1b6e' => :mountain_lion
+    sha1 'f87317bb72219dcc8bea42e1022d03d820a2d39d' => :lion
+  end
+
   # can be removed at Mapnik > 2.2.0
   # https://github.com/mapnik/mapnik/issues/1973
   def patches
