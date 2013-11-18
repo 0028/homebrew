@@ -7,6 +7,13 @@ class Liblwgeom < Formula
 
   head 'http://svn.osgeo.org/postgis/trunk/'
 
+  bottle do
+    cellar :any
+    sha1 '77920588ca7560c7f1837f0defc2e9c39b96e525' => :mavericks
+    sha1 '9f397fd3c70d3dcb8e6298a64d2572abe4ca7fdf' => :mountain_lion
+    sha1 '7d44d5a4da820ccc3381f1bc9b7680f5053cb5cb' => :lion
+  end
+
   keg_only "Conflicts with PostGIS, which also installs liblwgeom.dylib"
 
   depends_on :autoconf => :build
