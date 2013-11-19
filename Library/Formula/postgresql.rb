@@ -3,6 +3,12 @@ require 'formula'
 class Postgresql < Formula
   homepage 'http://www.postgresql.org/'
   url 'http://ftp.postgresql.org/pub/source/v9.3.1/postgresql-9.3.1.tar.bz2'
+  bottle do
+    sha1 '92d36cf6d9b69db7f467b3eea72478de30cc337c' => :mavericks
+    sha1 'be84307525dd0d00cf9ff6838bc53116ce8583b0' => :mountain_lion
+    sha1 '8423a9856dae29de69c3c233cdb54ae8ce83a4ac' => :lion
+  end
+
   sha256 '8ea4a7a92a6f5a79359b02e683ace335c5eb45dffe7f8a681a9ce82470a8a0b8'
 
   option '32-bit'
