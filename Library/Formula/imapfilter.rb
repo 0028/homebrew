@@ -5,6 +5,12 @@ class Imapfilter < Formula
   url 'https://github.com/lefcha/imapfilter/archive/v2.5.6.tar.gz'
   sha1 '49ac7b7fb937b40eb42a162314de4f8866e33c11'
 
+  bottle do
+    sha1 '47717fc5119a529811cd58a7919052c175f91c70' => :mavericks
+    sha1 'd38feb2b3ca2b6a6a1da3629bfc14cde4aa39062' => :mountain_lion
+    sha1 '05e40e0a2f137dfb86b57ff5bb92bf8825a6671f' => :lion
+  end
+
   depends_on 'lua'
   depends_on 'pcre'
   depends_on 'openssl'
