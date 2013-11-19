@@ -5,6 +5,12 @@ class Clojurescript < Formula
   url 'https://github.com/clojure/clojurescript/archive/r2030.tar.gz'
   sha1 '9d6ec56da87ab514496e95dc1ee05b6966e92e98'
 
+  bottle do
+    sha1 'f36e950451fb00329ed85a47fa94bfc547aa31bd' => :mavericks
+    sha1 '075e90fb40a5c5dabe5b2b1d22755fbba7e32265' => :mountain_lion
+    sha1 'f7d9ff7d1a518061780e8353f414ecbd97816f8b' => :lion
+  end
+
   head "https://github.com/clojure/clojurescript.git"
 
   def install
