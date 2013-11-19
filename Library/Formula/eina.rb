@@ -5,6 +5,12 @@ class Eina < Formula
   url 'http://download.enlightenment.org/releases/eina-1.7.9.tar.gz'
   sha1 '26f385e888b29876c8fb06f35f0433ab7e3251d5'
 
+  bottle do
+    sha1 '64b7f30629f10fc572dddfb579e2aa34c22815ab' => :mavericks
+    sha1 'f762a7452ad9e1db4b714e6600e50b602111935c' => :mountain_lion
+    sha1 'ba9b48412a2b16be2bef9aac45f6b19914e0bc39' => :lion
+  end
+
   head do
     url 'http://svn.enlightenment.org/svn/e/trunk/eina/'
 
