@@ -7,6 +7,13 @@ class Exercism < Formula
   when Hardware::CPU.arch_64_bit
     version  '1.3.0-64bit'
     sha1 'c2eb7b3973f15b2be4a067cbe2d97d5aa7732920'
+  bottle do
+    cellar :any
+    sha1 '91433c71d0153c29781caf1038a60188df644342' => :mavericks
+    sha1 'c3a98718eb486fc934b7383358aaf0246f0f0bf4' => :mountain_lion
+    sha1 '197368d65fc56570fefcb72c433827eedef5f44e' => :lion
+  end
+
     url 'https://github.com/exercism/cli/releases/download/v1.3.0/exercism-darwin-amd64.tgz'
   when Hardware::CPU.arch_32_bit
     version  '1.3.0-32bit'
