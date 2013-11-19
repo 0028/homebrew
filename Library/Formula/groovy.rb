@@ -5,6 +5,13 @@ class Groovy < Formula
   url 'http://dist.groovy.codehaus.org/distributions/groovy-binary-2.2.0.zip'
   sha1 'e4c80b14fd21b168c1682b26f117e6427f9e712f'
 
+  bottle do
+    cellar :any
+    sha1 '7ae4555f2a8e3c608e4285add3a699b4f074f399' => :mavericks
+    sha1 '35ecfa20b68ad0ac68487116eb8f2a365fb4abb6' => :mountain_lion
+    sha1 'dca7cea58c0093ccdcc2e9b0f8399f9a34913a45' => :lion
+  end
+
   devel do
     url 'http://dist.groovy.codehaus.org/distributions/groovy-binary-2.2.0-rc-3.zip'
     sha1 '4db741568aa6ab1ba333f40f4e25aa63653faa76'
