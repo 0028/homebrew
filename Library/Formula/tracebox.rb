@@ -5,6 +5,13 @@ class Tracebox < Formula
   url 'https://drone.io/github.com/tracebox/tracebox/files/tracebox-0.1.tar.gz'
   sha1 'bb79f17cb799c3b4b1b8f4e3ab0775ae40b2060c'
 
+  bottle do
+    cellar :any
+    sha1 'ef210a2863e150b0a8cdf3ebc9388e368b52ad54' => :mavericks
+    sha1 'e352ee9926c7aad94553c885044e544d0babe0c9' => :mountain_lion
+    sha1 'c4f23bb6681ad558985c004c0818b92be0a4a268' => :lion
+  end
+
   depends_on 'lua'
 
   def install
