@@ -7,6 +7,12 @@ class Calabash < Formula
 
   head 'https://github.com/ndw/xmlcalabash1.git'
 
+  bottle do
+    sha1 'f4aa7d1672306d5f7aaf5c4ab70c3407e68c5514' => :mavericks
+    sha1 '3608760804a5a897e413fdbfae44b1e252dc32c9' => :mountain_lion
+    sha1 '4c75f746fd160c00047e5e2b9fa01d57be24f33a' => :lion
+  end
+
   depends_on 'saxon'
 
   def install
