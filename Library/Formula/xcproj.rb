@@ -7,6 +7,12 @@ class Xcproj < Formula
 
   head 'https://github.com/0xced/xcproj.git'
 
+  bottle do
+    cellar :any
+    sha1 '82ce625f88db00564bf79342a8c12dc32fecc155' => :mavericks
+    sha1 'a824d32bf26357e18978841e7b6dde9f8d5f01c4' => :mountain_lion
+  end
+
   depends_on :macos => :mountain_lion
   depends_on :xcode
 
