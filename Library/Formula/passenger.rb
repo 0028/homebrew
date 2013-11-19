@@ -6,6 +6,12 @@ class Passenger < Formula
   sha1 'e830f46fd3e666017ae3c441efdfe36cc575364e'
   head 'https://github.com/phusion/passenger.git'
 
+  bottle do
+    sha1 'cdd312fc1c2b7bc45457695b84f0660750bd6393' => :mavericks
+    sha1 '303785f974c5379c712267db361a962d19b2da95' => :mountain_lion
+    sha1 'c20a2b50ed77c16f5876390fdded774b04fd6e1b' => :lion
+  end
+
   depends_on :macos => :lion
   depends_on 'curl'
 
