@@ -6,6 +6,13 @@ class Gist < Formula
   sha1 '592afe5f45f476f2d9129bcd250892c884c3664d'
   head 'https://github.com/defunkt/gist.git'
 
+  bottle do
+    cellar :any
+    sha1 '350a7c2203f53816c2d90bcfbb319ebd1bb6cbfd' => :mavericks
+    sha1 '3d4887dc4cfd76cd82be745481140b576425fd32' => :mountain_lion
+    sha1 '0a4048b65c4b32ab2fbc3bfa90535268df504fdb' => :lion
+  end
+
   def install
     rake "install", "prefix=#{prefix}"
   end
