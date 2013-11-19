@@ -6,6 +6,13 @@ class Assimp < Formula
   sha1 'e80a3a4326b649ed6585c0ce312ed6dd68942834'
   head 'https://github.com/assimp/assimp.git'
 
+  bottle do
+    cellar :any
+    sha1 'eb40c95e54fe29afdfc75fbda4a62d59af311e05' => :mavericks
+    sha1 'd351b31716e070d0bd9269ac916c862f081a02bf' => :mountain_lion
+    sha1 '09cf06c93121b272fb06fe2345830c3e8cc3f8d7' => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on 'boost'
 
