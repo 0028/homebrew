@@ -5,6 +5,12 @@ class Asciidoc < Formula
   url 'http://downloads.sourceforge.net/project/asciidoc/asciidoc/8.6.9/asciidoc-8.6.9.tar.gz'
   sha1 '82e574dd061640561fa0560644bc74df71fb7305'
 
+  bottle do
+    sha1 '1b1514bdf9ecdd0a4dc12bb190241079d653e3e8' => :mavericks
+    sha1 '4331040e53aaac256721f455d870739141d95de7' => :mountain_lion
+    sha1 '2e1a7b0b4b6da6be37d8b24b1005a83b36b74859' => :lion
+  end
+
   head do
     url 'https://code.google.com/p/asciidoc/', :using => :hg
     depends_on :autoconf
