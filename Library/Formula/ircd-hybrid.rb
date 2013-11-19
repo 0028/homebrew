@@ -5,6 +5,12 @@ class IrcdHybrid < Formula
   url 'http://downloads.sourceforge.net/project/ircd-hybrid/ircd-hybrid/ircd-hybrid-8.1.9/ircd-hybrid-8.1.9.tgz'
   sha1 '47c0203ed1ea356389f35bcdfa5b7a2514ac01c5'
 
+  bottle do
+    sha1 '394c7fedf87ee83afb0df8acbbeeae8f987a6b52' => :mavericks
+    sha1 'f0bd46c1007fcfa7205cb09c818369dd77e7057a' => :mountain_lion
+    sha1 'ec8c4df65666fb92b703fb0db6fbed929e8ed765' => :lion
+  end
+
   # ircd-hybrid needs the .la files
   skip_clean :la
 
