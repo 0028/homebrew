@@ -6,6 +6,12 @@ class Grass < Formula
   url 'http://grass.osgeo.org/grass64/source/grass-6.4.3.tar.gz'
   sha1 '925da985f3291c41c7a0411eaee596763f7ff26e'
 
+  bottle do
+    sha1 '4fb5dc24bdef5a610d48244096a9eda586aa236d' => :mavericks
+    sha1 'b55d120398643744399aa001a1e008e9296b927c' => :mountain_lion
+    sha1 'd4a34fb3b86b6e382d5fe310961ec34012df6294' => :lion
+  end
+
   option "without-gui", "Build without WxPython interface. Command line tools still available."
 
   depends_on :macos => :lion
