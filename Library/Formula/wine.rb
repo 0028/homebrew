@@ -8,6 +8,12 @@ class Wine < Formula
 
   stable do
     url 'http://downloads.sourceforge.net/project/wine/Source/wine-1.6.1.tar.bz2'
+  bottle do
+    sha1 '62c2f52424093c118096fb42a85843b4d1a3da29' => :mavericks
+    sha1 'f45ab5c2aa7ba2cdc9ae2d82e7304aa6366c4ef6' => :mountain_lion
+    sha1 '27249794155a9d6ce836f833ed6231812f9b610d' => :lion
+  end
+
     sha256 'd5bc2c088b555caa60a7ba1156e6ed74d791ba3c438129c75ab53805215a384c'
 
     depends_on 'little-cms'
