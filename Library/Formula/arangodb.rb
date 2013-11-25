@@ -5,6 +5,12 @@ class Arangodb < Formula
   url 'https://www.arangodb.org/repositories/Source/ArangoDB-1.4.3.tar.gz'
   sha1 '67abf1cf18dc19c11e3bde41a1fa4792fa4367d4'
 
+  bottle do
+    sha1 'e799c50504e411cd0c75f52da190805773b8c625' => :mavericks
+    sha1 '829f4d5a22d44281e58cacd74d2daadd2f4c910a' => :mountain_lion
+    sha1 '583bd1c7fd5e3f9be586ac0430465d014612fd3e' => :lion
+  end
+
   head "https://github.com/triAGENS/ArangoDB.git", :branch => 'unstable'
 
   depends_on 'icu4c'
