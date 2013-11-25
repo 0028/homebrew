@@ -7,6 +7,12 @@ class Cmus < Formula
 
   head 'https://git.gitorious.org/cmus/cmus.git'
 
+  bottle do
+    sha1 'a5c1a7d19c3e0f7018da3a5fab75245cb3552bf8' => :mavericks
+    sha1 '846fe10d7d8591d731944faf6a569d841f30b6dd' => :mountain_lion
+    sha1 'e609320bad8c5c567595adb7068a8eff0e89fb6e' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'libao'
   depends_on 'mad'
