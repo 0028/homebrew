@@ -5,6 +5,13 @@ class Liblwgeom < Formula
   url 'http://download.osgeo.org/postgis/source/postgis-2.1.1.tar.gz'
   sha1 'eaff009fb22b8824f89e5aa581e8b900c5d8f65b'
 
+  bottle do
+    cellar :any
+    sha1 '2323e4b680c7ea521d776124e4e359d4fe6b78fc' => :mavericks
+    sha1 '19b0a35355857a885a7a9943a733681d0106f3b5' => :mountain_lion
+    sha1 '5fb14e0f7cae7c97d1201bbe29fba9a54cc4f269' => :lion
+  end
+
   head do
     url 'http://svn.osgeo.org/postgis/trunk/'
     depends_on 'postgresql' => :build # don't maintain patches for HEAD
