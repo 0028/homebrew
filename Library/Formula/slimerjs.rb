@@ -7,6 +7,13 @@ class Slimerjs < Formula
 
   head 'https://github.com/laurentj/slimerjs.git'
 
+  bottle do
+    cellar :any
+    sha1 '800c56e3841dc9e12197ffb9dd7d60fc46cc30f2' => :mavericks
+    sha1 'e241d7094b5cf9c03fdfeaab2c8cfa53dca35834' => :mountain_lion
+    sha1 'b1af6263177810d66be605cfa21ce82eca53aec2' => :lion
+  end
+
   devel do
     url 'https://github.com/laurentj/slimerjs/archive/RELEASE_0.9.1rc1.tar.gz'
     sha1 '9fb0a3b2e4c44c8d48e9b436127ba2036099b93f'
