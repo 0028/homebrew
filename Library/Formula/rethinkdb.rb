@@ -5,6 +5,12 @@ class Rethinkdb < Formula
   url 'http://download.rethinkdb.com/dist/rethinkdb-1.11.0.tgz'
   sha1 '9a56bc07b7ed431432ee2be61dc6aafa49fc3760'
 
+  bottle do
+    sha1 '548325de4adcfcbed04b654c460c35b7726a4d14' => :mavericks
+    sha1 '8c9069d476a9dac4d0c02456d88e252fd24a5063' => :mountain_lion
+    sha1 'dafe3a5e0122c6ccfd8f54b12e0209fc8d07d00f' => :lion
+  end
+
   depends_on :macos => :lion
   depends_on 'boost' => :build
   depends_on 'protobuf' if MacOS.version >= :mavericks
