@@ -4,6 +4,13 @@ class AwsIamTools < AmazonWebServicesFormula
   homepage 'http://aws.amazon.com/developertools/4143'
   url 'http://awsiammedia.s3.amazonaws.com/public/tools/cli/latest/IAMCli.zip'
   sha1 'a2bd3048327d1ee34e20abbc8e2cc6c68ebdee5f'
+  bottle do
+    cellar :any
+    sha1 '425861889630db2d8897f7cbaeab914f44c87f8f' => :mavericks
+    sha1 'c71e8de9532b455193ff60776318db28c56de731' => :mountain_lion
+    sha1 '119274538b957c67c1b0367bf69a4f290fb98c3b' => :lion
+  end
+
   version "1.5.0"
 
   def install
