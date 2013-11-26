@@ -5,6 +5,12 @@ class Cdrdao < Formula
   url 'http://downloads.sourceforge.net/project/cdrdao/cdrdao/1.2.3/cdrdao-1.2.3.tar.bz2'
   sha1 '70d6547795a1342631c7ab56709fd1940c2aff9f'
 
+  bottle do
+    sha1 '8a2dfa8fbafac7d03dcbe0d612c09fe9e3545544' => :mavericks
+    sha1 '147c5ea512ba3b267ec1ea44ab4db539246beb42' => :mountain_lion
+    sha1 'effb428bc7316a859501a020c33e0248ee3326f8' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'libao'
   depends_on 'libvorbis'
