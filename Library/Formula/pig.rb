@@ -5,6 +5,13 @@ class Pig < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=pig/pig-0.12.0/pig-0.12.0.tar.gz'
   sha1 'b641a932d45003d2e6350007558d63e69a1bf7c6'
 
+  bottle do
+    cellar :any
+    sha1 'e9ed1da401fd8ac6d38cce21a49b603fc667da7b' => :mavericks
+    sha1 '8708247e728ad36a1867d3e113f0fd2e195bb3e8' => :mountain_lion
+    sha1 '9c196f674a42c10010a5dcb2a90a6fc5fc8158cb' => :lion
+  end
+
   def patches
     DATA
   end
