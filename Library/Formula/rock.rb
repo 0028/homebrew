@@ -7,6 +7,12 @@ class Rock < Formula
 
   head 'https://github.com/nddrylliog/rock.git'
 
+  bottle do
+    sha1 'e74097ed3c5857f5510c10db426b041c789d4370' => :mavericks
+    sha1 'a93d740341c1fcf71a1b92b05de3c4c05976d94e' => :mountain_lion
+    sha1 'a499cb306bbb40f8784e4eda328d24ade1adb378' => :lion
+  end
+
   depends_on 'bdw-gc'
 
   def install
