@@ -6,6 +6,13 @@ class Xdu < Formula
   url 'http://sd.wareonearth.com/~phil/xdu/xdu-3.0.tar.Z'
   sha1 '196e2ba03253fd6b8a88fafe6b00e40632183d0c'
 
+  bottle do
+    cellar :any
+    sha1 '7518d1b91e34e508f2318e11406398a11aed0451' => :mavericks
+    sha1 '62d57f21d67139667d3e50563c7e68f5b9004f37' => :mountain_lion
+    sha1 '4534736fcace03c76d086b7ba5bd8eff6ff245f6' => :lion
+  end
+
   depends_on :x11
 
   def patches
