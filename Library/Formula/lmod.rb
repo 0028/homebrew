@@ -7,6 +7,12 @@ class Lmod < Formula
 
   head 'https://github.com/TACC/Lmod.git'
 
+  bottle do
+    sha1 '1f1027fd162e6250f064fe5dd646d09434208204' => :mavericks
+    sha1 'f3381791a8b089044da3563d5185853fc0d358a1' => :mountain_lion
+    sha1 '3c304b6dcf10efd287a59e9fea30867983ada525' => :lion
+  end
+
   LMOD_OPTIONS = %w(ancient shortTime useDotFiles prependBlock duplicatePaths colorize settargs)
   LMOD_OPTIONS.each do |opt|
     option "with-#{opt}", "Build lmod and set #{opt}"
