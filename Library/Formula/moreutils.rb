@@ -3,6 +3,11 @@ require 'formula'
 class Moreutils < Formula
   homepage 'http://packages.debian.org/unstable/utils/moreutils'
   url 'http://mirrors.kernel.org/debian/pool/main/m/moreutils/moreutils_0.50.tar.gz'
+  bottle do
+    cellar :any
+    sha1 '9361e126375ca57b6f8734f1eea4047970893a17' => :mavericks
+  end
+
   mirror 'http://ftp.us.debian.org/debian/pool/main/m/moreutils/moreutils_0.50.tar.gz'
   sha1 'f2d2cab5be2ba4b9a568ea32becf866ee4a37d9d'
 
