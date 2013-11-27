@@ -6,10 +6,10 @@ class Freetype < Formula
   sha1 '2d539b375688466a8e7dcc4260ab21003faab08c'
 
   bottle do
-    # Included with X11 so no bottle needed before Mountain Lion.
-    revision 1
-    sha1 '54dad7e45cdbbdfa6065d13f9cbc497c94a94af5' => :mavericks
-    sha1 '9bfe424803590bccaaa39944b9b69e6ae7dbd548' => :mountain_lion
+    cellar :any
+    sha1 '49604baab2e2efca836b898e2b5c2ec18b7a337b' => :mavericks
+    sha1 '911c057fe49ad0b5e9e7c5492a5a64184ff611f9' => :mountain_lion
+    sha1 'a7e8c32b48e22880088a8d10a74f7d1b7fc0b84a' => :lion
   end
 
   keg_only :provided_pre_mountain_lion
