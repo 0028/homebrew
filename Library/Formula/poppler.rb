@@ -5,6 +5,12 @@ class Poppler < Formula
   url 'http://poppler.freedesktop.org/poppler-0.24.4.tar.xz'
   sha1 '7938c92c61b63331f2af463db0d10048bf0d4712'
 
+  bottle do
+    sha1 'e792f49dc5ba5694fba45e21df5de22ccca95000' => :mavericks
+    sha1 '65c609a7c8a79dca576a8f54dbbe95ea55f1742d' => :mountain_lion
+    sha1 'b709b50455a960bf9af832cf590fedaaa8ccb4fd' => :lion
+  end
+
   option 'with-qt4', 'Build Qt backend'
   option 'with-glib', 'Build Glib backend'
 
