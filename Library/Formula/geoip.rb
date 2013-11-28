@@ -6,6 +6,13 @@ class Geoip < Formula
   sha1 '41ed21fb2d40e54648cae2a1f73e8a5210676def'
   head 'https://github.com/maxmind/geoip-api-c.git'
 
+  bottle do
+    cellar :any
+    sha1 'd9c3ffae3549f8fe440ed05a7514c8002e4c460a' => :mavericks
+    sha1 '475a17228651ff8271e9209b6497d865d3b07deb' => :mountain_lion
+    sha1 '57cdeee74da1a79dd6f8f80eb43d3b6324c0be1b' => :lion
+  end
+
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
   depends_on 'libtool' => :build
