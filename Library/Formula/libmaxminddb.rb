@@ -6,6 +6,13 @@ class Libmaxminddb < Formula
   sha1 'db7618a97c222cab0a0ba2fb8439abcd1465f10c'
   head 'https://github.com/maxmind/libmaxminddb.git'
 
+  bottle do
+    cellar :any
+    sha1 '7d0e8b80fe88c7db1a062b0c45842e8850542e7f' => :mavericks
+    sha1 'f51e5cedd0bc71f3dff63a4f1344f980057fbf29' => :mountain_lion
+    sha1 'dc15a02d1d36081693ebff7deb9945ff10cc7907' => :lion
+  end
+
   if build.head?
     depends_on 'autoconf' => :build
     depends_on 'automake' => :build
