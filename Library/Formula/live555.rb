@@ -7,6 +7,13 @@ class Live555 < Formula
 
   head 'http://www.live555.com/liveMedia/public/live555-latest.tar.gz'
 
+  bottle do
+    cellar :any
+    sha1 '4803322823bf7d7c5165f0bd3ae28a1a46a4b0cf' => :mavericks
+    sha1 '2d2d77b0c3159000245b2a1a91cb4d3c1e5594cd' => :mountain_lion
+    sha1 '075f2c70b6f71b83c264c690c81b2a8a2988aaad' => :lion
+  end
+
   depends_on 'cmake' => :build
 
   conflicts_with 'openrtsp',
