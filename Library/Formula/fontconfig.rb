@@ -6,9 +6,10 @@ class Fontconfig < Formula
   sha1 '969818b0326ac08241b11cbeaa4f203699f9b550'
 
   bottle do
-    # Included with X11 so no bottle needed before Mountain Lion.
-    sha1 'fe9ea7cf87a3f442571a93fda6ed539f74b5ecea' => :mavericks
-    sha1 '5ed39070bb5b0d7316d14567e0b952725fec4e58' => :mountain_lion
+    revision 1
+    sha1 'a702fca16e4211bb33daa1fa262dc7e974a69a2b' => :mavericks
+    sha1 'baee9d8d31c2fb526f82175f2d81b86dbe498196' => :mountain_lion
+    sha1 '15574f5ad636e64bcee2a2c5bc4884a0c67f899b' => :lion
   end
 
   keg_only :provided_pre_mountain_lion
