@@ -5,6 +5,13 @@ class Lsyncd < Formula
   url 'https://github.com/axkibe/lsyncd/archive/release-2.1.5.tar.gz'
   sha1 '2b8eb169365edc54488a97435bbd39ae4a6731b8'
 
+  bottle do
+    cellar :any
+    sha1 'df29af5b1fd032f4b4546910f5ba468b0fd1afee' => :mavericks
+    sha1 'd619f4f6cd60ae32a1f864a16b59557892c9ac48' => :mountain_lion
+    sha1 '050d99e80502f99bf54c9706ae7d8c67b66a7ccc' => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
   depends_on 'asciidoc' => :build
