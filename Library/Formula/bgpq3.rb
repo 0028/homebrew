@@ -5,6 +5,13 @@ class Bgpq3 < Formula
   url 'http://snar.spb.ru/prog/bgpq3/bgpq3-0.1.19.tgz'
   sha1 '41a2afaeffb12e43048ca8771c6cc6e6392e0da5'
 
+  bottle do
+    cellar :any
+    sha1 '91a7ec2400b32f396f2970d63cc158e4f8d9ba7d' => :mavericks
+    sha1 '75cc4c738a5f554ce5b2b71a77ceeb6a228a43eb' => :mountain_lion
+    sha1 '90e737715fe7bc5dfe403b870275e164cd701eaa' => :lion
+  end
+
   def patches
     # Upstream has been informed of this patch through email
     DATA
