@@ -7,6 +7,13 @@ class Chruby < Formula
 
   head 'https://github.com/postmodern/chruby.git'
 
+  bottle do
+    cellar :any
+    sha1 'c0f97bdcf7b1455d1ab7426c4669d8070544e8b8' => :mavericks
+    sha1 '897aa01cb69df2852d509dde77107bdfb94628c0' => :mountain_lion
+    sha1 'cbdfc3104942e6b30021e6c56480cff4d2408905' => :lion
+  end
+
   def install
     system 'make', 'install', "PREFIX=#{prefix}"
   end
