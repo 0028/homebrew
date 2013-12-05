@@ -6,10 +6,10 @@ class Fuse4xKext < Formula
   sha1 '4222c14b38325d9e41fb0925d2681dda3e73e861'
 
   bottle do
-    # cellar :any
-    revision 3
-    sha1 'f571d853f081883d943a6e8c1b12753c96fa4b28' => :mountain_lion
-    sha1 'd64873c1c3afa179929651ce2c08cd6f893b421f' => :lion
+    cellar :any
+    sha1 '48af54e917cc848da100ad43ebac3fc23b453797' => :mavericks
+    sha1 '7f52f8c4eb2248d3a0474e7735c402ba94700275' => :mountain_lion
+    sha1 'f4576568a7bfb03a1d56c58054c705c599ab708f' => :lion
   end
 
   def install
