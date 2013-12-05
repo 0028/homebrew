@@ -7,6 +7,12 @@ class Io < Formula
 
   head 'https://github.com/stevedekorte/io.git'
 
+  bottle do
+    sha1 'f7de8bc95150f1556edabbc291ba2c6d9136ad93' => :mavericks
+    sha1 '001ee556768bb781906cccec3bfc74c91b50ab2c' => :mountain_lion
+    sha1 'bf34fde37f31ba4fb4c06c96ba08000d900e7e31' => :lion
+  end
+
   option 'without-addons', 'Build without addons'
 
   depends_on 'cmake' => :build
