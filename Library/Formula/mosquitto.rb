@@ -5,6 +5,12 @@ class Mosquitto < Formula
   url 'http://mosquitto.org/files/source/mosquitto-1.2.3.tar.gz'
   sha1 '1675048286e0e32dc33126ec62466d083c0857f3'
 
+  bottle do
+    sha1 '08fb4218acca28240eefc48b3aa9305e97aae76b' => :mavericks
+    sha1 '673557f49d8666ae10bedbe652ebf56eb2365275' => :mountain_lion
+    sha1 '5787fcda65d24a43d01b33df19e02fe52af1ca17' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'cmake' => :build
 
