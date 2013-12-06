@@ -11,9 +11,9 @@ class Influxdb < Formula
   end
 
   bottle do
-    sha1 '9cc355279cf466f4ebc5704287c255c1d0312093' => :mavericks
-    sha1 'ffb246bf0923ca28b31db256b259b95a96f81f80' => :mountain_lion
-    sha1 '9f43d93ebfd3b8dd1c9d4d43f600d38504be2d66' => :lion
+    sha1 'f70bcbd4ab538e93a0d8a9b1c1a9da84cff94f78' => :mavericks
+    sha1 '9968e89392c5c098b9e662c82be4db4af41fd99a' => :mountain_lion
+    sha1 '0ea54eff1f58f3c20044f34539464c8c2a876512' => :lion
   end
 
   depends_on "leveldb"
