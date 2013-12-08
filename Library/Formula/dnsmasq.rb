@@ -5,6 +5,12 @@ class Dnsmasq < Formula
   url 'http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.67.tar.gz'
   sha1 '550c7ea2bef2a74a089c664d95fc52420a8cb726'
 
+  bottle do
+    sha1 '819135218e013be3e1ca7a2df3c8cbadf780000d' => :mavericks
+    sha1 'a3fd19d8aebc1b8fd0dcfa4109bbda85b8514df1' => :mountain_lion
+    sha1 '1e200ff2a385215f1cbf5de4c623ab9921e67cfe' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on "libidn" => :optional
 
