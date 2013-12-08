@@ -7,9 +7,9 @@ class Git < Formula
   head 'https://github.com/git/git.git'
 
   bottle do
-    sha1 '2c26cb1d99b3262df1f5fb6174bff992250c60b9' => :mavericks
-    sha1 '5b763a65526a23401a019119cd48bada6587d731' => :mountain_lion
-    sha1 'e88534f06d82de3d8ead0645d54046a74f021158' => :lion
+    sha1 '414dc17700bad21b6ac4cf07389cb3c9407d30f6' => :mavericks
+    sha1 '5ac0aee64062d9946e0a22683d25399d66de9d97' => :mountain_lion
+    sha1 '6c718c99919f8019fab56c6ba8c9d4d7f522da95' => :lion
   end
 
   option 'with-blk-sha1', 'Compile with the block-optimized SHA1 implementation'
