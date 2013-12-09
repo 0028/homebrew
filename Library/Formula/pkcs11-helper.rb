@@ -7,6 +7,13 @@ class Pkcs11Helper < Formula
 
   head 'https://github.com/OpenSC/pkcs11-helper.git'
 
+  bottle do
+    cellar :any
+    sha1 '2f4d6e7e593dd906ffa07f05c984b72895417caa' => :mavericks
+    sha1 '30cd7984b482a394ae6700387a1fee17443d2649' => :mountain_lion
+    sha1 '585249a8865842dcc571d5c6fb88f37278a1d1b4' => :lion
+  end
+
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
   depends_on 'libtool' => :build
