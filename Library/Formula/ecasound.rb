@@ -5,6 +5,12 @@ class Ecasound < Formula
   url 'http://ecasound.seul.org/download/ecasound-2.9.0.tar.gz'
   sha1 'aed604742968085a8e95cdebb21dc62f1d90d2b5'
 
+  bottle do
+    sha1 '58434c4bf7b13c809d2588253bca71fbe0ca8e87' => :mavericks
+    sha1 '2e68c5abcfd65916390c69bca36bf90511f86ddb' => :mountain_lion
+    sha1 'a87e18e534fc5f1f913682969b047b485eb1ecbd' => :lion
+  end
+
   option "with-ruby", "Compile with ruby support"
 
   depends_on 'apple-gcc42'
