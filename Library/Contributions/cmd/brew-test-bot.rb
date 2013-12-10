@@ -10,6 +10,12 @@
 # --email:        Generate an email subject file.
 # --no-bottle:    Run brew install without --build-bottle
 # --HEAD:         Run brew install with --HEAD
+# --local:
+# --ci-master:
+# --ci-pr:
+# --ci-testing:
+# --ci-pr-upload:
+# --ci-testing-upload:
 
 require 'formula'
 require 'utils'
@@ -368,12 +374,30 @@ class Test
     cleanup_before
     download
     setup unless ARGV.include? "--skip-setup"
-    homebrew
-    formulae.each do |f|
-      formula(f)
+    if ARGV.include? '--ci-pr-upload' or ARGV.include? '--ci-testing-upload'
+      bottle_upload
+    else
+      homebrew
+      formulae.each do |f|
+        formula(f)
+      end
     end
     cleanup_after
     check_results
+  end
+
+  def bottle_upload
+    @category = __method__
+    test "brew bottle --merge --write *.bottle*.rb"
+    if ARGV.include? '--ci-pr-upload'
+      pull_match = @url.match HOMEBREW_PULL_OR_COMMIT_URL_REGEX
+      if pull_match
+        bot = "https://github.com/BrewTestBot/homebrew.git"
+        pr = pull_match[4]
+        test "git push #{bot} #{pr}" if pull_match
+      end
+    end
+    test "brew readall"
   end
 end
 
@@ -388,6 +412,24 @@ if ARGV.include? "--email"
     file.write "#{MacOS.version}: internal error."
   end
 end
+
+ENV['HOMEBREW_DEVELOPER'] = '1'
+ENV['HOMEBREW_NO_EMOJI'] = '1'
+if ARGV.include? '--ci-master' or ARGV.include? '--ci-pr' \
+   or ARGV.include? '--ci-testing'
+  ARGV << '--cleanup' << '--junit' << '--local'
+end
+if ARGV.include? '--ci-master'
+  ARGV << '--no-bottle' << '--email'
+end
+
+if ARGV.include? '--local'
+  ENV['HOMEBREW_LOGS'] = "#{Dir.pwd}/logs"
+  ENV['HOMEBREW_CACHE'] = "#{Dir.pwd}/cache"
+end
+
+puts ARGV
+exit 0
 
 tests = []
 any_errors = false
