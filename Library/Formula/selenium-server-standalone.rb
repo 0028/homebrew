@@ -5,6 +5,12 @@ class SeleniumServerStandalone < Formula
   url 'http://selenium.googlecode.com/files/selenium-server-standalone-2.38.0.jar'
   sha1 'c717aea5c601fe657825db280b4788ee97b34f97'
 
+  bottle do
+    sha1 'c0d2504242ac739106003c01901fcf40b6f91f7c' => :mavericks
+    sha1 '08b1ddbce1f23b66f91517d126b7cd321ed3278e' => :mountain_lion
+    sha1 'dd11317bfdabe0cd27d57787f46450f6ad907d01' => :lion
+  end
+
   def install
     prefix.install "selenium-server-standalone-#{version}.jar"
   end
