@@ -7,6 +7,12 @@ class Launch4j < Formula
   version '3.1.0-beta2'
 
 
+  bottle do
+    sha1 'a6d522b8e791386cece9effa16a1abfb22051e94' => :mavericks
+    sha1 '42370eac5502868083092d6216a89d2f2c90a34d' => :mountain_lion
+    sha1 'cef14c861449bc6c8acde44b99d1fecb3cbf652b' => :lion
+  end
+
   def install
     libexec.install Dir['*'] - ['src', 'web']
     bin.write_jar_script libexec/"launch4j.jar", "launch4j"
