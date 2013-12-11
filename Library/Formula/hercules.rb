@@ -5,6 +5,12 @@ class Hercules < Formula
   url 'http://downloads.hercules-390.eu/hercules-3.09.tar.gz'
   sha1 '5cbe89ec214de00b90e3077c27db636a7d2607f5'
 
+  bottle do
+    sha1 '2557751e6da5a5df6a8f3554b0b82da59a64534a' => :mavericks
+    sha1 'af1f427fe88937b79674f95aae34f7074b1e2b41' => :mountain_lion
+    sha1 '09a26b3f34fae65790c361d007fceaa55ff4883a' => :lion
+  end
+
   skip_clean :la
 
   depends_on 'gawk'
