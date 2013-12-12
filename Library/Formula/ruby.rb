@@ -3,6 +3,13 @@ require 'formula'
 class Ruby < Formula
   homepage 'https://www.ruby-lang.org/'
   url 'http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p353.tar.bz2'
+  bottle do
+    cellar :any
+    sha1 'ba96b6df0282b1de589bdb169e9b67f8a0af92ce' => :mavericks
+    sha1 'eccb88d8027bc28105950cc7232852d122f420f3' => :mountain_lion
+    sha1 '87d1ff61d92c75c5f2de8584051aeea5892bd29b' => :lion
+  end
+
   sha256 '3de4e4d9aff4682fa4f8ed2b70bd0d746fae17452fc3d3a8e8f505ead9105ad9'
 
   head do
