@@ -7,6 +7,13 @@ class Slimerjs < Formula
 
   head 'https://github.com/laurentj/slimerjs.git'
 
+  bottle do
+    cellar :any
+    sha1 'f8c86138c41dd950015bdb20b6981a8228d0c789' => :mavericks
+    sha1 '0813996a0cb185b362818bedb8fdf8d0d8f64ba3' => :mountain_lion
+    sha1 '2c0f9bcc449fd8f849d2e88639a8bcde490af373' => :lion
+  end
+
   if MacOS.version > :snow_leopard
     option 'without-xulrunner', 'Build with xulrunner (requires a local Firefox installation, default on OS X 10.6 and below)'
     depends_on 'xulrunner' => :recommended
