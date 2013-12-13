@@ -30,6 +30,12 @@ class Xulrunner < Formula
   # use 27.0b1 as stable on 10.9, because it compiles without patches and env :userpaths
   if MacOS.version >= :mavericks
     url 'http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/27.0b1/source/xulrunner-27.0b1.source.tar.bz2'
+  bottle do
+    sha1 'b9fd6f30ef6df58754c2aefdaeafccbd21f3a8eb' => :mavericks
+    sha1 '0be77d81a4d7279907b4c2a42311e215f7965d09' => :mountain_lion
+    sha1 '5379c3054834fa3da622605ca0b1be89561e82ca' => :lion
+  end
+
     sha1 'a29a81aa0cc431a541ee6e6dff3e1e055ef20149'
     version '27.0b1'
   else
