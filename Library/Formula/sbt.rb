@@ -6,6 +6,12 @@ class Sbt < Formula
   version '0.13.1'
   sha1 '3a1718a467ca34380b0a356a2e1bb46813aff240'
 
+  bottle do
+    sha1 'c01a0cd72a5bda5a9c6da848ebbd2014fe9c47ef' => :mavericks
+    sha1 '6536807233e5031a0034c39c3a990b96700c7ca6' => :mountain_lion
+    sha1 'fe2b5dde754eb3447e98950c635965775bd2895a' => :lion
+  end
+
   devel do
     url 'http://repo.typesafe.com/typesafe/ivy-snapshots/org.scala-sbt/sbt-launch/0.13.2-20131212-062515/sbt-launch.jar'
     version '0.13.2-20131212-062515'
