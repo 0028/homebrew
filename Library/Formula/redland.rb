@@ -5,6 +5,12 @@ class Redland < Formula
   url 'http://download.librdf.org/source/redland-1.0.16.tar.gz'
   sha1 '0dc3d65bee6d580cae84ed261720b5b4e6b1f856'
 
+  bottle do
+    sha1 'f18427ca5e440bd78fde5ff415825f2c6e7b9a1b' => :mavericks
+    sha1 '70fcb7e68d0211e56f9ff6871e0599e3aed1a51f' => :mountain_lion
+    sha1 '26472193a47b325811058dbfd3c77da8f3c93bbd' => :lion
+  end
+
   option 'with-php', 'Build with php support'
   option 'with-ruby', 'Build with ruby support'
 
