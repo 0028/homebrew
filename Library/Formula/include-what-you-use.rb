@@ -6,6 +6,12 @@ class IncludeWhatYouUse < Formula
   version '3.3'
   sha1 'f49dd094300b648543e3510ebd8101dbab23056f'
 
+  bottle do
+    sha1 '6f281cc843859345795a655d92dc40a6da1d5430' => :mavericks
+    sha1 '850c43843494a6489041ba129163abcba36a6107' => :mountain_lion
+    sha1 '667972f3f10bda478b1310400d764c93ec7648d9' => :lion
+  end
+
   depends_on 'llvm' => [:build, "with-clang"]
   depends_on 'cmake' => :build
 
