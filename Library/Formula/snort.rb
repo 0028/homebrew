@@ -5,6 +5,13 @@ class Snort < Formula
   url 'http://www.snort.org/dl/snort-current/snort-2.9.5.6.tar.gz'
   sha1 '85ae4a4d021dd40107fa1dbd72fd70cc1fdca3d9'
 
+  bottle do
+    cellar :any
+    sha1 'cceb5893c8c4496a24acbf40deb5cf3edf46fb92' => :mavericks
+    sha1 '8046e672e0b2665477ab2cfa7fa1b43a32616705' => :mountain_lion
+    sha1 '4b5c53eed4da3f04b32786ed25e578c6672be7ed' => :lion
+  end
+
   depends_on 'daq'
   depends_on 'libdnet'
   depends_on 'pcre'
