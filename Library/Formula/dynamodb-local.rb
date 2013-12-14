@@ -6,6 +6,12 @@ class DynamodbLocal < Formula
   version '2013-12-12'
   sha1 '66e39e57297a394e7ca7b30d3072c615fd413310'
 
+  bottle do
+    sha1 '8b84b4d16fbbe8b772dffd961c7800534e3f33d3' => :mavericks
+    sha1 '2002af146c2e3e23cbce6d10536ab90501a3bc4d' => :mountain_lion
+    sha1 '1f97a6322863d8552b1aa8d2574dedc2f70e0c9a' => :lion
+  end
+
   def data_path
     var/'data/dynamodb-local'
   end
