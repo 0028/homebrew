@@ -5,6 +5,12 @@ class Ldns < Formula
   url 'http://nlnetlabs.nl/downloads/ldns/ldns-1.6.16.tar.gz'
   sha1 '5b4fc6c5c3078cd061905c47178478cb1015c62a'
 
+  bottle do
+    sha1 '2ecbd2e28e8704cfddba2c629577bc23d0166f6a' => :mavericks
+    sha1 '6280fa2755c07b9f5ffe4acbde7c8a13061aeecc' => :mountain_lion
+    sha1 'edae601ae81f21828d1bd1065992563292c1e302' => :lion
+  end
+
   option 'with-gost', 'Compile ldns with support for GOST algorithms in DNSSEC'
 
   depends_on :python => :optional
