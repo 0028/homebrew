@@ -5,6 +5,13 @@ class Clucene < Formula
   url 'http://downloads.sourceforge.net/project/clucene/clucene-core-stable/0.9.21b/clucene-core-0.9.21b.tar.bz2'
   sha1 '8bc505b64f82723c2dc901036cb0607500870973'
 
+  bottle do
+    cellar :any
+    sha1 'a192d6b0d1b6ca01426a0d569683cafb647b521e' => :mavericks
+    sha1 '8b12e627e343b4df74e8d7430c69cced4b49dc58' => :mountain_lion
+    sha1 'e88d8c434900885912b6552564e10fe2c8bedeff' => :lion
+  end
+
   head do
     url 'git://clucene.git.sourceforge.net/gitroot/clucene/clucene'
     depends_on 'cmake' => :build
