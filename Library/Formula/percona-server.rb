@@ -6,6 +6,12 @@ class PerconaServer < Formula
   version '5.6.14-rel62.0'
   sha1 '6d9ddd92338c70ec13bdeb9a23568a990a5766f9'
 
+  bottle do
+    sha1 'c2ae3491855698369bf3e1c01c5baa3ddc57d468' => :mavericks
+    sha1 'fa5073225042e386a7ed3f1057ea443827b4d89a' => :mountain_lion
+    sha1 'e441319a34d1b4ebdc8ce047045b89be1e5f66d5' => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on 'pidof' unless MacOS.version >= :mountain_lion
 
