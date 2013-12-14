@@ -6,6 +6,12 @@ require 'formula'
 class Wget < Formula
   homepage 'http://www.gnu.org/software/wget/'
   url 'http://ftpmirror.gnu.org/wget/wget-1.14.tar.gz'
+  bottle do
+    sha1 '1571a80d3d02e71f9e1d0cbc0ea5791cd7063c9c' => :mavericks
+    sha1 'ca705ec90e40560c6df5116ef0183a7e7ae0c053' => :mountain_lion
+    sha1 '122f71cd8b04a6a3e60de1190aabfe49da42b1f3' => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/wget/wget-1.14.tar.gz'
   sha1 'c487bce740b3a1847a35fb29b5c6700c46f639b8'
 
