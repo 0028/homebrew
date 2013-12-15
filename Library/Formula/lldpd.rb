@@ -5,6 +5,12 @@ class Lldpd < Formula
   url 'http://media.luffy.cx/files/lldpd/lldpd-0.7.7.tar.gz'
   sha1 '4471e5fcd66d650b6327842a9e2e779e546f2491'
 
+  bottle do
+    sha1 'b8f25ec0e3edc70a4fa264053479d3de133e36dc' => :mavericks
+    sha1 '0c73535e3c50560e0ad2670236a6110a2e3f7be8' => :mountain_lion
+    sha1 '1a5e35f204916fa9a0012d1ff830cb06e804e8fe' => :lion
+  end
+
   option 'with-snmp', "Build SNMP subagent support"
   option 'with-json', "Build JSON support for lldpcli"
 
