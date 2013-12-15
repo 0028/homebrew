@@ -3,6 +3,13 @@ require 'formula'
 class Coreutils < Formula
   homepage 'http://www.gnu.org/software/coreutils'
   url 'http://ftpmirror.gnu.org/coreutils/coreutils-8.22.tar.xz'
+  bottle do
+    cellar :any
+    sha1 '53374a8e079091e7dadd9f81f749505a37c9271e' => :mavericks
+    sha1 '14bafbe1f7ee0dc67eb880bc3f2ae2fbf54c8757' => :mountain_lion
+    sha1 '9f84d26d9e77d596637920905214d4d225c32539' => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/coreutils/coreutils-8.22.tar.xz'
   sha256 '5b3e94998152c017e6c75d56b9b994188eb71bf46d4038a642cb9141f6ff1212'
 
