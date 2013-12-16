@@ -4,6 +4,13 @@ class Vpnc < Formula
   homepage 'http://www.unix-ag.uni-kl.de/~massar/vpnc/'
   url 'http://ftp.debian.org/debian/pool/main/v/vpnc/vpnc_0.5.3r512.orig.tar.gz'
   version '0.5.3r512'
+  bottle do
+    cellar :any
+    sha1 'b05f8dbfadce5dc0b1604788d269e32b2b27167b' => :mavericks
+    sha1 '2818edcfa8f22a2b7036f3d69c91ee378b78c962' => :mountain_lion
+    sha1 '7e5d316eb743375c8f425f1faff4365ba8a915cf' => :lion
+  end
+
   sha256 'd421ac20b6c65d22d2ee88066e487f740f4d367f9143b6045bcb8fa177b384fe'
 
   depends_on 'pkg-config' => :build
