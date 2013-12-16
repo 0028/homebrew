@@ -12,10 +12,9 @@ class Erlang < Formula
   head 'https://github.com/erlang/otp.git', :branch => 'master'
 
   bottle do
-    revision 3
-    sha1 'bb535a13fcd11180cc9a68c52264ded677b9d160' => :mavericks
-    sha1 '3107a1bae9912d18e4a54c9eda57a4862e0999c5' => :mountain_lion
-    sha1 '0f857e488fd239625c6181b210394f0bd05fea78' => :lion
+    sha1 'ab820bf4be42fb4496fca3ca2dc4fc83bffdd9b5' => :mavericks
+    sha1 '131f82f5ed7c272f80b9ead96b016a4d04be8bab' => :mountain_lion
+    sha1 'dccac71186d57b7be40c1901d1169c7010cbde1d' => :lion
   end
 
   resource 'man' do
