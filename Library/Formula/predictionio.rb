@@ -5,6 +5,12 @@ class Predictionio < Formula
   url 'http://download.prediction.io/PredictionIO-0.6.4.zip'
   sha1 '29422514f5f71eaa8bcf7e689083471f1ba93ca3'
 
+  bottle do
+    sha1 '22b71d56ea8792274323a120b412ca6257fe3be6' => :mavericks
+    sha1 '5d65747d365c87bb9501afb5cf1b0b99ccc73727' => :mountain_lion
+    sha1 '8070b28360e0fc8ff00788d20ab0282806eb2028' => :lion
+  end
+
   depends_on 'mongodb'
   depends_on 'hadoop'
 
