@@ -5,6 +5,12 @@ class Zsh < Formula
   url 'http://www.zsh.org/pub/zsh-5.0.3.tar.bz2'
   sha1 'b7a80d2cdb83a871d869cfdf487bda8a18e01ef7'
 
+  bottle do
+    sha1 '3ef1bcfacae177d2aeca8aeccd995f99ab60bf9e' => :mavericks
+    sha1 'b0f860165dcb231290f66eedd74f9004ef9a21ca' => :mountain_lion
+    sha1 '819f3867982d19571e685c16e3adb83137003208' => :lion
+  end
+
   depends_on 'gdbm'
   depends_on 'pcre'
 
