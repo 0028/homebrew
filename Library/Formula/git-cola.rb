@@ -7,6 +7,13 @@ class GitCola < Formula
 
   head 'https://github.com/git-cola/git-cola.git'
 
+  bottle do
+    cellar :any
+    sha1 '6ff7b05934877929d8d34126b8350a3e0fd3eba6' => :mavericks
+    sha1 '23fc439f92a6ca90209c7d4059bcb682f35e4fd3' => :mountain_lion
+    sha1 '488d40a15c8d11c5d1663d1b2503a2a5b5997e4d' => :lion
+  end
+
   option 'with-docs', "Build man pages using asciidoc and xmlto"
 
   depends_on :python
