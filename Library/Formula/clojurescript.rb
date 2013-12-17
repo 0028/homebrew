@@ -6,6 +6,12 @@ class Clojurescript < Formula
   url 'https://github.com/clojure/clojurescript/archive/r2120.tar.gz'
   sha1 '50143c223407bc4562cf5c97270724e1a9b4e128'
 
+  bottle do
+    sha1 'f4278d46b1bfd419ff5e7e7a58ed6e02b61b7daf' => :mavericks
+    sha1 '85b04087db9bc03cd7eefc9f5b636f531dd8bdb3' => :mountain_lion
+    sha1 'fdc38ae826938455f58ef2c2bb43af1c5629c011' => :lion
+  end
+
   def install
     system "./script/bootstrap"
     inreplace %w(bin/cljsc script/repl script/repljs script/browser-repl),
