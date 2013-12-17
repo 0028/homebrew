@@ -7,6 +7,13 @@ class Pyenv < Formula
 
   head 'https://github.com/yyuu/pyenv.git'
 
+  bottle do
+    cellar :any
+    sha1 'c7df3703ecdb8f0f54dba569880a0a80a450003a' => :mavericks
+    sha1 '75bfa7b0737a14dbde52a47427cb780e542d4376' => :mountain_lion
+    sha1 '7e47ba9877e6db587eace02210008b1756dbba35' => :lion
+  end
+
   skip_clean "plugins", "versions"
 
   def install
