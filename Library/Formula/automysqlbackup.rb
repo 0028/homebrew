@@ -6,6 +6,12 @@ class Automysqlbackup < Formula
   version '3.0-rc6'
   sha1 'a21123a2c5fbf568a7fe167698a82697ae1cbb21'
 
+  bottle do
+    sha1 '45aa956efc4325aa27a4a84e46f06b34ac5adfab' => :mavericks
+    sha1 '2c5fb6c9ff22b5cde892da6399c1fda2faa25742' => :mountain_lion
+    sha1 'eb891d0169e9c36ea8d12287c524fc41291e3010' => :lion
+  end
+
   def install
     inreplace 'automysqlbackup' do |s|
       s.gsub! "/etc", etc
