@@ -6,6 +6,13 @@ class Bgpq3 < Formula
   url 'http://snar.spb.ru/prog/bgpq3/bgpq3-0.1.19.tgz'
   sha1 '41a2afaeffb12e43048ca8771c6cc6e6392e0da5'
 
+  bottle do
+    cellar :any
+    sha1 '923556daf62f0fd3d72214fb7fc8ce93981e670f' => :mavericks
+    sha1 '306e88f6bf4a95545c29e3ab27d321faa69b0ebe' => :mountain_lion
+    sha1 'd0dfb9e56c52af1d76c496072c3674266a87f8e0' => :lion
+  end
+
   def patches
     # Makefile: upstream has been informed of the patch through email,
     # but no plans yet to incorporate it
