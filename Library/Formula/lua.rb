@@ -7,6 +7,13 @@ class Lua < Formula
   url 'http://www.lua.org/ftp/lua-5.1.5.tar.gz'
   sha1 'b3882111ad02ecc6b972f8c1241647905cb2e3fc'
 
+  bottle do
+    cellar :any
+    sha1 'e8505982baa1a962ef96ea90740010d83a11199b' => :mavericks
+    sha1 'ed3104f43036258e484d1558c9293ea7226cd7c0' => :mountain_lion
+    sha1 '9d5277fe223e91986734106ab8de75b481c6b721' => :lion
+  end
+
   fails_with :llvm do
     build 2326
     cause "Lua itself compiles with LLVM, but may fail when other software tries to link."
