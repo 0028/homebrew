@@ -5,6 +5,13 @@ class Oinkmaster < Formula
   url 'http://switch.dl.sourceforge.net/project/oinkmaster/oinkmaster/2.0/oinkmaster-2.0.tar.gz'
   sha1 '01a0d774195670a11af5ff3e302773d962b34224'
 
+  bottle do
+    cellar :any
+    sha1 'cf68a67ff25cff2096c091e78ac1d7a43e277f73' => :mavericks
+    sha1 'd69a84d73c8ad1e98cfe6bf9640b077309fbca63' => :mountain_lion
+    sha1 'bdb8ffd7adf6b32dca2afec6c150d049f3ab81ff' => :lion
+  end
+
   depends_on 'wget'
 
   def patches
