@@ -5,6 +5,11 @@ class PltRacket < Formula
   url 'https://github.com/plt/racket/archive/v5.3.6.tar.gz'
   sha1 '6b0e7a11bb3ae6480b99db346e5b503a97539e6b'
 
+  bottle do
+    sha1 'e9afbb90226f1ac51064199930459a747cb44a2c' => :mavericks
+    sha1 'f7e46c317f6cace42195821ead009c6b75d955f0' => :mountain_lion
+  end
+
   depends_on :macos => :mountain_lion # https://github.com/Homebrew/homebrew/pull/22420
 
   depends_on 'glib'
