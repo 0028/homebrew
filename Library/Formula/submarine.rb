@@ -6,6 +6,13 @@ class Submarine < Formula
   sha1 '9ecbdfd25c299839a55ec7878b585525b03f2e8b'
   head 'https://github.com/rastersoft/submarine.git'
 
+  bottle do
+    cellar :any
+    sha1 '4b27882b8f462294813e2437fc75a5defad3435b' => :mavericks
+    sha1 'c5f615b132848d99059f1de31d8eaf9482767304' => :mountain_lion
+    sha1 '36ede1dad5f7d2697c638870d3db6061d24634eb' => :lion
+  end
+
   depends_on 'glib'
   depends_on 'libgee'
   depends_on 'libsoup'
