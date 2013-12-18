@@ -7,6 +7,12 @@ class Yeti < Formula
 
   head 'https://github.com/mth/yeti.git'
 
+  bottle do
+    sha1 'dfd9684dcb7e3d2e9d4fd40869e8ca72dbfddb75' => :mavericks
+    sha1 'ea90a842712ae212fcc1266ac41c042c1f97e95a' => :mountain_lion
+    sha1 '81800424e54c73ab12473c599906824b9ccddda7' => :lion
+  end
+
   depends_on :ant
 
   def install
