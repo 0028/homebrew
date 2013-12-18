@@ -5,6 +5,12 @@ class Nginx < Formula
   url 'http://nginx.org/download/nginx-1.4.4.tar.gz'
   sha1 '304d5991ccde398af2002c0da980ae240cea9356'
 
+  bottle do
+    sha1 'ab8040bc5ef2ba14318cece5baf2ddd19831aeea' => :mavericks
+    sha1 '661004e3ca90d82b18c7f4e96002b09e47e04b94' => :mountain_lion
+    sha1 'c5e39abe715c38c725afc509dc13e1d9105c4095' => :lion
+  end
+
   devel do
     url 'http://nginx.org/download/nginx-1.5.8.tar.gz'
     sha1 '5c02b293a59c32172d2d5b3c52da7fe0afc179ef'
