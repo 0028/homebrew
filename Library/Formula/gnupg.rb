@@ -5,6 +5,12 @@ class Gnupg < Formula
   url 'ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-1.4.16.tar.bz2'
   sha1 '0bf5e475f3eb6f33d5474d017fe5bf66070e43f4'
 
+  bottle do
+    sha1 '7650853d2b33e55d333ae7150124509c1c267e26' => :mavericks
+    sha1 '19d30a9e6ffa53f8e0ac1dd3553c157cc707df6d' => :mountain_lion
+    sha1 '5e97252908569dd4f3ece2b5db4cf6ddec7bf153' => :lion
+  end
+
   option '8192', 'Build with support for private keys of up to 8192 bits'
 
   def cflags
