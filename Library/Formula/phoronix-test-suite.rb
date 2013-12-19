@@ -5,6 +5,12 @@ class PhoronixTestSuite < Formula
   url 'http://www.phoronix-test-suite.com/download.php?file=phoronix-test-suite-4.8.6'
   sha1 '2b234c5e5600a5155fe9807e75f9f8a55379f98e'
 
+  bottle do
+    sha1 '31be3b5f5860036f2f311d1f6df12dc0fc464925' => :mavericks
+    sha1 'e2f3051fcf357faa048a341a078aae3f276255c5' => :mountain_lion
+    sha1 '3233041d709cdc27af5e55be47dd406c5b8bfd7e' => :lion
+  end
+
   def patches; DATA; end
 
   def install
