@@ -5,6 +5,12 @@ class Nrpe < Formula
   url 'http://downloads.sourceforge.net/project/nagios/nrpe-2.x/nrpe-2.15/nrpe-2.15.tar.gz'
   sha1 '45f434758c547c0af516e8b3324717f8dcd100a3'
 
+  bottle do
+    sha1 '65cf5363fdbf5544a4403e18a2f40e905d127300' => :mavericks
+    sha1 'b54ede6fcae81cca3ecb3c47c197d501515fbd69' => :mountain_lion
+    sha1 '8a477ae5c0a9332cabe834a83e028a8508b96c84' => :lion
+  end
+
   depends_on 'nagios-plugins'
 
   def install
