@@ -5,6 +5,12 @@ class Gitbucket < Formula
   url 'https://github.com/takezoe/gitbucket/releases/download/1.8/gitbucket.war'
   sha1 'abdd921283e25e6663c49798df0bfb0287c0eb9c'
 
+  bottle do
+    sha1 'd949237040e006897203c888501399c8ab378db9' => :mavericks
+    sha1 'e5130c8c78006b16745387e58ff9917826366d10' => :mountain_lion
+    sha1 'b07a335ef4c61987eee426340b01468e68800764' => :lion
+  end
+
   head do
     url 'https://github.com/takezoe/gitbucket.git'
     depends_on 'ant' => :build
