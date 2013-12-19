@@ -3,6 +3,12 @@ require 'formula'
 class Trafficserver < Formula
   homepage 'http://trafficserver.apache.org/'
   url 'http://www.apache.org/dyn/closer.cgi?path=trafficserver/trafficserver-4.1.2.tar.bz2'
+  bottle do
+    sha1 '70ff811337b5129c4752fbf7a3792c8c573ab200' => :mavericks
+    sha1 '0960b26802a810454b6f49e9526ba20fd9162c16' => :mountain_lion
+    sha1 '2a8441c9e3f1a54461122f17b49c450c0072b1c2' => :lion
+  end
+
   mirror 'http://archive.apache.org/dist/trafficserver/trafficserver-4.1.2.tar.bz2'
   sha1 '18ba9753057c10f3824562e2cbc9d3c3c08795db'
 
