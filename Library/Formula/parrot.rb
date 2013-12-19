@@ -3,6 +3,12 @@ require 'formula'
 class Parrot < Formula
   homepage 'http://www.parrot.org/'
   url 'ftp://ftp.parrot.org/pub/parrot/releases/supported/5.9.0/parrot-5.9.0.tar.bz2'
+  bottle do
+    sha1 '9fb8512c8405af829e0e6cd39f5d806bcd92650f' => :mavericks
+    sha1 '8b0e6778363331c89d25d4bbba3303448fe98300' => :mountain_lion
+    sha1 'deb7c74e64f3c5f5bd3e3575993acb861e85e8c4' => :lion
+  end
+
   sha256 'b4704231d90ddec827f45f945b9ad13dd4f9dc7cc9bc0cfc97ab6e30ec1c38ca'
 
   devel do
