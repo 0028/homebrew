@@ -3,6 +3,13 @@ require 'formula'
 class Curl < Formula
   homepage 'http://curl.haxx.se/'
   url 'http://curl.haxx.se/download/curl-7.34.0.tar.gz'
+  bottle do
+    cellar :any
+    sha1 '5c0f2b2623ea1c2799c2efd32c49a1126d6e36bf' => :mavericks
+    sha1 '778044d0c1859b232ae2f7891faeebb0e1904203' => :mountain_lion
+    sha1 'da722f85a94e3ccf6fe1fbe831313c3f33c66ea2' => :lion
+  end
+
   mirror 'ftp://ftp.sunet.se/pub/www/utilities/curl/curl-7.34.0.tar.gz'
   sha256 '0705271de8411a85460706e177cd0f1064ec07c0b9e140a66a916fb644696d6a'
 
