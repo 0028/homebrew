@@ -11,6 +11,13 @@ class Itex2mml < Formula
   url 'http://golem.ph.utexas.edu/~distler/blog/files/itexToMML-1.5.0.tar.gz'
   sha1 'd30ac4327f4e9dc5259950404b45671eb241945e'
 
+  bottle do
+    cellar :any
+    sha1 'fa8cb42cf3716b46b63fec39680b2b2f1b56d74f' => :mavericks
+    sha1 '9e0ff4756b49700fedaf446b35484c74299e1441' => :mountain_lion
+    sha1 'a221c315cdb5c37fab98852ccf2b017798804401' => :lion
+  end
+
   def install
     bin.mkpath
     cd "itex-src" do
