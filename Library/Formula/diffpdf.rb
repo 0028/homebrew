@@ -5,6 +5,12 @@ class Diffpdf < Formula
   url 'http://www.qtrac.eu/diffpdf-2.1.3.tar.gz'
   sha1 '663ecb7666a4b7d6fbd1a37327fd1f895fae69b8'
 
+  bottle do
+    sha1 'fcf88b8ab1b0789431f6fca83e98581af73d6668' => :mavericks
+    sha1 'af29fe42e0753b014ea7c0a7755b49aaff19b4f4' => :mountain_lion
+    sha1 '67af7620ae9082cd5b086ad9a733d4be51e23b13' => :lion
+  end
+
   depends_on 'qt'
   depends_on 'poppler' => 'with-qt4'
 
