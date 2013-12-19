@@ -7,6 +7,13 @@ class Goaccess < Formula
 
   head 'https://github.com/allinurl/goaccess.git'
 
+  bottle do
+    cellar :any
+    sha1 '24f34d1f63bc4e653d08b17af64c73554bd34eee' => :mavericks
+    sha1 '4e63f2182224bbd96a2a38355c9de90e0b783819' => :mountain_lion
+    sha1 'ba7abc5b6e31fc0cff4a237ae53c1ce9bf16a05b' => :lion
+  end
+
   option 'enable-geoip', "Enable IP location information using GeoIP"
 
   depends_on 'pkg-config' => :build
