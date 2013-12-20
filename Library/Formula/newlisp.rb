@@ -5,6 +5,12 @@ class Newlisp < Formula
   url 'http://www.newlisp.org/downloads/newlisp-10.5.4.tgz'
   sha1 'a1fa37eb21f8045858a30493429d243ababc2488'
 
+  bottle do
+    sha1 'dbf8fa68e6a96b2fa6a31c42dd2fb47da6b0ce97' => :mavericks
+    sha1 '4c1b18d88272ed9479feb4ebc5ca7003fd21d832' => :mountain_lion
+    sha1 '73050798a06259199e1063ea8c975b3cc4bae31b' => :lion
+  end
+
   devel do
     url 'http://www.newlisp.org/downloads/development/newlisp-10.5.6.tgz'
     sha1 'ef887c6d617b2acdad2c8f9f05789166b1f1a95f'
