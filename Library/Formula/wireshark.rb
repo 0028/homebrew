@@ -3,6 +3,12 @@ require 'formula'
 class Wireshark < Formula
   homepage 'http://www.wireshark.org'
   url 'http://wiresharkdownloads.riverbed.com/wireshark/src/wireshark-1.10.5.tar.bz2'
+  bottle do
+    sha1 '7319468917cb40fe867c6f2bfaf32f1350de076e' => :mavericks
+    sha1 'cfe56e5cd42eb971c410944f3cbebbec82ce8551' => :mountain_lion
+    sha1 '92b422beeb6299b40a8d16927c94c3479d633806' => :lion
+  end
+
   mirror 'http://www.wireshark.org/download/src/wireshark-1.10.5.tar.bz2'
   sha1 'ebbf4f8382fc8961c1fb7959727b3e6792e597c1'
 
