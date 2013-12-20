@@ -5,6 +5,12 @@ class AndroidNdk < Formula
   url 'http://dl.google.com/android/ndk/android-ndk-r9b-darwin-x86.tar.bz2'
   sha1 'e9e44144a1db987f917eafe9fa2dc0b0de3ee78f'
 
+  bottle do
+    sha1 '46c321e9b90c1c91045010b1e266c346c56ed9be' => :mavericks
+    sha1 '0c67282b240ab7bdf4c7b0677cf82b51ce21cb4c' => :mountain_lion
+    sha1 '898ba22997dd8c71556ed7e6202f4e5128ee814c' => :lion
+  end
+
   depends_on 'android-sdk'
 
   def install
