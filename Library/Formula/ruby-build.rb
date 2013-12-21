@@ -7,6 +7,13 @@ class RubyBuild < Formula
 
   head 'https://github.com/sstephenson/ruby-build.git'
 
+  bottle do
+    cellar :any
+    sha1 'ce888b46e117e2cb91e5aa1d35a5b58f6031923a' => :mavericks
+    sha1 'bd8c51a9d3373c20301a42482e96dbf1d8212a80' => :mountain_lion
+    sha1 '9a1cce56a02f2630133e187a4093abc57ec583c6' => :lion
+  end
+
   depends_on 'autoconf' => [:recommended, :run]
   depends_on 'pkg-config' => [:recommended, :run]
   depends_on 'openssl' => :recommended
