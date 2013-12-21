@@ -6,6 +6,13 @@ class Tbb < Formula
   sha1 'f354bd9b67295f65c43531b751e34f483ed8a024'
   version '4.2'
 
+  bottle do
+    cellar :any
+    sha1 '904ed1567550bc404b4c81059dcec888bdd67aea' => :mavericks
+    sha1 '562f97dd278e5125a3c6434b88c88d3378c67b92' => :mountain_lion
+    sha1 '52b000cc81742f930e5a2f7465f18b9b4d5633e9' => :lion
+  end
+
   option :cxx11
 
   fails_with :llvm do
