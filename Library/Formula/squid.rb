@@ -18,6 +18,12 @@ class Squid < Formula
   url 'http://www.squid-cache.org/Versions/v3/3.3/squid-3.3.11.tar.gz'
   sha1 'e89812a51d4e88abac15c301d571d83549f2d81e'
 
+  bottle do
+    sha1 'ef56da86c1f1b89d33178b0b83fa25681ddf0bfe' => :mavericks
+    sha1 'a9156406a09e8690055306ce4c89b7ca6c47ab21' => :mountain_lion
+    sha1 '315ac86dfb67f44c1e69e6fc040763cb6bcd1b78' => :lion
+  end
+
   depends_on NoBdb5
 
   # fix building on mavericks
