@@ -3,6 +3,13 @@ require 'formula'
 class Truecrypt < Formula
   homepage 'http://truecrypt.org/'
   url 'ftp://ftp.archlinux.org/other/tc/truecrypt-7.1a.tar.gz'
+  bottle do
+    cellar :any
+    sha1 '56df5220f63cbdf717151571f3611fd039625fa4' => :mavericks
+    sha1 '23dd16c561dbf4f67cf8bde9b7e932a75b471134' => :mountain_lion
+    sha1 'a8cb0848c2186435a61a0d9de9a331546d46d89f' => :lion
+  end
+
   sha256 'e6214e911d0bbededba274a2f8f8d7b3f6f6951e20f1c3a598fc7a23af81c8dc'
 
   # RSA PKCS #11 Cryptographic Token Interface (Cryptoki)
