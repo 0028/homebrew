@@ -5,6 +5,12 @@ class Dpkg < Formula
   url 'http://ftp.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.5.tar.xz'
   sha1 '30656d70795c463d67e3507dfad9351e92fe3354'
 
+  bottle do
+    sha1 '4ea9fa544d421ec95cc9ded063edd0371e09ab71' => :mavericks
+    sha1 'b8e089bbb986073b646b0ce3ee538a04d3ff436b' => :mountain_lion
+    sha1 '9c6b2db50e198fc288b2415de9f9637a25b31180' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'xz' => :build
   depends_on 'gnu-tar'
