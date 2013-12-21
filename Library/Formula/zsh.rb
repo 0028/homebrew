@@ -3,6 +3,12 @@ require 'formula'
 class Zsh < Formula
   homepage 'http://www.zsh.org/'
   url 'http://fossies.org/linux/misc/zsh-5.0.4.tar.bz2'
+  bottle do
+    sha1 '8f7151970db7705f73207ff08f867e855d64ca0c' => :mavericks
+    sha1 '35e8f6c83ad5a6224de460ab8765b0dd7a7a7968' => :mountain_lion
+    sha1 '5c7f189443afea4be974a4d5b3c362a6ef481f4d' => :lion
+  end
+
   mirror 'http://www.zsh.org/pub/zsh-5.0.4.tar.bz2'
   sha1 '9c52044531a7ffa6d299bffd8610399e4a000266'
 
