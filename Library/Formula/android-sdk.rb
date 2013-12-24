@@ -6,6 +6,12 @@ class AndroidSdk < Formula
   version '22.3'
   sha1 '547ea51c4aa61d623a4823d0b635d3b66b6c9329'
 
+  bottle do
+    sha1 'e3b111a013a0729ae4deec158ff93ff522a46a32' => :mavericks
+    sha1 'e800c06b031b5abc377fdacc1910985aac954bea' => :mountain_lion
+    sha1 '9d48cd865e0fcaf6d0979b77171c93d351fe7675' => :lion
+  end
+
   resource 'completion' do
     url 'https://raw.github.com/CyanogenMod/android_sdk/3bf0a01ef66a9b99149ba3faaf34a1362581dd01/bash_completion/adb.bash'
     sha1 '8e7dad45b8c98c359516d4a818a9090125bc6f7a'
