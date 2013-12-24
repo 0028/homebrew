@@ -5,6 +5,12 @@ class Mutt < Formula
   url 'ftp://ftp.mutt.org/mutt/devel/mutt-1.5.22.tar.gz'
   sha1 '728a114cb3a44df373dbf1292fc34dd8321057dc'
 
+  bottle do
+    sha1 'a2064e6d1bcf052ded4055bf01453f1c394b7a2d' => :mavericks
+    sha1 '3cfb118cd99c5e04cb4e5ba65c2bcee6688c7cfa' => :mountain_lion
+    sha1 'e258e012dc67d5de79da8c4bc4189877b25b4454' => :lion
+  end
+
   head do
     url 'http://dev.mutt.org/hg/mutt#default', :using => :hg
 
