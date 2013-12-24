@@ -5,6 +5,13 @@ class Minizip < Formula
   url 'http://zlib.net/zlib-1.2.8.tar.gz'
   sha1 'a4d316c404ff54ca545ea71a27af7dbc29817088'
 
+  bottle do
+    cellar :any
+    sha1 '31a937d4a1791b7038711c43bffefa63c929a175' => :mavericks
+    sha1 'bee5686dc2c6fa8073b47178e90256f96025674b' => :mountain_lion
+    sha1 'f781566fba9c90a650645bcfbc53ab6b84580aad' => :lion
+  end
+
   # version for minizip, not zlib
   version '1.1'
 
