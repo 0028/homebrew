@@ -5,6 +5,13 @@ class BerkeleyDb < Formula
   url 'http://download.oracle.com/berkeley-db/db-5.3.28.tar.gz'
   sha1 'fa3f8a41ad5101f43d08bc0efb6241c9b6fc1ae9'
 
+  bottle do
+    cellar :any
+    sha1 'd273b90ca88dec3136ec0d5065745aa657c90f2b' => :mavericks
+    sha1 '2471fde9e24f42f8a02d019f3bb08d6629c03712' => :mountain_lion
+    sha1 'bbf40e78eec57c05661f9572cce7d0fbfbe2f4d8' => :lion
+  end
+
   option 'with-java', 'Compile with Java support.'
   option 'enable-sql', 'Compile with SQL support.'
 
