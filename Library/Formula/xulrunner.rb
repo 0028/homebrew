@@ -38,6 +38,12 @@ class Xulrunner < Formula
   sha1 '13d2718053764e176f370a3196bb19efc9e2a5f8'
   version '27.0b2'
 
+  bottle do
+    sha1 '38e0d269c67efec376ceef81863985162e851cef' => :mavericks
+    sha1 '497d9ab3a5f224791586d4a70fd2a973e691f1cf' => :mountain_lion
+    sha1 '5a033a3b9d896e5613053b156fd547caf5447b37' => :lion
+  end
+
   head ['http://ftp.mozilla.org/pub/mozilla.org/firefox/bundles/mozilla-central.hg','https://hg.mozilla.org/mozilla-central/'].join('|'), :using => HgBundleDownloadStrategy
 
   depends_on :macos => :lion # needs clang++
