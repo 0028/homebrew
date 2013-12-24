@@ -4,6 +4,13 @@ class Osm2pgrouting < Formula
   homepage 'http://pgrouting.org/docs/tools/osm2pgrouting.html'
   url 'https://github.com/pgRouting/osm2pgrouting/archive/v2.0.0.tar.gz'
   sha1 '2d100ac9914919993a7c341e2395b8bafdfe3759'
+  bottle do
+    cellar :any
+    sha1 'af5cbf32d0e7ee76d49fa03e4cfa8a3b0a3cfe33' => :mavericks
+    sha1 'c515bc5c8570fff9b8bc4da6ced4a20eb4273639' => :mountain_lion
+    sha1 '20f3e023ba5bdac6c62ef38c2152d6c743d37388' => :lion
+  end
+
   head 'https://github.com/pgRouting/osm2pgrouting.git', :branch => 'master'
 
   depends_on 'cmake' => :build
