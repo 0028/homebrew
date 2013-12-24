@@ -22,6 +22,12 @@ class Coq < Formula
 
   head 'git://scm.gforge.inria.fr/coq/coq.git'
 
+  bottle do
+    sha1 '883e54d7c6dbdb11718f15e1067c3169bc05e68c' => :mavericks
+    sha1 '887e967993e305687f8b8de09cd46d4b7a5d7bc9' => :mountain_lion
+    sha1 '0789e0efd4cba715b310f9ed02d3d387d22dcf62' => :lion
+  end
+
   depends_on TransitionalMode
   depends_on 'objective-caml'
   depends_on 'camlp5'
