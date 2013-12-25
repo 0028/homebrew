@@ -5,6 +5,12 @@ class Aiccu < Formula
   url 'http://www.sixxs.net/archive/sixxs/aiccu/unix/aiccu_20070115.tar.gz'
   sha1 '7b3c51bfe291c777e74b2688e9339b4fb72e6a39'
 
+  bottle do
+    sha1 '7976d0fdd5215bc1a7a79e250ebecc48a30e5284' => :mavericks
+    sha1 'fc0d54c942fd765eb9fe8db912e089887688f87b' => :mountain_lion
+    sha1 'd08bd32c963ce9230226d4225be1a940622f8c28' => :lion
+  end
+
   # Patches per MacPorts
   def patches; DATA; end
 
