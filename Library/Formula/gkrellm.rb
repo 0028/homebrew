@@ -5,6 +5,12 @@ class Gkrellm < Formula
   url 'http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.5.tar.bz2'
   sha1 'bcfc2efb5fd3f27e9bb703bda73f6a1d96b080df'
 
+  bottle do
+    sha1 'db825a91fe13a0163deea3aafbf64b2106a630f7' => :mavericks
+    sha1 'd9c41db4b454ecd25caf9285bbb7e1259f8400d0' => :mountain_lion
+    sha1 '50775b1a424942d70ef537cebe7c9a31858bff6d' => :lion
+  end
+
   depends_on :x11
   depends_on 'pkg-config' => :build
   depends_on 'atk'
