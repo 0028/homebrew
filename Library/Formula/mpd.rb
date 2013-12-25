@@ -2,11 +2,12 @@ require 'formula'
 
 class Mpd < Formula
   homepage 'http://www.musicpd.org/'
-  url 'http://www.musicpd.org/download/mpd/0.17/mpd-0.17.5.tar.bz2'
-  sha1 '91e4d8d364a3db02e6f92676dd938880e5bb200a'
+  url 'http://www.musicpd.org/download/mpd/0.18/mpd-0.18.6.tar.gz'
+  sha1 'a63fcdeb10413d6f2b091766df0a2406aa294145'
 
   head 'git://git.musicpd.org/master/mpd.git'
 
+  option 'without-osx', 'Build without the osx output plugin'
   option 'with-wavpack', 'Build with wavpack support (for .wv files)'
   option 'with-lastfm', 'Build with last-fm support (for experimental Last.fm radio)'
   option 'with-lame', 'Build with lame support (for MP3 encoding when streaming)'
@@ -75,6 +76,8 @@ class Mpd < Formula
     args << '--disable-lame-encoder' if build.without? 'lame'
     args << '--disable-soundcloud' if build.without? 'yajl'
     args << '--enable-vorbis-encoder' if build.with? 'vorbis'
+
+    args << '--enable-osx' unless build.without? 'osx'
 
     system './configure', *args
     system 'make'
