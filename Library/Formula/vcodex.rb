@@ -19,6 +19,13 @@ class Vcodex < Formula
   sha1 '0423ee95b13069dd617c5f7625484a92d5068ea0'
   version '2013-05-31'
 
+  bottle do
+    cellar :any
+    sha1 '51687bb066f66f392595165f2e440f0000cce1fb' => :mavericks
+    sha1 '23c3db3ac9576915286208bbd8a07cf4cff45a89' => :mountain_lion
+    sha1 'ed39967e00fd14993f0d2cc3b5fb488e4c4c41fe' => :lion
+  end
+
   def install
     # Vcodex makefiles do not work in parallel mode
     ENV.deparallelize
