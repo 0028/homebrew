@@ -3,6 +3,13 @@ require 'formula'
 class Doxygen < Formula
   homepage 'http://www.doxygen.org/'
   url 'http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.6.src.tar.gz'
+  bottle do
+    cellar :any
+    sha1 '24fe1b294f97183900d2acaa71e4c27949f10793' => :mavericks
+    sha1 '0d3bc407582a9965710f9ab1fea0ab86d98c3743' => :mountain_lion
+    sha1 '8a83c270959d105479a406eeffb496d3027b3851' => :lion
+  end
+
   mirror 'http://downloads.sourceforge.net/project/doxygen/rel-1.8.6/doxygen-1.8.5.src.tar.gz'
   sha1 '204f1b3695c73efac44a521609c5360241d64045'
 
