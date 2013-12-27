@@ -5,6 +5,13 @@ class Nfcutils < Formula
   url 'https://nfc-tools.googlecode.com/files/nfcutils-0.3.2.tar.gz'
   sha1 'e560ba7683175257ef9e72838b9f02cf75ce99b8'
 
+  bottle do
+    cellar :any
+    sha1 '32e723ad4b92c2983eab14e2f3d8c2e4fb472a3b' => :mavericks
+    sha1 '9124d2cbf90f8bc5e7e5464c9ba57e84573e4c45' => :mountain_lion
+    sha1 '07c0ce8c2e28e8179e8042e7b4c08922bd347579' => :lion
+  end
+
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
   depends_on 'pkg-config' => :build
