@@ -5,6 +5,12 @@ class Juise < Formula
   url 'https://github.com/Juniper/juise/releases/download/0.5.9/juise-0.5.9.tar.gz'
   sha1 '0d1663164904fee8ebbf29025fb2819e0ad34404'
 
+  bottle do
+    sha1 '76c3eae54c4ebac94104303be400b3f976cc4163' => :mavericks
+    sha1 'a6666a8c24000493cebb0dbdd9be8c0db7183c28' => :mountain_lion
+    sha1 '47f08b5fa0a1fc4de987b3b4f716b8d42ec2291b' => :lion
+  end
+
   head do
     url 'https://github.com/Juniper/juise.git'
 
