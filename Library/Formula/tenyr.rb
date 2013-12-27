@@ -7,6 +7,13 @@ class Tenyr < Formula
 
   head 'https://github.com/kulp/tenyr.git'
 
+  bottle do
+    cellar :any
+    sha1 '45529e7bc0e14983d49784133aeedd8a027ecf65' => :mavericks
+    sha1 'dd0dcede4ee2ef9178141833cfd5c245164a209d' => :mountain_lion
+    sha1 '4a2b521d9a950c8682717080b00bb5f19379fa4a' => :lion
+  end
+
   depends_on 'bison' => :build # tenyr requires bison >= 2.5
   depends_on 'sdl2'
   depends_on 'sdl2_image'
