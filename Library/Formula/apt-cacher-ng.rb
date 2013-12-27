@@ -3,6 +3,12 @@ require 'formula'
 class AptCacherNg < Formula
   homepage 'http://www.unix-ag.uni-kl.de/~bloch/acng/'
   url 'http://ftp.debian.org/debian/pool/main/a/apt-cacher-ng/apt-cacher-ng_0.7.24.orig.tar.xz'
+  bottle do
+    sha1 'cf6803c708cf2402f69f8191f98b880684878d85' => :mavericks
+    sha1 'bfb01c063a6213762e6db4da1720c341bb3933fe' => :mountain_lion
+    sha1 '83910c751b6ca7896bbec9161762ddb5caf79377' => :lion
+  end
+
   sha256 'c02f65a0dce3d143ae6c5d49ef6ba75d78b2fcf94bcc856a78c7a406070ee5c7'
 
   depends_on 'xz' => :build
