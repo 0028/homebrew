@@ -5,6 +5,12 @@ class Glib < Formula
   url 'http://ftp.gnome.org/pub/gnome/sources/glib/2.38/glib-2.38.2.tar.xz'
   sha256 '056a9854c0966a0945e16146b3345b7a82562a5ba4d5516fd10398732aea5734'
 
+  bottle do
+    sha1 '2221c51aa63652448b3fc40d144e54eabc6e7551' => :mavericks
+    sha1 '290402d900e69daeb9a53d6ee5be0941702c5c20' => :mountain_lion
+    sha1 '7209c8a92a76ce39ef4a8c56724de82976475349' => :lion
+  end
+
   option :universal
   option 'test', 'Build a debug build and run tests. NOTE: Not all tests succeed yet'
   option 'with-static', 'Build glib with a static archive.'
