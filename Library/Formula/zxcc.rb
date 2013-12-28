@@ -5,6 +5,12 @@ class Zxcc < Formula
   url 'http://www.seasip.info/Unix/Zxcc/zxcc-0.5.7.tar.gz'
   sha1 'cc088ef24b2a62fc2673a593982dd62c16136f18'
 
+  bottle do
+    sha1 'ac5026aae97e5e798f1a80479e79e072de3143f5' => :mavericks
+    sha1 '973c2fc7d368f000dacfe5b84e9949fd12b5ff70' => :mountain_lion
+    sha1 '250c615623baee7f3507394df400091a9fc7d17c' => :lion
+  end
+
   depends_on :libtool
 
   def install
