@@ -5,6 +5,12 @@ class Avfs < Formula
   url 'http://downloads.sourceforge.net/project/avf/avfs/1.0.1/avfs-1.0.1.tar.gz'
   sha1 '77ce08fb10c680e6d5821ea8634d06a351b747f2'
 
+  bottle do
+    sha1 '399ae4aa8799f0c54dc3604aaf8e70e083cf5352' => :mavericks
+    sha1 '60adb96c340b4975525bd8e620e794acffe1a588' => :mountain_lion
+    sha1 '86a8f3a3117f8ee19559219a695ede938f97960d' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'osxfuse'
 
