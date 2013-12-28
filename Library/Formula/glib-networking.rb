@@ -5,6 +5,13 @@ class GlibNetworking < Formula
   url 'http://ftp.gnome.org/pub/GNOME/sources/glib-networking/2.38/glib-networking-2.38.2.tar.xz'
   sha256 'e8e2fe919d3236169c9bfaec807966ec81b844fc28b11bddc9f8256cfa949fc7'
 
+  bottle do
+    cellar :any
+    sha1 '3b2b3684a4cad8df94cbb5d3473426f1a5f04826' => :mavericks
+    sha1 'cad909b6f8d6092662993eef3d8f9462deba17c2' => :mountain_lion
+    sha1 '3469234ecd7fe123f968cb8cb92b30e7e2013f62' => :lion
+  end
+
   option "curl-ca-bundle", "Build with cURL's CA certificate"
 
   depends_on 'pkg-config' => :build
