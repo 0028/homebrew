@@ -7,9 +7,9 @@ class Automake < Formula
   sha1 '648f7a3cf8473ff6aa433c7721cab1c7fae8d06c'
 
   bottle do
-    sha1 'd4b453a2c8d0f4c0cefa499a8f658448d781225e' => :mavericks
-    sha1 'bbbd4cc22501df3e747596d4bfd02cba987fc852' => :mountain_lion
-    sha1 '8ee87f97dc533fd1b86a46dff0b05d831070c6cb' => :lion
+    sha1 '8720e073a828e5b7e29e5cacd01b3ccca88a6d40' => :mavericks
+    sha1 'ed3cba7f2a806a4192e875e809bb73b65a128757' => :mountain_lion
+    sha1 '12d0d7d3b6d31ea4faf9551076225343e9a5af1f' => :lion
   end
 
   # Always needs a newer autoconf, even on Snow Leopard.
