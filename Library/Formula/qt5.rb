@@ -25,9 +25,10 @@ class Qt5 < Formula
     :using => Qt5HeadDownloadStrategy
 
   bottle do
-    sha1 '38ae6b107af1e34635cf9e6efc69e630518cc0a6' => :mavericks
-    sha1 '7623e90ae623360a1f6ca282ca8003ae8ee04c55' => :mountain_lion
-    sha1 '1f58eab10d42880b444c6c151e2075227574fa8d' => :lion
+    revision 2
+    sha1 'b29162065fd39f4a3b78315114c687ee286e42c0' => :mavericks
+    sha1 '5398024c138507dd89ad8b42d8ad1a61ddd8427a' => :mountain_lion
+    sha1 '3f3602b734af3730217d5bd9a1abee301ca9458b' => :lion
   end
 
   keg_only "Qt 5 conflicts Qt 4 (which is currently much more widely used)."
