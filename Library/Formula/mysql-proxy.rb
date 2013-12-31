@@ -5,6 +5,12 @@ class MysqlProxy < Formula
   url 'http://cdn.mysql.com/Downloads/MySQL-Proxy/mysql-proxy-0.8.3.tar.gz'
   sha1 'ce6e03e2bdcafecd06a9c3582096dd4eeacdaaa8'
 
+  bottle do
+    sha1 'aed11b52f81a5fc473182c801498848456f99da8' => :mavericks
+    sha1 '5dc910ba5bc507f6b8c90e66e818c51330d24668' => :mountain_lion
+    sha1 '870d414ad9e717df8319c68245fda53df625191a' => :lion
+  end
+
   depends_on :mysql
   depends_on 'pkg-config' => :build
   depends_on 'glib'
