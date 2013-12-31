@@ -5,6 +5,12 @@ class Rust < Formula
 
   stable do
     url 'http://static.rust-lang.org/dist/rust-0.8.tar.gz'
+  bottle do
+    sha1 '50205c9ff28940ffa04b1337698ae1c57053dae0' => :mavericks
+    sha1 'f7a2b190a6115352997b588d06982a27da87df3a' => :mountain_lion
+    sha1 '5d4590ff8a52bd184ba48ae5932077f04b0db939' => :lion
+  end
+
     sha256 '42f791ab1537357fe0f63d67ffe6bcb64ecf16b2bd3f1484ab589823f5914182'
 
     depends_on :xcode # for gyp; fixed in HEAD
