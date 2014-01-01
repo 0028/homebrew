@@ -5,6 +5,13 @@ class Bastet < Formula
   url 'http://fph.altervista.org/prog/files/bastet-0.41.tgz'
   sha1 '644a0f76adedef84946159520c1639ff0c6c47ec'
 
+  bottle do
+    cellar :any
+    sha1 'c4d24d86a434424a7c07e10ebc32785a78e30d02' => :mavericks
+    sha1 'e44818550d05e96aef8ed15b0dd91da82009cf54' => :mountain_lion
+    sha1 '17e8db5b9f02f39ce8e3ae8b23fb575388dee73b' => :lion
+  end
+
   def patches
     # allows bastet to work on OS X
     'http://fph.altervista.org/prog/files/bastet-0.41-osx-patch.diff'
