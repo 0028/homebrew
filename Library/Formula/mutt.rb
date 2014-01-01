@@ -3,6 +3,12 @@ require 'formula'
 class Mutt < Formula
   homepage 'http://www.mutt.org/'
   url 'ftp://ftp.mutt.org/mutt/devel/mutt-1.5.22.tar.gz'
+  bottle do
+    sha1 '39a97182ddc0d18806bb8e7b0fbf32d00b73e73f' => :mavericks
+    sha1 '12b980a450a1d22ea94b93c17cbc044101a2f545' => :mountain_lion
+    sha1 '92f5b2c86801ec776f135e15e06f41db75b060a3' => :lion
+  end
+
   mirror 'https://bitbucket.org/mutt/mutt/downloads/mutt-1.5.22.tar.gz'
   sha1 '728a114cb3a44df373dbf1292fc34dd8321057dc'
 
