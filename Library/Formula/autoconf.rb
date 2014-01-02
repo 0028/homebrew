@@ -7,9 +7,10 @@ class Autoconf < Formula
   sha1 '562471cbcb0dd0fa42a76665acf0dbb68479b78a'
 
   bottle do
-    sha1 '2b69898b2827740e5983e25c7f20c0328201b256' => :mavericks
-    sha1 'ec30045d8fe4be10858b66d59f029fb19fe63b5e' => :mountain_lion
-    sha1 'e7d6d88e762996c2fb96238f7d9e48e6d0feaeba' => :lion
+    revision 1
+    sha1 'f9cb45ea21bd74bfe4e4f800c3e7d54d6bf9dfca' => :mavericks
+    sha1 '340c39b905b981b4a3e48b237d19a805fb1bfd88' => :mountain_lion
+    sha1 '73ba86d4d129488e6cb1550ad27b3f9891d09fdb' => :lion
   end
 
   if MacOS::Xcode.provides_autotools? or File.file? "/usr/bin/autoconf"
