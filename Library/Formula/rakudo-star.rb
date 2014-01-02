@@ -5,6 +5,12 @@ class RakudoStar < Formula
   url 'http://rakudo.org/downloads/star/rakudo-star-2013.12.tar.gz'
   sha256 '6a257e5f7879e0a9d7199edcfd47bd5a09dc4d9f5d91f124429af04974a836d3'
 
+  bottle do
+    sha1 'e496b65fc89cb0da6f4de00c535bb4804e7364e9' => :mavericks
+    sha1 'ea17173f9d73de7595198378387b68858eec8647' => :mountain_lion
+    sha1 '690b87483b72e9c60e03bdbd75c5a512992f9076' => :lion
+  end
+
   conflicts_with 'parrot'
 
   depends_on 'gmp' => :optional
