@@ -7,6 +7,12 @@ class Leiningen < Formula
 
   head 'https://github.com/technomancy/leiningen.git'
 
+  bottle do
+    sha1 'c133f1057a1e83cc0158bfe5e7065193ea05b661' => :mavericks
+    sha1 '0ec2e000d8cc5e850619bb79d3761cb5d620a7e7' => :mountain_lion
+    sha1 '9dfb5e2933bbc905703d0eb18c1ef9bf5e90e823' => :lion
+  end
+
   resource 'jar' do
     url 'https://leiningen.s3.amazonaws.com/downloads/leiningen-2.3.4-standalone.jar'
     sha1 '59718bb8553f25b8ca853f57dd259cd81eb16f91'
