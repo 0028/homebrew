@@ -7,6 +7,13 @@ class Wry < Formula
 
   head 'https://github.com/hoop33/wry.git'
 
+  bottle do
+    cellar :any
+    sha1 '564744028cac4d07e6025c16429c95a9bcf3da3d' => :mavericks
+    sha1 '5ea6e0965e098ad11914c706b49ab1a3135fadfc' => :mountain_lion
+    sha1 '94aff5eaea55d124a2e0057ec2dad3b08d9a64fe' => :lion
+  end
+
   depends_on :macos => :lion
   depends_on :xcode
 
