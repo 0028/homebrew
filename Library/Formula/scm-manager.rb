@@ -6,6 +6,12 @@ class ScmManager < Formula
   version '1.35'
   sha1 '9ae7168e3f312dbf75d5ade278dfa0c8176e8dd0'
 
+  bottle do
+    sha1 '42fcabaad6fda9026d403501f6651c46573a904d' => :mavericks
+    sha1 '114e3eaf0fab3dfda57ebaf764fcd301c34c8c86' => :mountain_lion
+    sha1 'd9936d2539cc1bf340c17a4d6ed7befd31e0b12b' => :lion
+  end
+
   skip_clean 'libexec/var/log'
 
   resource 'client' do
