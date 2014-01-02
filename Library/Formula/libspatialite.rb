@@ -5,9 +5,17 @@ class Libspatialite < Formula
   url 'http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.1.1.tar.gz'
   sha1 'b8ed50fb66c4a898867cdf9d724d524c5e27e8aa'
 
+  head do
+    url 'fossil://https://www.gaia-gis.it/fossil/libspatialite'
+    depends_on :autoconf => :build
+    depends_on :automake => :build
+    depends_on :libtool => :build
+  end
+
   option 'without-freexl', 'Build without support for reading Excel files'
   option 'without-libxml2', 'Disable support for xml parsing (parsing needed by spatialite-gui)'
   option 'without-liblwgeom', 'Build without additional sanitization/segmentation routines provided by PostGIS 2.0+ library'
+  option 'with-geopackage', 'Build with experimental OGC GeoPackage support'
 
   depends_on 'pkg-config' => :build
   depends_on 'proj'
@@ -21,6 +29,8 @@ class Libspatialite < Formula
   depends_on 'liblwgeom' => :recommended
 
   def install
+    system 'autoreconf', '-fi' if build.head?
+
     # Ensure Homebrew's libsqlite is found before the system version.
     sqlite = Formula.factory 'sqlite'
     ENV.append 'LDFLAGS', "-L#{sqlite.opt_prefix}/lib"
@@ -40,9 +50,10 @@ class Libspatialite < Formula
     args << '--enable-freexl=no' if build.without? 'freexl'
     args << '--enable-libxml2=yes' unless build.without? 'libxml2'
     args << '--enable-lwgeom=yes' unless build.without? 'liblwgeom'
+    args << '--enable-geopackage=yes' if build.with? 'geopackage'
 
     system './configure', *args
-    system "make install"
+    system 'make', 'install'
   end
 
 end
