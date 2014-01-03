@@ -15,11 +15,10 @@ class Mpd < Formula
   option 'with-flac', 'Build with flac support (for Flac encoding when streaming)'
   option 'with-vorbis', 'Build with vorbis support (for Ogg encoding)'
   option 'with-yajl', 'Build with yajl support (for playing from soundcloud)'
-  if MacOS.version < :lion
-    option 'with-libwrap', 'Build with libwrap (TCP Wrappers) support'
-  elsif MacOS.version == :lion
-    option 'with-libwrap', 'Build with libwrap (TCP Wrappers) support (buggy)'
-  end
+
+  # won't build on < mavericks due to poor c++11 support
+  # find a compatible version in Hombrew/versions
+  depends_on :macos => :mavericks
 
   depends_on 'pkg-config' => :build
   depends_on 'glib'
@@ -51,10 +50,6 @@ class Mpd < Formula
       opoo 'See this formula\'s caveats for details.'
     end
 
-    if build.with? 'libwrap' and MacOS.version > :lion
-      opoo 'Ignoring --with-libwrap: TCP Wrappers were removed in OSX 10.8'
-    end
-
     system './autogen.sh' if build.head?
 
     args = %W[
@@ -64,20 +59,17 @@ class Mpd < Formula
       --enable-bzip2
       --enable-ffmpeg
       --enable-fluidsynth
+      --enable-osx
     ]
 
     args << '--disable-mad'
-    args << '--disable-curl' if MacOS.version <= :leopard
 
-    args << "--with-faad=#{Formula.factory('faad2').opt_prefix}"
     args << '--enable-zzip' if build.with? 'libzzip'
     args << '--enable-lastfm' if build.with? 'lastfm'
     args << '--disable-libwrap' if build.without? 'libwrap'
     args << '--disable-lame-encoder' if build.without? 'lame'
     args << '--disable-soundcloud' if build.without? 'yajl'
     args << '--enable-vorbis-encoder' if build.with? 'vorbis'
-
-    args << '--enable-osx' unless build.without? 'osx'
 
     system './configure', *args
     system 'make'
