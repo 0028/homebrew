@@ -7,6 +7,10 @@ class Mpd < Formula
 
   head 'git://git.musicpd.org/master/mpd.git'
 
+  bottle do
+    sha1 'f74c766a30e956fd5b6dcc1c719114ea5688cb8f' => :mavericks
+  end
+
   option 'without-osx', 'Build without the osx output plugin'
   option 'with-wavpack', 'Build with wavpack support (for .wv files)'
   option 'with-lastfm', 'Build with last-fm support (for experimental Last.fm radio)'
