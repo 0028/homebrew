@@ -5,6 +5,13 @@ class Libspatialite < Formula
   url 'http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.1.1.tar.gz'
   sha1 'b8ed50fb66c4a898867cdf9d724d524c5e27e8aa'
 
+  bottle do
+    cellar :any
+    sha1 '06a6d1ce459af40770cb18de8ae2b1e80057b886' => :mavericks
+    sha1 '52802911675f432411c583dbbcbfe5e2ebe34306' => :mountain_lion
+    sha1 '7867cda25cb373fca00eb1e4a7ad179545f5e367' => :lion
+  end
+
   head do
     url 'fossil://https://www.gaia-gis.it/fossil/libspatialite'
     depends_on :autoconf => :build
