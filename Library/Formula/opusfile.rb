@@ -7,6 +7,13 @@ class Opusfile < Formula
 
   head 'https://git.xiph.org/opusfile.git'
 
+  bottle do
+    cellar :any
+    sha1 'e00fb8799bc2badb92013446ae01365b71ce3837' => :mavericks
+    sha1 '9ba2f87d086d8cbf12e298c291b806be9f9ad96c' => :mountain_lion
+    sha1 'c170d91d29057713939e1daddb04c0704f69ae04' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'opus'
   depends_on 'libogg'
