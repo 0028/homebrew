@@ -5,6 +5,12 @@ class GedaGaf < Formula
   url 'http://ftp.geda-project.org/geda-gaf/stable/v1.8/1.8.2/geda-gaf-1.8.2.tar.gz'
   sha1 'c61edc04997fc12398534a346dac32d8fcdabcc1'
 
+  bottle do
+    sha1 'b969e66f29995df10ff0a26f1a09e74de7e5796e' => :mavericks
+    sha1 'eba043e0016acde80e5c21a70e73d26204752540' => :mountain_lion
+    sha1 '18b9b0cfcff6c05c63bfb85af91e7589f525a40e' => :lion
+  end
+
   devel do
     url 'http://ftp.geda-project.org/geda-gaf/unstable/v1.9/1.9.0/geda-gaf-1.9.0.tar.gz'
     sha1 '2b6732238ca5ed6693695d737e52aef1bdb2a589'
