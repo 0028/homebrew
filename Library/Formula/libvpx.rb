@@ -5,6 +5,12 @@ class Libvpx < Formula
   url 'http://webm.googlecode.com/files/libvpx-v1.3.0.tar.bz2'
   sha1 '191b95817aede8c136cc3f3745fb1b8c50e6d5dc'
 
+  bottle do
+    sha1 '1507220cc7be3cf87ca56a59202314b4d58b618e' => :mavericks
+    sha1 'c9f6719e8360df77180a2e44af269345b6775fd4' => :mountain_lion
+    sha1 '815ca51923a1a95142838b2ac6aa940a9297445b' => :lion
+  end
+
   depends_on 'yasm' => :build
 
   option 'gcov', 'Enable code coverage'
