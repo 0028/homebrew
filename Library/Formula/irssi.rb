@@ -5,6 +5,12 @@ class Irssi < Formula
   url 'http://irssi.org/files/irssi-0.8.15.tar.bz2'
   sha1 'b79ce8c2c98a76b004f63706e7868cd363000d89'
 
+  bottle do
+    sha1 '86b3cada2f64f6c48bce684dbcd04fafa9a9059b' => :mavericks
+    sha1 'f2627571709875a6617ba2ca7a4ee277968a3f38' => :mountain_lion
+    sha1 'ca210e1294153825d060de1fde5d90ea38452da3' => :lion
+  end
+
   option "without-perl", "Build without perl support."
 
   depends_on :clt # See https://github.com/Homebrew/homebrew/issues/20952
