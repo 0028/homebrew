@@ -5,6 +5,12 @@ class SeleniumServerStandalone < Formula
   url 'http://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar'
   sha1 'f2391600481dd285002d04b66916fc4286ff70ce'
 
+  bottle do
+    sha1 '1c22d0aadf8fb00afdc34277c7bb523232cd1179' => :mavericks
+    sha1 'd1f1d23d7e77fdead2ff51e1221a9c09b073f683' => :mountain_lion
+    sha1 '72a1f4296a5d60b8c78ddf316ccad0a524f714f5' => :lion
+  end
+
   def install
     libexec.install "selenium-server-standalone-#{version}.jar"
     bin.write_jar_script libexec/"selenium-server-standalone-#{version}.jar", "selenium-server"
