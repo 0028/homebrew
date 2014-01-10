@@ -3,6 +3,12 @@ require 'formula'
 class Libmagic < Formula
   homepage 'http://www.darwinsys.com/file/'
   url 'ftp://ftp.astron.com/pub/file/file-5.16.tar.gz'
+  bottle do
+    sha1 'b290911042a2804708b27b25787a4c9d04daf863' => :mavericks
+    sha1 '67e6120abbd0dfe125349d0b034a4c77c54889bd' => :mountain_lion
+    sha1 '447ef1647f1c96df93edb9a8e821720432e2b413' => :lion
+  end
+
   mirror 'http://fossies.org/unix/misc/file-5.16.tar.gz'
   sha1 '12fd8ca35705bb24b00135ee65cb7de2d53aa69a'
 
