@@ -8,10 +8,10 @@ class OsspUuid < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha1 'be005cdd4b3b2bb684a2c67458b241189fb234e2' => :mavericks
-    sha1 'fbed4a708210f9c2fcf2ee70f8e82e4c92db3ac3' => :mountain_lion
-    sha1 '853ec550d13e6cd48f2ff43605a6ae17b43f4565' => :lion
+    revision 2
+    sha1 'baa80572486366900bf7e7742b0f009d62d1789b' => :mavericks
+    sha1 '4693e5ad7042eead8c253599abd8f54bcffb0230' => :mountain_lion
+    sha1 'e2a8f1510e7998c206cce761d420d1d7e15cd724' => :lion
   end
 
   option :universal
