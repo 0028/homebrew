@@ -5,6 +5,13 @@ class Mkhexgrid < Formula
   url 'http://www.nomic.net/~uckelman/mkhexgrid/releases/mkhexgrid-0.1.1.src.tar.bz2'
   sha1 '3b8e0be3636f90a3217a5e3556bdaf7bb0c49116'
 
+  bottle do
+    cellar :any
+    sha1 '485ae124b522ccfe47611f175e35c64a413ed46f' => :mavericks
+    sha1 'd428a599216503995ad0b7a52ef490368cd7d1fc' => :mountain_lion
+    sha1 'deb897804340254a48f798eb937f7f237a2b7503' => :lion
+  end
+
   depends_on 'boost'
   depends_on 'gd' => %w{with-freetype}
 
