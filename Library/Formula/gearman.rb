@@ -5,6 +5,12 @@ class Gearman < Formula
   url 'https://launchpad.net/gearmand/1.2/1.1.9/+download/gearmand-1.1.9.tar.gz'
   sha1 '59ec305a4535451c3b51a21d2525e1c07770419d'
 
+  bottle do
+    sha1 'b1794452d36482ad8affcc55b57971dfbbec7cb6' => :mavericks
+    sha1 '2b082927e6688acd4f20a4de5b0fa3d153f53a64' => :mountain_lion
+    sha1 'badd747436885c7c37916eea427cd47848409361' => :lion
+  end
+
   option 'with-mysql', 'Compile with MySQL persistent queue enabled'
 
   depends_on 'pkg-config' => :build
