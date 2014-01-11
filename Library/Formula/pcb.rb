@@ -8,6 +8,12 @@ class Pcb < Formula
 
   head 'git://git.geda-project.org/pcb.git'
 
+  bottle do
+    sha1 '56ea1e908e3d553631711e8f14c23adbbde83e24' => :mavericks
+    sha1 '7135aca84a119668fb48c2958c50d567c80c17a7' => :mountain_lion
+    sha1 'd5a3fd7ceee52403296e83221165ce2af70a4b30' => :lion
+  end
+
   option 'with-doc', "Build the documentation (requires LaTeX)."
 
   depends_on :autoconf
