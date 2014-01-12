@@ -5,6 +5,13 @@ class Tomcat < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=tomcat/tomcat-7/v7.0.50/bin/apache-tomcat-7.0.50.tar.gz'
   sha1 '5f8d82b6f142a7b4936680a6bd774bb7330b862e'
 
+  bottle do
+    cellar :any
+    sha1 '1b32b9c9f95ab1c74a2dc8491ff233211e02d696' => :mavericks
+    sha1 'eb0d2165913888366e7104cbefbfbe5922498c4e' => :mountain_lion
+    sha1 '0112c46ed7992781a3c4bd3c7535f3071ae2f75d' => :lion
+  end
+
   option "with-fulldocs", "Install full documentation locally"
 
   devel do
