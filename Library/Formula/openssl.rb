@@ -3,6 +3,12 @@ require 'formula'
 class Openssl < Formula
   homepage 'http://openssl.org'
   url 'https://www.openssl.org/source/openssl-1.0.1f.tar.gz'
+  bottle do
+    sha1 '55581d35ea0bac8b401d23f027671169c6316d8c' => :mavericks
+    sha1 '4c130b26d5d2e5b2de2027f8966bb1a2581bdaed' => :mountain_lion
+    sha1 '7a565dba7167b96debcddd169114b850b985d7c6' => :lion
+  end
+
   mirror 'http://mirrors.ibiblio.org/openssl/source/openssl-1.0.1f.tar.gz'
   sha256 '6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a'
 
