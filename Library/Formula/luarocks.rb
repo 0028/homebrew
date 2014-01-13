@@ -6,6 +6,12 @@ class Luarocks < Formula
   url 'http://luarocks.org/releases/luarocks-2.1.2.tar.gz'
   sha1 '406253d15c9d50bb0d09efa9807fb2ddd31cba9d'
 
+  bottle do
+    sha1 '9b6f2d07229dc883905b228de38555dff3e4e4cc' => :mavericks
+    sha1 '481122272ec1b9bceda231b230cbc8c0e69140a5' => :mountain_lion
+    sha1 'e01f4d5280da77f92ca0d5a5b1cea8564a64f9d5' => :lion
+  end
+
   option 'with-luajit', 'Use LuaJIT instead of the stock Lua'
   option 'with-lua52', 'Use Lua 5.2 instead of the stock Lua'
 
