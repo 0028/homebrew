@@ -5,6 +5,12 @@ class HaskellPlatform < Formula
   url 'http://lambda.haskell.org/platform/download/2013.2.0.0/haskell-platform-2013.2.0.0.tar.gz'
   sha1 '8669bb5add1826c0523fb130c095fb8bf23a30ce'
 
+  bottle do
+    sha1 '21454cc3213271224207da3c255ebb60725c8dd6' => :mavericks
+    sha1 '45261b3aa2721ace8e72b9594e76f6e0e157bc55' => :mountain_lion
+    sha1 'b40120f03cd1825b048725cd7d9a9e3facf8969e' => :lion
+  end
+
   depends_on 'ghc'
 
   conflicts_with 'cabal-install'
