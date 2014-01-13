@@ -5,6 +5,13 @@ class Sshfs < Formula
   url 'https://github.com/fuse4x/sshfs/archive/sshfs_2_4_0.tar.gz'
   sha1 '30b81ac7f32125088652937568d8886e3bb3f6e2'
 
+  bottle do
+    cellar :any
+    sha1 '9a227c8c85f410c48c95e766599d04fafd6c42b7' => :mavericks
+    sha1 '9f40f3614b424be69c19b13a5cc0b22fe9566faf' => :mountain_lion
+    sha1 '78164b5d1f374f9177017ccef88734d4af19d390' => :lion
+  end
+
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
   depends_on :libtool
