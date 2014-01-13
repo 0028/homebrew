@@ -7,6 +7,13 @@ class Thrift < Formula
 
   head 'https://git-wip-us.apache.org/repos/asf/thrift.git'
 
+  bottle do
+    cellar :any
+    sha1 '66470a9bedfbe0a75ea1392de635a46c318dd1f2' => :mavericks
+    sha1 '8ea42af3e0c241ab44765b6cb56ee6181d3ec97e' => :mountain_lion
+    sha1 '7b4fbfc69e8d08049555a8d027e5524fe3e31361' => :lion
+  end
+
   unless build.stable?
     depends_on :autoconf
     depends_on :automake
