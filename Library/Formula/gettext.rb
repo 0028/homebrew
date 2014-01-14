@@ -3,6 +3,12 @@ require 'formula'
 class Gettext < Formula
   homepage 'http://www.gnu.org/software/gettext/'
   url 'http://ftpmirror.gnu.org/gettext/gettext-0.18.3.2.tar.gz'
+  bottle do
+    sha1 '958ffe89dc3fa7bb5aea87ff36b414f771c39162' => :mavericks
+    sha1 '43721fca948d19614a57dc611f84345fbe8fe0d6' => :mountain_lion
+    sha1 '6ce378c525be8d2a3f366f0decb638c9a5a1faa9' => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/gettext/gettext-0.18.3.2.tar.gz'
   sha256 'd1a4e452d60eb407ab0305976529a45c18124bd518d976971ac6dc7aa8b4c5d7'
 
