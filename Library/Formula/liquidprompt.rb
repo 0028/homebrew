@@ -5,6 +5,13 @@ class Liquidprompt < Formula
   url 'https://github.com/nojhan/liquidprompt/archive/v_1.8.tar.gz'
   sha1 'ad481e98b0f6ed251cd65cb01464da151929f081'
 
+  bottle do
+    cellar :any
+    sha1 'f97edab30c88055757857a4bb42ede091b4ffd82' => :mavericks
+    sha1 '4dc6708f984d7e43904d1b4947f03c7853489f9b' => :mountain_lion
+    sha1 '6e8be7c00ecef5c10286b4278ef2892b3a369553' => :lion
+  end
+
   def install
     share.install 'liquidpromptrc-dist'
     share.install 'liquidprompt'
