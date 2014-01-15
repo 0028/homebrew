@@ -5,6 +5,12 @@ class OpenMpi < Formula
   url 'http://www.open-mpi.org/software/ompi/v1.7/downloads/openmpi-1.7.4rc1.tar.bz2'
   sha1 'af52f674392553dd57019fdcd717f86e95d03787'
 
+  bottle do
+    sha1 '2f0df14632e25c8fed2bcd5a86464ee238f95029' => :mavericks
+    sha1 '2f3e1c5ab410515cb6c136369b1ccd61a3440574' => :mountain_lion
+    sha1 '9f7f69cfb2f1a390ef8a60a57980f5efd1c1797c' => :lion
+  end
+
   option 'disable-fortran', 'Do not build the Fortran bindings'
   option 'enable-mpi-thread-multiple', 'Enable MPI_THREAD_MULTIPLE'
   option :cxx11
