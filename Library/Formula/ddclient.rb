@@ -5,6 +5,12 @@ class Ddclient < Formula
   url 'http://downloads.sourceforge.net/project/ddclient/ddclient/ddclient-3.8.2/ddclient-3.8.2.tar.bz2'
   sha1 '8c887c06a580773c48a1eaced82a08c3077e1325'
 
+  bottle do
+    sha1 '2b7b2f77b048f9c339ee3d9268535dce1f8fbcc9' => :mavericks
+    sha1 '4e9e247951a415ca4216ced5c124f563c1133e94' => :mountain_lion
+    sha1 '4f8802280ea28c367ae3e7e47a56a0f4906da2e9' => :lion
+  end
+
   def install
     # Adjust default paths in script
     inreplace 'ddclient' do |s|
