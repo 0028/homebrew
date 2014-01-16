@@ -5,6 +5,13 @@ class Pwgen < Formula
   url 'http://downloads.sourceforge.net/project/pwgen/pwgen/2.06/pwgen-2.06.tar.gz'
   sha1 '43dc4fbe6c3bdf96ae24b20d44c4a4584df93d8e'
 
+  bottle do
+    cellar :any
+    sha1 'a44d0fbcd04cdd0fde7fe4f2ab49743402711758' => :mavericks
+    sha1 '58794a526115549ecd1d22a553dbbc55fbde7763' => :mountain_lion
+    sha1 '03dcac57f10a6ef187e216c56891dde34b084933' => :lion
+  end
+
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
