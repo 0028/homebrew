@@ -5,6 +5,13 @@ class Id3lib < Formula
   url 'http://downloads.sourceforge.net/project/id3lib/id3lib/3.8.3/id3lib-3.8.3.tar.gz'
   sha1 'c92c880da41d1ec0b242745a901702ae87970838'
 
+  bottle do
+    cellar :any
+    sha1 '1d741ca31d1b3353787d5c0bf894c63ac9c2cd29' => :mavericks
+    sha1 '4ce45b888350ebab5b6384f3e720c10395924965' => :mountain_lion
+    sha1 '939b90cbf9611dcbd0132b8c138b5cb9aa8aae26' => :lion
+  end
+
   head "cvs://:pserver:anonymous:@id3lib.cvs.sourceforge.net:/cvsroot/id3lib:id3lib-devel"
 
   depends_on 'autoconf' => :build
