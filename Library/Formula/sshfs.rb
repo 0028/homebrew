@@ -5,6 +5,13 @@ class Sshfs < Formula
   url 'https://github.com/osxfuse/sshfs/archive/osxfuse-sshfs-2.4.1.tar.gz'
   sha1 'cf614508db850a719529dec845ae59309f8a79c2'
 
+  bottle do
+    cellar :any
+    sha1 '5f55ca119665c2e84f8218442d66d936022b04cd' => :mavericks
+    sha1 '765a630c50719457268baa812871bfa097ff525a' => :mountain_lion
+    sha1 'a961bd0448a313b609590f7a1d7167efb58ed564' => :lion
+  end
+
   def patches; DATA end
 
   depends_on 'autoconf' => :build
