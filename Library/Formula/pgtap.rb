@@ -6,6 +6,12 @@ class Pgtap < Formula
   sha1 '58c04a57d79345c18525ed4aee9db058964408a1'
   head 'https://github.com/theory/pgtap.git'
 
+  bottle do
+    sha1 '07e72e8b789223a54a8108e4392f4aab70e238aa' => :mavericks
+    sha1 '32206b11b0bd93b9b3a91fa14f1ec5c92a168d82' => :mountain_lion
+    sha1 '04915a8294123b5a8d5c26fa2b61f54f899ef4a5' => :lion
+  end
+
   # Not :postgresql, because we need to install into its share directory.
   depends_on 'postgresql'
 
