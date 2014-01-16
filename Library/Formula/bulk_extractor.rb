@@ -5,6 +5,12 @@ class BulkExtractor < Formula
   url 'http://digitalcorpora.org/downloads/bulk_extractor/bulk_extractor-1.4.4.tar.gz'
   sha1 'e95ed6db74d9998842089b53eb4322dd0a730a82'
 
+  bottle do
+    sha1 '3c3fd667de807b828e7fab10ac2cc3d3db341d64' => :mavericks
+    sha1 '8fa75f2a847468f79cff5c3a94ec79fd4f85bb4b' => :mountain_lion
+    sha1 'b6ec4241c598ce37b6e192284529afffd209c004' => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
 
