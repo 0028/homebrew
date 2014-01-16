@@ -5,6 +5,12 @@ class Imlib2 < Formula
   url 'http://downloads.sourceforge.net/project/enlightenment/imlib2-src/1.4.6/imlib2-1.4.6.tar.bz2'
   sha1 '20e111d822074593e8d657ecf8aafe504e9e2967'
 
+  bottle do
+    sha1 '30d79977f7d24295ab9153cde8f73d673e03bd88' => :mavericks
+    sha1 'fd06a1dacb9afe48d9eb29746204ae094fc0376f' => :mountain_lion
+    sha1 '75fdb8559d5fb807c666b9b8b1f0e3bd0a290e47' => :lion
+  end
+
   option "without-x", "Build without X support"
 
   depends_on :freetype
