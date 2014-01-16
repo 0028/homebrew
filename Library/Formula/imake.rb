@@ -5,6 +5,12 @@ class Imake < Formula
   url 'http://xorg.freedesktop.org/releases/individual/util/imake-1.0.6.tar.bz2'
   sha1 'a54c025d7ac9894b6bc919d13454c6adb12ae140'
 
+  bottle do
+    sha1 'f707f540da8bbbee646951fefe4494ef40129277' => :mavericks
+    sha1 '7c4799660768bb924e2af2c91e147febb0341379' => :mountain_lion
+    sha1 '235edde86d1a529a9a7bb40b3c8c5dd0fdc05fc4' => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on :x11
 
