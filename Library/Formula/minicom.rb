@@ -5,6 +5,12 @@ class Minicom < Formula
   url 'http://ftp.de.debian.org/debian/pool/main/m/minicom/minicom_2.7.orig.tar.gz'
   sha1 '939eef8ca1bda82ee801b087d9db4f16a19fbe6e'
 
+  bottle do
+    sha1 'f11834d90cd25455e7f47a265e23480159987e3d' => :mavericks
+    sha1 '7cebcd3dda369c02963eef088fa5a0d458c559ad' => :mountain_lion
+    sha1 '1bcf5b968731b6521fcd16d7af583935add76c74' => :lion
+  end
+
   def install
     # There is a silly bug in the Makefile where it forgets to link to iconv. Workaround below.
     ENV['LIBS'] = '-liconv'
