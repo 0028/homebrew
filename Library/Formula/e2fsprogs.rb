@@ -7,6 +7,12 @@ class E2fsprogs < Formula
 
   head 'https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git'
 
+  bottle do
+    sha1 '33f603f5a0d897f8fb04a734c4c14e09b45abd59' => :mavericks
+    sha1 '235e8311b544864be7d79184f322d51434443e29' => :mountain_lion
+    sha1 '111a55a2969e95784d70fc3f3d6d7ec787c70ee4' => :lion
+  end
+
   keg_only "This brew installs several commands which override OS X-provided file system commands."
 
   depends_on 'pkg-config' => :build
