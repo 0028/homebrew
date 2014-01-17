@@ -5,6 +5,13 @@ class Crash < Formula
   url 'https://crsh.googlecode.com/files/crash-1.2.8.tar.gz'
   sha1 '12290cd227b20eae07674f8cf0d43ee58732e34b'
 
+  bottle do
+    cellar :any
+    sha1 'd4152e18d7fea4fcf6caa6729e2b2782b887020b' => :mavericks
+    sha1 'cfcfda26ebe4d0ed5144ee2b6d6531d0a0bd7c39' => :mountain_lion
+    sha1 'e244e81c45a5f22ba4ac7344cb1a6f19d3ad352c' => :lion
+  end
+
   devel do
     url 'https://crsh.googlecode.com/files/crash-1.3.0-beta14.tar.gz'
     sha1 '80ba0af7c951998094761160d1b034c712d9eccc'
