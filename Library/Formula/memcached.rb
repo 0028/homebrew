@@ -5,6 +5,12 @@ class Memcached < Formula
   url 'http://www.memcached.org/files/memcached-1.4.17.tar.gz'
   sha1 '2b4fc706d39579cf355e3358cfd27b44d40bd79c'
 
+  bottle do
+    sha1 '5da29a21dd5f3cf4dc2ab8a74709f9fce74c2ad8' => :mavericks
+    sha1 'b651df05143e11791b997346a2d6052f754561e3' => :mountain_lion
+    sha1 'b97ff4c878a4e68057f9e1795223b9562136d0e1' => :lion
+  end
+
   depends_on 'libevent'
 
   option "enable-sasl", "Enable SASL support -- disables ASCII protocol!"
