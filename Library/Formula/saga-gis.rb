@@ -7,6 +7,13 @@ class SagaGis < Formula
 
   head 'svn://svn.code.sf.net/p/saga-gis/code-0/trunk/saga-gis'
 
+  bottle do
+    cellar :any
+    sha1 'a58c09cafe82ac931bd88f45133aa1ab6e81e1e1' => :mavericks
+    sha1 '1759d4197c4c88e3a956920fc1f5c7f1f2daa4aa' => :mountain_lion
+    sha1 '081e963adadf3a28eef9375046a2cc46d47f8dc2' => :lion
+  end
+
   option "with-app", "Build SAGA.app Package"
 
   depends_on :automake
