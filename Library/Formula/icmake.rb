@@ -6,6 +6,12 @@ class Icmake < Formula
   sha1 '8e175538dabc40afbb933202166bfdffd5f675c2'
   head 'https://icmake.svn.sourceforge.net/svnroot/icmake/trunk/icmake'
 
+  bottle do
+    sha1 "3de1783989dddff9a50239672bb718f098f76c5e" => :mavericks
+    sha1 "624be755850436eb9a7f4fe617c8d1ace8673da6" => :mountain_lion
+    sha1 "f0a37339615aa786748986500565462f8d5469be" => :lion
+  end
+
   def patches
     [
       # Fix sed syntax
