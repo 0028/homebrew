@@ -5,6 +5,12 @@ class Ntfs3g < Formula
   url 'http://tuxera.com/opensource/ntfs-3g_ntfsprogs-2013.1.13.tgz'
   sha1 '8c12b7644d90ae9fb8d0aca0d7ebd5f8fac2c818'
 
+  bottle do
+    sha1 "027771d0ca467ee4b4ff09c35d427fb9bc25c65a" => :mavericks
+    sha1 "44c243c1490fe6a47874a3181c33d122134d247a" => :mountain_lion
+    sha1 "fb7771d24b304b6b438385ba6263d8352b6bce49" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'osxfuse'
   depends_on 'gettext'
