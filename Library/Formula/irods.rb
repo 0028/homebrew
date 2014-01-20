@@ -5,6 +5,13 @@ class Irods < Formula
   url 'https://github.com/irods/irods-legacy/archive/3.3.tar.gz'
   sha1 '2e975fcda20b023155dfd53ff098dde0c3995f75'
 
+  bottle do
+    cellar :any
+    sha1 "16d155b92e00f6bdb4dfbe4c5a45aa6c25375de2" => :mavericks
+    sha1 "ee1f9a2fc93bdc66591d5a29f61ffc91e764f797" => :mountain_lion
+    sha1 "c7f3f2010f776af026ef910280d38a7569bfc2ce" => :lion
+  end
+
   conflicts_with 'sleuthkit', :because => 'both install `ils`'
 
   option 'with-fuse', 'Install iRODS FUSE client'
