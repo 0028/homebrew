@@ -12,6 +12,12 @@ class Task < Formula
   homepage 'http://www.taskwarrior.org/'
   url 'http://www.taskwarrior.org/download/task-2.3.0.tar.gz'
   sha1 'b5390a1c1232bcb727f5a595ac1141184810d09d'
+  bottle do
+    sha1 "29376197058c59e69e94761bfed6dd95617e3bff" => :mavericks
+    sha1 "829c0e6c0b8e839aca102e9dd273d24f37638f6a" => :mountain_lion
+    sha1 "56477984286ed7ed0be634459c2e275ba1724fc6" => :lion
+  end
+
   head 'git://tasktools.org/task.git', :branch => :"2.3.1",
                                        :using => TaskwarriorDownloadStrategy
 
