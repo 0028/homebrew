@@ -6,6 +6,12 @@ class Valgrind < Formula
   sha1 '9415e28933de9d6687f993c4bb797e6bd49583f1'
   head 'svn://svn.valgrind.org/valgrind/trunk'
 
+  bottle do
+    sha1 "de3cf464b01f0c5c548e0050b67cca58c94ccbeb" => :mavericks
+    sha1 "5fe0ed6eed589b1f19a807f50ec5728edcfee01d" => :mountain_lion
+    sha1 "0f4a5b10fa3dff480bf2379c61d3a2bf3d838d7a" => :lion
+  end
+
   if build.head? || MacOS.version == :mavericks
     depends_on :autoconf
     depends_on :automake
