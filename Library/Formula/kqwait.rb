@@ -7,6 +7,13 @@ class Kqwait < Formula
 
   head 'https://github.com/sschober/kqwait.git'
 
+  bottle do
+    cellar :any
+    sha1 "de98cc8fe9f359d12502a294331f9eecd03d0c4a" => :mavericks
+    sha1 "af7826cb05168a43927b972446fcbc9f1e8d0596" => :mountain_lion
+    sha1 "82be05b949bbff7115287f78d0452a31efcb070c" => :lion
+  end
+
   def install
     system "make"
     bin.install "kqwait"
