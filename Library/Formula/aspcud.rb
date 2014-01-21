@@ -5,6 +5,10 @@ class Aspcud < Formula
   url 'http://downloads.sourceforge.net/project/potassco/aspcud/1.8.0/aspcud-1.8.0-source.tar.gz'
   sha1 '8e05dca2bcf3a388a985317b71f2fcd5586351f7'
 
+  bottle do
+    sha1 "230ad6d44bb9b4797a347e0870c59f453eb8eece" => :mavericks
+  end
+
   depends_on 'boost' => :build
   depends_on 'cmake' => :build
   depends_on 're2c'  => :build
