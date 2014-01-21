@@ -7,6 +7,12 @@ class Sdcc < Formula
 
   head 'https://sdcc.svn.sourceforge.net/svnroot/sdcc/trunk/sdcc/'
 
+  bottle do
+    sha1 "53bbdebecea38bd6589073f682b10413cdc084a6" => :mavericks
+    sha1 "5c7aa3e6f17aa9e3aba8acaa25f674a833c73457" => :mountain_lion
+    sha1 "bb0f538cb653f38118f427d0509e3e2b4dd93439" => :lion
+  end
+
   depends_on 'gputils'
   depends_on 'boost'
 
