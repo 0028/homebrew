@@ -3,6 +3,13 @@ require 'formula'
 class Gnutls < Formula
   homepage 'http://gnutls.org'
   url 'ftp://ftp.gnutls.org/gcrypt/gnutls/v3.1/gnutls-3.1.18.tar.xz'
+  bottle do
+    cellar :any
+    sha1 "5d0c1a8bddc31cd4ff5751fae2b2e364a4383cd3" => :mavericks
+    sha1 "92cbf437150ec2c3a7fa85bda20daa309f0c73eb" => :mountain_lion
+    sha1 "51f42d91d773e9331637d9fbb102ce3c8673c3c5" => :lion
+  end
+
   mirror 'http://mirrors.dotsrc.org/gcrypt/gnutls/v3.1/gnutls-3.1.18.tar.xz'
   sha1 '360cdb86c1bb6494c27901b5d4c8815b37d5bd4c'
 
