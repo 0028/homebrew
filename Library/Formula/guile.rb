@@ -3,6 +3,12 @@ require 'formula'
 class Guile < Formula
   homepage 'http://www.gnu.org/software/guile/'
   url 'http://ftpmirror.gnu.org/guile/guile-2.0.9.tar.gz'
+  bottle do
+    sha1 "17222d6331afb0ec14dcc9fb26b6f86bceffdd58" => :mavericks
+    sha1 "0172cb5723c1d274113183b2789ae266a50f2de3" => :mountain_lion
+    sha1 "544452a1703b97c77c8b7832cced0e8307352bc9" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/guile/guile-2.0.9.tar.gz'
   sha1 'fc5d770e8b1d364b2f222a8f8c96ccf740b2956f'
 
