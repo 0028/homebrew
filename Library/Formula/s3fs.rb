@@ -5,6 +5,13 @@ class S3fs < Formula
   url 'https://github.com/s3fs-fuse/s3fs-fuse/archive/v1.76.tar.gz'
   sha1 '478aa3230b5d85bfe95d9962ee2f1d8cd35fa070'
 
+  bottle do
+    cellar :any
+    sha1 "1019d02233500ac52089fdee6e0921e77f910c96" => :mavericks
+    sha1 "368f58ac644b65336c7273c9c733ec4edf29f7c4" => :mountain_lion
+    sha1 "3664703a8ca3e887edd4e63a78dd1f80a94ed631" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on :autoconf
   depends_on :automake
