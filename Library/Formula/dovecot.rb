@@ -3,6 +3,12 @@ require 'formula'
 class Dovecot < Formula
   homepage 'http://dovecot.org/'
   url 'http://dovecot.org/releases/2.2/dovecot-2.2.10.tar.gz'
+  bottle do
+    sha1 "4854177110f7ca8b7831034612be552d97e80772" => :mavericks
+    sha1 "59b9ce2f3b22175a3720d9456f2951369c68b8ff" => :mountain_lion
+    sha1 "a08e7c570299e38ff4d2a80ade6244ebdb105d5a" => :lion
+  end
+
   mirror 'http://fossies.org/linux/misc/dovecot-2.2.10.tar.gz'
   sha256 '75592483d40dc4f76cc3b41af40caa4be80478946a699d46846d5d03e4d2e09b'
 
