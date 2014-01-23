@@ -2,6 +2,12 @@ require 'formula'
 
 class Minidlna < Formula
   url 'http://downloads.sourceforge.net/project/minidlna/minidlna/1.1.1/minidlna-1.1.1.tar.gz'
+  bottle do
+    sha1 "e128771386cb9fb2838b616ab49095ff46def3bd" => :mavericks
+    sha1 "607c7852c50bcb03829a97a9fa2a0a31e75cc515" => :mountain_lion
+    sha1 "cd78d4294ea4b87cc3a7e40d65b3cb026c0e4cd0" => :lion
+  end
+
   homepage 'http://sourceforge.net/projects/minidlna/'
   sha1 '97c28d2b861957620d319929f904225e906830c7'
   head 'http://git.code.sf.net/p/minidlna/git', :using => :git
