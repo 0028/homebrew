@@ -5,6 +5,12 @@ class Qwt < Formula
   url 'http://downloads.sourceforge.net/project/qwt/qwt/6.1.0/qwt-6.1.0.tar.bz2'
   sha1 '48a967038f7aa9a9c87c64bcb2eb07c5df375565'
 
+  bottle do
+    sha1 "84061884037c332f1b2248ef9725b0e4ded4c685" => :mavericks
+    sha1 "882b927d7a8a162813bb4118a4a66ef630d53699" => :mountain_lion
+    sha1 "2281eb7866bb4b9aaac60cc0cb548ff688ed518e" => :lion
+  end
+
   option "with-qwtmathml", "Build the qwtmathml library"
 
   depends_on 'qt'
