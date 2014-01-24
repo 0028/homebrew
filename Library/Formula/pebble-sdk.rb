@@ -6,6 +6,12 @@ class PebbleSdk < Formula
   version '2.0-BETA7'
   sha1 '26455446e5e3c68fa321a6ac9b644c8dd36a8343'
 
+  bottle do
+    sha1 "c5df17690270fe37325bc5e9bc24049c92ee8d93" => :mavericks
+    sha1 "530c856aef7cbf3d6cc0aecfa2d6257aa5760196" => :mountain_lion
+    sha1 "919299d6913ccb0e25bf9e757610e35408639930" => :lion
+  end
+
   depends_on 'freetype' => :recommended
   depends_on 'mpfr'
   depends_on 'gmp'
