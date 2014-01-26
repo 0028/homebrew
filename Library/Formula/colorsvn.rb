@@ -5,6 +5,12 @@ class Colorsvn < Formula
   url 'http://www.console-colors.de/downloads/colorsvn/colorsvn-0.3.2.tar.gz'
   sha1 '8d9452585d474ad10e9e1fd2372f9ad41e548863'
 
+  bottle do
+    sha1 "2e681473ec6aad72a99f925f859594a821e92ffd" => :mavericks
+    sha1 "9a61c502f8d7d056d205c592f258cc4aba834fc5" => :mountain_lion
+    sha1 "befb450cda3cf02b43de5a58a5ab54fdb13cff6d" => :lion
+  end
+
   def patches
     DATA
   end
