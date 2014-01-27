@@ -12,6 +12,12 @@ class Gnuplot < Formula
   url 'http://downloads.sourceforge.net/project/gnuplot/gnuplot/4.6.3/gnuplot-4.6.3.tar.gz'
   sha256 'df5ffafa25fb32b3ecc0206a520f6bca8680e6dcc961efd30df34c0a1b7ea7f5'
 
+  bottle do
+    sha1 "86f2c80a2c794e546f57618a3241a501fcd12995" => :mavericks
+    sha1 "998f5f3525871ce4d8c56a572bdd5c67c5fb84a4" => :mountain_lion
+    sha1 "064c03e73ce04c1a67ce09bbb7ef97138223d35e" => :lion
+  end
+
   head do
     url 'cvs://:pserver:anonymous:@gnuplot.cvs.sourceforge.net:/cvsroot/gnuplot:gnuplot'
 
