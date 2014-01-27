@@ -7,6 +7,13 @@ class Launch < Formula
 
   head 'https://github.com/nriley/launch.git'
 
+  bottle do
+    cellar :any
+    sha1 "2e3d16124283244d050bae508a8bb923e7d80989" => :mavericks
+    sha1 "2123e3026b75bc2bedecf588ec9f47c819d530cb" => :mountain_lion
+    sha1 "e521d881938995c358262adb05895663d90d729e" => :lion
+  end
+
   def install
     rm_rf "launch" # We'll build it ourself, thanks.
     system  "xcodebuild",
