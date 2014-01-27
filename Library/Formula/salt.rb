@@ -6,6 +6,13 @@ class Salt < Formula
   sha1 '7f6e36e78199d8dec0458b464643e1e90fc51282'
   version '2.4'
 
+  bottle do
+    cellar :any
+    sha1 "60d498cdc47452e90ebf4d2022acbef03131c723" => :mavericks
+    sha1 "2393c4ddd4ab7132e0d44d9b1152c0fcc390cc7d" => :mountain_lion
+    sha1 "b35ed886a99d00aea10c7133f56055f6c0c85681" => :lion
+  end
+
   depends_on :fortran
 
   conflicts_with 'fastbit', :because => 'both install `include/filter.h`'
