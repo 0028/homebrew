@@ -5,6 +5,12 @@ class Jena < Formula
   url 'http://www.apache.org/dist/jena/binaries/apache-jena-2.11.1.tar.gz'
   sha1 '1cb7122ed62d8748b8cc759ae22292f9cc4336bf'
 
+  bottle do
+    sha1 "ea4c72fa1ad25fa72d8f4e15b97c3b85ab06969a" => :mavericks
+    sha1 "b921fe33cf34c2deaf49c8d483d362b502d90364" => :mountain_lion
+    sha1 "f8fb1006084dc611f10c53fbfcf2484a444d6de3" => :lion
+  end
+
   def shim_script target
     <<-EOS.undent
       #!/usr/bin/env bash
