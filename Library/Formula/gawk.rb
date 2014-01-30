@@ -3,6 +3,12 @@ require 'formula'
 class Gawk < Formula
   homepage 'http://www.gnu.org/software/gawk/'
   url 'http://ftpmirror.gnu.org/gawk/gawk-4.1.0.tar.xz'
+  bottle do
+    sha1 "4e570b811583d35cb587f027b5b9595d6af4c8be" => :mavericks
+    sha1 "84747bc5573dfcd22d162f1bdb6fc29f86df7514" => :mountain_lion
+    sha1 "a336205451416c9450eeb5453dfc2dd014c50b9e" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/gawk/gawk-4.1.0.tar.xz'
   sha1 'caabca3c1a59d05807c826c45a4639b82cad612a'
 
