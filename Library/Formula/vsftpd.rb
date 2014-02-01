@@ -5,6 +5,13 @@ class Vsftpd < Formula
   url 'https://security.appspot.com/downloads/vsftpd-2.3.4.tar.gz'
   sha1 'b774cc6b4c50e20f4fe9ca7f6aa74169ce7fe5ea'
 
+  bottle do
+    cellar :any
+    sha1 "552ef16265dd83c1d7e02bf583ba9a321cabf672" => :mavericks
+    sha1 "350ce9a6c6609dcd6231df2fc8a244ba92d6ba73" => :mountain_lion
+    sha1 "15141d106f9a60cbc8902adf88914596d845a6c9" => :lion
+  end
+
   option "openssl", "Build with OpenSSL"
 
   # Patch so vsftpd doesn't depend on UTMPX, and can't find OS X's PAM library.
