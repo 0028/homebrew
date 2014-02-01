@@ -5,6 +5,13 @@ class Z80dasm < Formula
   url 'http://www.tablix.org/~avian/z80dasm/z80dasm-1.1.3.tar.gz'
   sha1 'da1e2525bc0db1b86e28f65ba510196998448ed1'
 
+  bottle do
+    cellar :any
+    sha1 "4ecaba0a164103cf6132030958ece23735eeedc8" => :mavericks
+    sha1 "ee4388d96a14ac0518c6124b0a147b7e90285135" => :mountain_lion
+    sha1 "d94260a339ed6eac4cf2afffe80534fdd4e97b59" => :lion
+  end
+
   def install
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
