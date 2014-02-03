@@ -6,6 +6,13 @@ class Acme < Formula
   version '0.91'
   sha1 '7104ea01a2ca2962294aaac4974e10c6486534a8'
 
+  bottle do
+    cellar :any
+    sha1 "4f2c371ac2c6cecf43cebe76f33c3e598dad670d" => :mavericks
+    sha1 "b2a0fd53787cb02dc4ba227b08e999fdc0b4ad37" => :mountain_lion
+    sha1 "d7ac524b37ad281005c9b12734d9019e76f696b9" => :lion
+  end
+
   def install
     cd "src" do
       system "make", "install", "BINDIR=#{bin}"
