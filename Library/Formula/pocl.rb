@@ -5,6 +5,11 @@ class Pocl < Formula
   url 'http://pocl.sourceforge.net/downloads/pocl-0.9.tar.gz'
   sha1 'd6e30f3120c7952dec9004db1db91a11d08c7b74'
 
+  bottle do
+    sha1 "8b72b7a1fb6936bfb9643f2672992353b6942c73" => :mavericks
+    sha1 "bf31d18adc1b02fcd226e325172bfa2b4b2e73f5" => :mountain_lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'hwloc'
   depends_on 'llvm' => 'with-clang'
