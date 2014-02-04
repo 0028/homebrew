@@ -5,6 +5,12 @@ class Dnsmasq < Formula
   url 'http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.68.tar.gz'
   sha1 'c78f5992539ff29924ca6aa1ba06ecb81710e743'
 
+  bottle do
+    sha1 "d911ee900c4ce91eb9f6acb512d53445c2f277c3" => :mavericks
+    sha1 "9fc6a491f010d775a4176e98d6a44894af582883" => :mountain_lion
+    sha1 "144c47f50e2c741c37886c9f1c0660b8241ec304" => :lion
+  end
+
   option 'with-idn', 'Compile with IDN support'
   option 'FTABSIZ=', 'Max number of outstanding requests (default: 150)'
 
