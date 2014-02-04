@@ -7,6 +7,13 @@ class SimpleTiles < Formula
 
   head 'https://github.com/propublica/simple-tiles.git'
 
+  bottle do
+    cellar :any
+    sha1 "3a8eb351023f49b9081d3f00a25a21a9388c5d04" => :mavericks
+    sha1 "5a10b428e64755b6b1bd5f4cebc8e4b60b7543ba" => :mountain_lion
+    sha1 "081c9084831cc3e58f5e7a684c57f3f5fc0fef39" => :lion
+  end
+
   depends_on "pkg-config" => :build
   depends_on "cairo"
   depends_on "gdal"
