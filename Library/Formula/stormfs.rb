@@ -5,6 +5,12 @@ class Stormfs < Formula
   url 'https://github.com/downloads/benlemasurier/stormfs/stormfs-0.01.tar.gz'
   sha1 'd86bb74beb4b4343b63b3eda3e6bd6f4db982bbb'
 
+  bottle do
+    sha1 "b20a2ad5e120044878a87bd03905dbf5cde072d4" => :mavericks
+    sha1 "ef1925676d1af027fb01fe7bdd8b70785db2248c" => :mountain_lion
+    sha1 "0796267dd606040bd7532c9abe2a71b5be9e8a5f" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'glib'
   depends_on 'fuse4x'
