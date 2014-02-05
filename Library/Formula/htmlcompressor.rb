@@ -5,6 +5,12 @@ class Htmlcompressor < Formula
   url 'http://htmlcompressor.googlecode.com/files/htmlcompressor-1.5.3.jar'
   sha1 '57db73b92499e018b2f2978f1c7aa7b1238c7a39'
 
+  bottle do
+    sha1 "10fd931c3d42d51cda6bad766cd5b3347e4badaf" => :mavericks
+    sha1 "bfa155d596eb4491bf7aadebf167c3359ef5e9ee" => :mountain_lion
+    sha1 "428db49cdc8a8c552743541db0615158039e9a40" => :lion
+  end
+
   option 'yuicompressor', "Use YUICompressor for JS/CSS compression"
   option 'closure-compiler', "Use Closure Compiler for JS optimization"
 
