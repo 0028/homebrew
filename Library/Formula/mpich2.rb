@@ -5,6 +5,12 @@ require 'formula'
 class Mpich2 < Formula
   homepage 'http://www.mpich.org/'
   url 'http://www.mpich.org/static/downloads/3.0.4/mpich-3.0.4.tar.gz'
+  bottle do
+    sha1 "a382fce3a0eb4b3ec16bf8a302db6d0291d9e6a6" => :mavericks
+    sha1 "3d8c4966f1f6b1b2e32648f55edbe5d1f2a284e1" => :mountain_lion
+    sha1 "7c8a56b6331fe206a86fc2d37f05bd6780456217" => :lion
+  end
+
   mirror 'http://fossies.org/linux/misc/mpich-3.0.4.tar.gz'
   sha1 'e89cc8de89d18d5718f7b881f3835b5a0943f897'
 
