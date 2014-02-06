@@ -5,6 +5,12 @@ class Tcsh < Formula
   url 'ftp://ftp.astron.com/pub/tcsh/tcsh-6.18.01.tar.gz'
   sha1 'eee2035645737197ff8059c84933a75d23cd76f9'
 
+  bottle do
+    sha1 "d1cb3f1d98e85c396a13c609a8d82b274bfe861a" => :mavericks
+    sha1 "4d80c3b887b437d30e41b9fe8e27c858a09afa77" => :mountain_lion
+    sha1 "af72084673510e14cf6e53583d685e0df43b48c3" => :lion
+  end
+
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
