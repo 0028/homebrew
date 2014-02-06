@@ -5,6 +5,12 @@ class Freeipmi < Formula
   url 'http://ftpmirror.gnu.org/freeipmi/freeipmi-1.3.4.tar.gz'
   sha1 '3848b5b014d60cf9ff8b848b65f192bb15ad0816'
 
+  bottle do
+    sha1 "a7680b49df91dea7c33970e7dda07a908dd0cfb4" => :mavericks
+    sha1 "c0f078a337cff5a059520dae79a733e68ba0d315" => :mountain_lion
+    sha1 "cdac8088ea4b2f5db939342725d5012162c7e7ef" => :lion
+  end
+
   depends_on "argp-standalone" => :build
   depends_on 'libgcrypt'       => :build
 
