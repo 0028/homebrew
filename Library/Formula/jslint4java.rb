@@ -5,6 +5,12 @@ class Jslint4java < Formula
   url 'http://jslint4java.googlecode.com/files/jslint4java-2.0.5-dist.zip'
   sha1 '30a75ce48b64d2c8f0b2b86e20c0d98e6441827d'
 
+  bottle do
+    sha1 "75fd2135d702f92bb71e051e2f6a11336e22e1fc" => :mavericks
+    sha1 "52eed30cd00a0dbed99e00d4de043364fce38eac" => :mountain_lion
+    sha1 "82924175d899fc1b35895687522239183d3cbfaf" => :lion
+  end
+
   def install
     doc.install Dir['docs/*']
     libexec.install Dir['*.jar']
