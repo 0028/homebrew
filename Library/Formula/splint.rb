@@ -5,6 +5,12 @@ class Splint < Formula
   url 'http://www.splint.org/downloads/splint-3.1.2.src.tgz'
   sha1 '0df489cb228dcfffb149b38c57614c2c3e200501'
 
+  bottle do
+    sha1 "ce11d578124252d7031865416415ef4e2dbf2d0d" => :mavericks
+    sha1 "eb5b3f667554caea182b0f5ad63cdbbea55fe7d5" => :mountain_lion
+    sha1 "a18df3705842c150ae5caa75455586cc6af274ed" => :lion
+  end
+
   def patches
     # fix compiling error of osd.c
     DATA
