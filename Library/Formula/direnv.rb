@@ -7,6 +7,12 @@ class Direnv < Formula
 
   head 'https://github.com/zimbatm/direnv.git'
 
+  bottle do
+    sha1 "760e6ff9043373d42349ed8d561946571bc3e09d" => :mavericks
+    sha1 "475bbe829c7212f33566fca57d9604a74644b2ca" => :mountain_lion
+    sha1 "c3c4cd22dc108611339b6eff52158d7983d9b29a" => :lion
+  end
+
   depends_on "go" => :build
 
   def install
