@@ -22,6 +22,13 @@ class Cask < Formula
   sha1 '0178e1b9a3ea80ad91e8a2d25ee3cdf7f782876f'
   head 'https://github.com/cask/cask.git'
 
+  bottle do
+    cellar :any
+    sha1 "090be563ee7dfc1f8f7113c4a23975d0be161022" => :mavericks
+    sha1 "447b02355f26d5997b83d62a2e8fc7a091d85ed2" => :mountain_lion
+    sha1 "c561466a6a9ff626e5f5bf49695db6d337bc2f40" => :lion
+  end
+
   depends_on NewEnoughEmacs
 
   def install
