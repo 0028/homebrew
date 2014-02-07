@@ -3,6 +3,12 @@ require 'formula'
 class GnuSmalltalk < Formula
   homepage 'http://smalltalk.gnu.org/'
   url 'http://ftpmirror.gnu.org/smalltalk/smalltalk-3.2.5.tar.xz'
+  bottle do
+    sha1 "2d7c31378b7f6e8bb0991efbbd4a84389ea56d40" => :mavericks
+    sha1 "5ee2190f3038810e8cd7ced82f431ed052b026f6" => :mountain_lion
+    sha1 "d6e1589d0f328c28592c48a1117cf86d187f5742" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/smalltalk/smalltalk-3.2.5.tar.xz'
   sha1 '0eb5895b9b5bebe4f75308efbe34f8721fc2fd6b'
 
