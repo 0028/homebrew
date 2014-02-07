@@ -5,6 +5,12 @@ class Pyqt5 < Formula
   url 'http://downloads.sf.net/project/pyqt/PyQt5/PyQt-5.2/PyQt-gpl-5.2.tar.gz'
   sha1 'a1c232d34ab268587c127ad3097c725ee1a70cf0'
 
+  bottle do
+    sha1 "45057997015c76f749009c2cc1f777657c32c3ee" => :mavericks
+    sha1 "dacb65ea95274c60fce2bc65c56cf165038f2888" => :mountain_lion
+    sha1 "d77d49cdce5fcff1159d8c621dd0b39af2e2faba" => :lion
+  end
+
   option 'enable-debug', "Build with debug symbols"
 
   depends_on :python3 => :recommended
