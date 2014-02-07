@@ -5,6 +5,13 @@ class Xa < Formula
   url 'http://www.floodgap.com/retrotech/xa/dists/xa-2.3.5.tar.gz'
   sha1 'd8f4564953adfcee69faacfa300b954875fabe21'
 
+  bottle do
+    cellar :any
+    sha1 "247a7864bee50d0aa36374c96842fd354dc7f527" => :mavericks
+    sha1 "52be6012aff9da4eac8ceb0dff4dca3b29319b02" => :mountain_lion
+    sha1 "eb7ca49517788ee4015729cda9ee0b1997061451" => :lion
+  end
+
   def patches
     # From upstream: http://www.floodgap.com/retrotech/xa/xa-getline-patch.txt
     # Filenames have been changed in the header ("xa.c" -> "a/src/xa.c")
