@@ -6,6 +6,12 @@ class Datomic < Formula
   sha1 '00656b7cccb582cc0b77eeffd154f27c6a824bea'
   version '0.9.4532'
 
+  bottle do
+    sha1 "4c5345008e9417ac545cde368704fb67e96b1dce" => :mavericks
+    sha1 "962c2a0afb7eae1b728aeeeafceb39a034738826" => :mountain_lion
+    sha1 "807c8e407a2d60caa9bc88ab6e39755394b111a6" => :lion
+  end
+
   def write_libexec_alias *script_names
     script_names.each do |script_name|
       alias_name = script_name == 'datomic' ? 'datomic' : "datomic-#{script_name}"
