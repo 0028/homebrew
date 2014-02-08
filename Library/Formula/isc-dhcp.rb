@@ -5,6 +5,12 @@ class IscDhcp < Formula
   url 'http://ftp.isc.org/isc/dhcp/4.3.0/dhcp-4.3.0.tar.gz'
   sha1 'deed72a4636461042b74de68c2825dc52623e1d1'
 
+  bottle do
+    sha1 "5246c5b1dc27587153b3b98c6196b648c3736a68" => :mavericks
+    sha1 "ed6361c58d5cb77134ee01e7df5e7d36e6d3f0a7" => :mountain_lion
+    sha1 "0b4ac6950eb8cad4fc60fec5356c36d04619be3b" => :lion
+  end
+
   def install
     # use one dir under var for all runtime state.
     dhcpd_dir = var+'dhcpd'
