@@ -5,6 +5,12 @@ class Pyqt < Formula
   url 'http://downloads.sf.net/project/pyqt/PyQt4/PyQt-4.10.3/PyQt-mac-gpl-4.10.3.tar.gz'
   sha1 'ba5465f92fb43c9f0a5b948fa25df5045f160bf0'
 
+  bottle do
+    sha1 "f9b856e2f60d3b381bcf12c29cab1d300d034e82" => :mavericks
+    sha1 "d97fcc5255eaff3a58382b97328605d58f5e8cf6" => :mountain_lion
+    sha1 "90158abeff46f3087464b9673d1ade96136f1536" => :lion
+  end
+
   depends_on :python => :recommended
 
   depends_on 'qt'  # From their site: PyQt currently supports Qt v4 and will build against Qt v5
