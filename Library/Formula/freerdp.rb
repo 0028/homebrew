@@ -7,6 +7,12 @@ class Freerdp < Formula
 
   head 'https://github.com/FreeRDP/FreeRDP.git'
 
+  bottle do
+    sha1 "82c4cf9365caa60aa3da22b78423a90c921cba14" => :mavericks
+    sha1 "8056df968904e3dfc78bea197a5b3c6e0b1bf300" => :mountain_lion
+    sha1 "11fa20db0d84ed581af812d6d588f334c9a1c0a0" => :lion
+  end
+
   depends_on :x11
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build
