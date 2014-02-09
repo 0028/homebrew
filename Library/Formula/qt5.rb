@@ -22,9 +22,10 @@ class Qt5 < Formula
   url 'http://download.qt-project.org/official_releases/qt/5.2/5.2.1/single/qt-everywhere-opensource-src-5.2.1.tar.gz'
   sha1 '31a5cf175bb94dbde3b52780d3be802cbeb19d65'
   bottle do
-    sha1 "242518522d1cfc33330586a189d005bd674244de" => :mavericks
-    sha1 "f7f6ff607fe69ae4c215167235f3f851717a6584" => :mountain_lion
-    sha1 "53697eeaca97521ed681460c91a046be8969ab26" => :lion
+    revision 1
+    sha1 "e26f03fbb8d6e41bf551460cdb6968921ae3a677" => :mavericks
+    sha1 "c827302f6c61b6d04104ac1d47c3b8de568363ce" => :mountain_lion
+    sha1 "94d782b85828473d4c13a1bb106996bb36f3fb8f" => :lion
   end
 
   head 'git://gitorious.org/qt/qt5.git', :branch => 'stable',
