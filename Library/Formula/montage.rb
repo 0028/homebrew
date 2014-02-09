@@ -5,6 +5,13 @@ class Montage < Formula
   url 'http://montage.ipac.caltech.edu/download/Montage_v3.3.tar.gz'
   sha1 'c8db5b9018c96e19b584d45758819e892b453d6d'
 
+  bottle do
+    cellar :any
+    sha1 "b3f586f5c87348106679b296da62be6275d25fd3" => :mavericks
+    sha1 "40c9bb34bccd6fc4dce7b3a574e505f4a5fd10ac" => :mountain_lion
+    sha1 "60f3f184f5e61d3b0ea2cae171551abdaa609f9e" => :lion
+  end
+
   def install
     system "make"
     bin.install Dir['bin/m*']
