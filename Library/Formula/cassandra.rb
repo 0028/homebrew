@@ -5,6 +5,12 @@ class Cassandra < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=/cassandra/2.0.5/apache-cassandra-2.0.5-bin.tar.gz'
   sha1 '25602881eaf1326fddb23d02dee72787751c95f7'
 
+  bottle do
+    sha1 "16e3ff1f7eb905c4a0a9afdd5614bf502e56a8aa" => :mavericks
+    sha1 "165f6ece05bd161bb6937854486898a9400b0dd6" => :mountain_lion
+    sha1 "c0879e48c45d48c6cce196f5cb57d85e30543233" => :lion
+  end
+
   def install
     (var+"lib/cassandra").mkpath
     (var+"log/cassandra").mkpath
