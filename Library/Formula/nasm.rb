@@ -5,6 +5,13 @@ class Nasm < Formula
   url 'http://www.nasm.us/pub/nasm/releasebuilds/2.11/nasm-2.11.tar.bz2'
   sha256 '1ce7e897c67255a195367a60c739a90a0b33a4a73f058f7cda3253bcf975642b'
 
+  bottle do
+    cellar :any
+    sha1 "5ccf423a640cf114a890356fe6b01958f0978fe2" => :mavericks
+    sha1 "80d8a3aef3cdd397f892b7e1a8afae48f12b8737" => :mountain_lion
+    sha1 "eb523d781e21483712335a762e006aab0ff161bd" => :lion
+  end
+
   option :universal
 
   def install
