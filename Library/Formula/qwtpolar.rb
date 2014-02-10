@@ -5,6 +5,12 @@ class Qwtpolar < Formula
   url "http://downloads.sf.net/project/qwtpolar/qwtpolar/1.1.0/qwtpolar-1.1.0.tar.bz2"
   sha1 "94d5f897e75e37f32c910e3bdf2a1ffbaaf76621"
 
+  bottle do
+    sha1 "24682ae116e0136e2dc54ccac389c8416475c2e9" => :mavericks
+    sha1 "4fd5321bd6e3b99942cd1dd5c1eed26e6803f867" => :mountain_lion
+    sha1 "bedb5d71da0cfb1f786e0a249377b8b63cbc7114" => :lion
+  end
+
   option "with-examples", "Install source code for example apps"
 
   depends_on "qt"
