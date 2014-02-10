@@ -5,6 +5,12 @@ class Graphviz < Formula
   url 'http://graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.36.0.tar.gz'
   sha1 'a41e9f1cbcc9a24651e14dd15a4cda3d912d7d19'
 
+  bottle do
+    sha1 "5124d609fe36c1499d91de1ba876dfeeca221b12" => :mavericks
+    sha1 "1b9639c4711716e63f1bc0a0739d362cbeb802d1" => :mountain_lion
+    sha1 "1f8779b5b07f2fc4c5febe615b4851d663da1454" => :lion
+  end
+
   devel do
     url 'http://graphviz.org/pub/graphviz/development/SOURCES/graphviz-2.37.20140209.1615.tar.gz'
     sha1 'f5703ce6e34d11920d687c6be98f913bf397018c'
