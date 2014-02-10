@@ -7,6 +7,13 @@ class Disktype < Formula
 
   head 'cvs://:pserver:anonymous:@disktype.cvs.sourceforge.net:/cvsroot/disktype:disktype'
 
+  bottle do
+    cellar :any
+    sha1 "1dbaf8df62c7e5720c3876619116abef4902eb18" => :mavericks
+    sha1 "e6fbeb0905b10f0339701f5fdf7f85c5d428840b" => :mountain_lion
+    sha1 "e4f671a558f6b04b9e7ea300019696b09cb9a798" => :lion
+  end
+
   def install
     system "make"
     bin.install "disktype"
