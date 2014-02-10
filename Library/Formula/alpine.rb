@@ -5,6 +5,12 @@ class Alpine < Formula
   url 'http://patches.freeiz.com/alpine/release/src/alpine-2.11.tar.xz'
   sha1 '656556f5d2e5ec7e3680d1760cd02aa3a0072c46'
 
+  bottle do
+    sha1 "ac056b3776f859f6192b64c930e6361275e737c9" => :mavericks
+    sha1 "1a88967f5b7f854ce9c4b19765e5f6b262221c92" => :mountain_lion
+    sha1 "421ad51bcce0fd598e0014b6704d1cd939739f9f" => :lion
+  end
+
   depends_on 'autoconf' => :build
   depends_on 'openssl'
 
