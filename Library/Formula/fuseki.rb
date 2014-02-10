@@ -6,6 +6,12 @@ class Fuseki < Formula
   version '1.0.1'
   sha1 '556d3bbe0dbac67ea1335c1933576492ecc9213f'
 
+  bottle do
+    sha1 "cf4fe51ceacfef51730425ce65d14d13e2843e1b" => :mavericks
+    sha1 "9d2e73eea1f5feb341b43af43cb9259019f6e57b" => :mountain_lion
+    sha1 "5ce1ef076d643983cbf55be447c706bc637ca8f4" => :lion
+  end
+
   def install
     # Remove windows files
     rm_f 'fuseki-server.bat'
