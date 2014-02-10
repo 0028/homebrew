@@ -5,6 +5,12 @@ class Xapian < Formula
   url 'http://oligarchy.co.uk/xapian/1.2.17/xapian-core-1.2.17.tar.xz'
   sha1 'ee8df16fe2fba1b12badfc91ecdb94ffd0bbc8ef'
 
+  bottle do
+    sha1 "1b12d0d8c0f0d30f80a1ff89b63e2c743b7b1967" => :mavericks
+    sha1 "3a1e93e89627416b8dcde22aa63584a80252d0e3" => :mountain_lion
+    sha1 "feaa4d178286a9b2651192d43708d563e06971b5" => :lion
+  end
+
   option "java",   "Java bindings"
   option "php",    "PHP bindings"
   option "ruby",   "Ruby bindings"
