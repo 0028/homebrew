@@ -8,6 +8,13 @@ class Hr < Formula
   sha1 '165cb02e1deaf3cb6dff312eab097c457aa06083'
   version '0.0.1'
 
+  bottle do
+    cellar :any
+    sha1 "83b3f521825adb359c5416944a2c9ccd4342b45e" => :mavericks
+    sha1 "62dad40b43cf24e0177525187af4753555972ab7" => :mountain_lion
+    sha1 "c6ce5bb0ddabb027dadde5a9abf6fe7e88e66421" => :lion
+  end
+
   def install
     bin.install 'hr'
   end
