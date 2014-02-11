@@ -27,7 +27,7 @@ class Vim < Formula
   end
 
   depends_on :python => :recommended
-  depends_on 'python3' => :optional
+  depends_on :python3 => :optional
   depends_on 'lua' => :optional
   depends_on 'gtk+' if build.with? 'client-server'
 
@@ -78,6 +78,24 @@ class Vim < Formula
                           "--with-compiledby=Homebrew",
                           *opts
 
+    # Require Python's dynamic library, and needs to be built as a framework.
+    if build.with? "python" and build.with? "python3"
+      py_prefix = Pathname.new `python -c "import sys; print(sys.prefix)"`.chomp
+      py3_prefix = Pathname.new `python3 -c "import sys; print(sys.prefix)"`.chomp
+      # Help vim find Python's dynamic library as absolute path.
+      inreplace "src/auto/config.mk", /-DDYNAMIC_PYTHON_DLL=\\".*\\"/,
+                   %(-DDYNAMIC_PYTHON_DLL=\'\"#{py_prefix}/Python\"\')
+      inreplace "src/auto/config.mk", /-DDYNAMIC_PYTHON3_DLL=\\".*\\"/,
+                  %(-DDYNAMIC_PYTHON3_DLL=\'\"#{py3_prefix}/Python\"\')
+      # Force vim loading different Python on same time, may cause vim crash.
+      inreplace "src/auto/config.h",
+                        %r(^(\/\* #undef|#define) PY_NO_RTLD_GLOBAL (\*\/|1)$),
+                        "#define PY_NO_RTLD_GLOBAL 1"
+      inreplace "src/auto/config.h",
+                        %r(^(\/\* #undef|#define) PY3_NO_RTLD_GLOBAL (\*\/|1)$),
+                        "#define PY3_NO_RTLD_GLOBAL 1"
+    end
+
     system "make"
     # If stripping the binaries is not enabled, vim will segfault with
     # statically-linked interpreters like ruby
@@ -87,9 +105,8 @@ class Vim < Formula
   end
 
   def caveats
-    s = ''
     if build.with? "python" and build.with? "python3"
-      s += <<-EOS.undent
+      <<-EOS.undent
         Vim has been built with dynamic loading of Python 2 and Python 3.
 
         Note: if Vim dynamically loads both Python 2 and Python 3, it may
