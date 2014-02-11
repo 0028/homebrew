@@ -8,6 +8,13 @@ class Erlang < Formula
   url 'http://www.erlang.org/download/otp_src_R16B03-1.tar.gz'
   sha1 'c2634ea0c078500f1c6a1369f4be59a6d14673e0'
 
+  bottle do
+    revision 1
+    sha1 "46f912e4a6276e098007fe9696ea2a6e19fbef83" => :mavericks
+    sha1 "5b12327b94e758008a588e4408c5ff5843fe50b3" => :mountain_lion
+    sha1 "60a9f19ad17e064703c6f56c44cdaab69787184c" => :lion
+  end
+
   head 'https://github.com/erlang/otp.git', :branch => 'master'
 
   resource 'man' do
