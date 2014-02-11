@@ -5,6 +5,12 @@ class Gwt < Formula
   url 'http://google-web-toolkit.googlecode.com/files/gwt-2.6.0.zip'
   sha1 '36d45c9dffbe59d15c6f6d04657438dc78e343c1'
 
+  bottle do
+    sha1 "4c218f1a2c229408c14cbc481119fd208df963ed" => :mavericks
+    sha1 "5b86958b91775f89d21f7164e0c04260a35a4d7e" => :mountain_lion
+    sha1 "570aa99f49409ec2a2f157dd242a4e969dd2e2cd" => :lion
+  end
+
   def install
     rm Dir['*.cmd'] # remove Windows cmd files
     share.install Dir['*']
