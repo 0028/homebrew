@@ -5,6 +5,13 @@ class Sox < Formula
   url 'http://downloads.sourceforge.net/project/sox/sox/14.4.1/sox-14.4.1.tar.gz'
   sha1 '71f05afc51e3d9b03376b2f98fd452d3a274d595'
 
+  bottle do
+    cellar :any
+    sha1 "d8a598b290876c3cc48f6006f7d414d4e9dd7497" => :mavericks
+    sha1 "ca2b325b7d1548e3b83adee0aded3bb8f2f083ba" => :mountain_lion
+    sha1 "2b652b6b4a9ea9c86d0973d38cca645c072b24ef" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on :libpng
   depends_on 'mad'
