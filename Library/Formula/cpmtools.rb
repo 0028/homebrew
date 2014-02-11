@@ -5,6 +5,12 @@ class Cpmtools < Formula
   url 'http://www.moria.de/~michael/cpmtools/cpmtools-2.17.tar.gz'
   sha1 '71e9d3a7de4b366a52ac24e53c2958c2b8124e5f'
 
+  bottle do
+    sha1 "569bbd4332baee4165b59051a7deaff47fcc1b92" => :mavericks
+    sha1 "5e765d6aa42a384b86c8d873a8bf8778ba128311" => :mountain_lion
+    sha1 "e4a9a251da5408ccc7c00e763fcf14af1926d487" => :lion
+  end
+
   def install
     system "./configure", "--prefix=#{prefix}"
 
