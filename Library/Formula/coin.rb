@@ -5,6 +5,12 @@ class Coin < Formula
   url 'https://bitbucket.org/Coin3D/coin/downloads/Coin-3.1.3.tar.gz'
   sha1 '8e9f05628461963623686d3ec53102214e233dd1'
 
+  bottle do
+    sha1 "0abc75caff7aac6981196e5f5a139a43995a13eb" => :mavericks
+    sha1 "dec926c6111155571a9b441dc5ef3bc092f885d5" => :mountain_lion
+    sha1 "4bdf027170c478d06eb853cdd801e4ea9c8dd694" => :lion
+  end
+
   option "without-soqt", "Build without SoQt"
 
   if build.with? "soqt"
