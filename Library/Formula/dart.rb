@@ -5,6 +5,12 @@ class Dart < Formula
 
   if MacOS.prefer_64_bit?
     url 'http://storage.googleapis.com/dart-archive/channels/stable/release/32314/sdk/dartsdk-macos-x64-release.zip'
+  bottle do
+    sha1 "2da04ffddde2e409343427bce81073538e72b856" => :mavericks
+    sha1 "85b86d08ef4434899dc8d6529e5f808d2421f43a" => :mountain_lion
+    sha1 "e5633095d0ac1613fb2c41a767762b39cc89a637" => :lion
+  end
+
     sha1 'c5becd88d9d2348193b954e3d9077d86f30b2536'
   else
     url 'http://storage.googleapis.com/dart-archive/channels/stable/release/32314/sdk/dartsdk-macos-ia32-release.zip'
