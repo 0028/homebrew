@@ -7,6 +7,13 @@ class EmacsClangCompleteAsync < Formula
 
   head 'https://github.com/Golevka/emacs-clang-complete-async.git'
 
+  bottle do
+    cellar :any
+    sha1 "9639d626da5127a6c0d9a82385204deb3aa174d1" => :mavericks
+    sha1 "7ce1b0164a11efabdecc2f5312461be85eb88f54" => :mountain_lion
+    sha1 "b5556b3adfa083b6ded3642e5b3b31b755852fa0" => :lion
+  end
+
   option 'with-elisp', 'Include Emacs lisp package'
 
   depends_on 'llvm' => 'with-clang'
