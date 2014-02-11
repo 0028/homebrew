@@ -18,6 +18,12 @@ class Wxmac < Formula
   url 'http://downloads.sourceforge.net/project/wxpython/wxPython/3.0.0.0/wxPython-src-3.0.0.0.tar.bz2'
   sha1 '48451763275cfe4e5bbec49ccd75bc9652cba719'
 
+  bottle do
+    sha1 "4bf56c7aee2018115628e46249f51bbc0769cb50" => :mavericks
+    sha1 "52b7c5815872e5f9981757b3093f7bc6416200dc" => :mountain_lion
+    sha1 "93aba1d839c3e86926563b414584a062d51f8f10" => :lion
+  end
+
   option 'disable-monolithic', "Build a non-monolithic library (split into multiple files)"
   depends_on :python => :recommended
   depends_on FrameworkPython if build.with? "python"
