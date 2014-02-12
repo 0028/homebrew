@@ -7,6 +7,13 @@ class Curlftpfs < Formula
 
   head 'https://github.com/rfw/curlftpfs.git'
 
+  bottle do
+    cellar :any
+    sha1 "3dc73aff8a474fd4d5f6b73e068239e5f769f633" => :mavericks
+    sha1 "b8e2425187e8965e391ddbc95a3bcbfb1b8c12d2" => :mountain_lion
+    sha1 "b420c2bab8a5d090e8b0eb1545ae0fa1f5834fe5" => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
   depends_on :libtool
