@@ -6,6 +6,13 @@ class Tup < Formula
   sha1 'a0ce259ce74321d2c103e63dffbf9703b7392e16'
   head 'https://github.com/gittup/tup.git'
 
+  bottle do
+    cellar :any
+    sha1 "ba093bda9159dacb6b1e435f66ac45cb19c40fc0" => :mavericks
+    sha1 "367bb3875dfd57d55eb0f5ee334be513b4bf3bbd" => :mountain_lion
+    sha1 "ac92e6a7e46460f7cb0755d073f758f19409da70" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'osxfuse'
 
