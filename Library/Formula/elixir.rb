@@ -31,6 +31,12 @@ class Elixir < Formula
 
   head 'https://github.com/elixir-lang/elixir.git'
 
+  bottle do
+    sha1 "558e8508c65c1f32a6e5098c05564d87967e4b42" => :mavericks
+    sha1 "ae8d12684543c237f6b9916ccc540c4639001695" => :mountain_lion
+    sha1 "353e951dcdaf5ff2469fee311c17bcb8188be8d5" => :lion
+  end
+
   depends_on ErlangInstalled
 
   def install
