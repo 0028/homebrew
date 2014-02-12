@@ -5,6 +5,12 @@ class Encfs < Formula
   url 'http://encfs.googlecode.com/files/encfs-1.7.4.tgz'
   sha1 '3d824ba188dbaabdc9e36621afb72c651e6e2945'
 
+  bottle do
+    sha1 "9379a156ddd3bd700c991eca88f5ae3204b7f8a4" => :mavericks
+    sha1 "88f55e4eef5f6bc08dc514b5adc6fac92a5fa8c6" => :mountain_lion
+    sha1 "04e1e6dfa36d219a20e525d29558b5aa1a577754" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'gettext'
   depends_on 'boost'
