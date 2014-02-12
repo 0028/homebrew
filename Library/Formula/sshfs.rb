@@ -18,9 +18,10 @@ class Sshfs < Formula
 
   bottle do
     cellar :any
-    sha1 '57778d401e579bc32a6153419a3bbb34ef76b2aa' => :mavericks
-    sha1 '7ef7bbf791ca3031f992ff6907a79bef65fbc51f' => :mountain_lion
-    sha1 'a98aff34dca5da77ff894ff230885f1025ea45ba' => :lion
+    revision 1
+    sha1 "2bab489e09b5f37e006c1126dd50530174a246d4" => :mavericks
+    sha1 "c90c1d43e0c9cefe35e864c1c8d9b93ea9d4c236" => :mountain_lion
+    sha1 "99fd0e8d6bbb4c04362e2d213a58448bf22ab27f" => :lion
   end
 
   def patches
