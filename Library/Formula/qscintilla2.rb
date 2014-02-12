@@ -5,6 +5,13 @@ class Qscintilla2 < Formula
   url 'http://downloads.sf.net/project/pyqt/QScintilla2/QScintilla-2.8/QScintilla-gpl-2.8.tar.gz'
   sha1 '3edf9d476d4e6af0706a4d33401667a38e3a697e'
 
+  bottle do
+    cellar :any
+    sha1 "4fc79506084f93d20ab7eefdc0397e25d85a1ac6" => :mavericks
+    sha1 "8789192b5a16c017327cb1d2535fe9c6b9166d94" => :mountain_lion
+    sha1 "8eadd944b4bedb8db4f6c76f399001b9e5c0e9b6" => :lion
+  end
+
   depends_on :python => :recommended
   depends_on :python3 => :optional
 
