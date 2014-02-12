@@ -5,6 +5,12 @@ class Juju < Formula
   url 'https://launchpad.net/juju-core/1.16/1.16.6/+download/juju-core_1.16.6.tar.gz'
   sha1 '0483d7a4d3fda0981f822d540cded855eb5afbda'
 
+  bottle do
+    sha1 "ef15add5d4d3536c071b4c03d5819e947b939363" => :mavericks
+    sha1 "e2a1ed7bb6b70caa428540a29b50c0d88a9b5142" => :mountain_lion
+    sha1 "5560b1611777a8a77678339719d9d9981adcccca" => :lion
+  end
+
   depends_on 'go' => :build
 
   def install
