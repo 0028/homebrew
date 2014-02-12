@@ -6,6 +6,13 @@ class Zpaq < Formula
   sha1 "aa0d8241679f314d0be8a43e7a87e5b4d4529017"
   version "6.49"
 
+  bottle do
+    cellar :any
+    sha1 "9154547c4e3b21c9be3a4f23d40af2d138c4d28a" => :mavericks
+    sha1 "4837a5489b21ede77e0b79b873072943285d70d8" => :mountain_lion
+    sha1 "fa1a1117db26d69ae3ed0738b6fb5a703fce8414" => :lion
+  end
+
   def install
     ENV.append_to_cflags "-Dunix -O3"
     system "make", "libzpaq.o", "divsufsort.o", "zpaq.o"
