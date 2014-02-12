@@ -5,6 +5,12 @@ class OpenOcd < Formula
   url 'http://downloads.sourceforge.net/project/openocd/openocd/0.7.0/openocd-0.7.0.tar.bz2'
   sha1 '40fa518af4fae273f24478249fc03aa6fcce9176'
 
+  bottle do
+    sha1 "26f03d33849d0eac2d62b3a60ee3a61a125e7d4f" => :mavericks
+    sha1 "2e7cf0135bf31acb750b5e3a04c25c7ebb876144" => :mountain_lion
+    sha1 "27771f3a208ff90756bf521e4dd9dcdf2dd78d1c" => :lion
+  end
+
   head do
     url 'git://git.code.sf.net/p/openocd/code'
 
