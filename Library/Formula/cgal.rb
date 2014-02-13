@@ -5,6 +5,12 @@ class Cgal < Formula
   url 'https://gforge.inria.fr/frs/download.php/32994/CGAL-4.3.tar.gz'
   sha1 '035d5fd7657e9eeccfc46ff0ebf84f137e63b03a'
 
+  bottle do
+    sha1 "bec7591f42d5e8789dc09e5ceb4986a3e9617905" => :mavericks
+    sha1 "d2495f582c15cc6d6aa466fc0b64e1cee836152f" => :mountain_lion
+    sha1 "637d2629b04ee2d2545c47507799d2bc65abaddd" => :lion
+  end
+
   option :cxx11
 
   option 'imaging', "Build ImageIO and QT compoments of CGAL"
