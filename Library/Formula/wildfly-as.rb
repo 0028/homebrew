@@ -5,6 +5,13 @@ class WildflyAs < Formula
   url 'http://download.jboss.org/wildfly/8.0.0.Final/wildfly-8.0.0.Final.tar.gz'
   sha1 '594f78aa04dd35c936615563ff3777a67228ba9d'
 
+  bottle do
+    cellar :any
+    sha1 "7ea7e7c79674b7c9975e916e40c3ab221f31af44" => :mavericks
+    sha1 "acf9d3908427b20365700e23157baa41aa1712a1" => :mountain_lion
+    sha1 "b7d054738f2639ff714fc26ef52e47d985b1e622" => :lion
+  end
+
   def install
     rm_f Dir["bin/*.bat"]
     libexec.install Dir['*']
