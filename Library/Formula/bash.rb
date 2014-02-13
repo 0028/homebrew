@@ -3,6 +3,12 @@ require 'formula'
 class Bash < Formula
   homepage 'http://www.gnu.org/software/bash/'
   url 'http://ftpmirror.gnu.org/bash/bash-4.2.tar.gz'
+  bottle do
+    sha1 "a291278f20dc9c14a9db8fd8e96d5f8e7d51f38a" => :mavericks
+    sha1 "5aa924ceb098b0b0ec71d99cdb4875daddfb0d84" => :mountain_lion
+    sha1 "915a3a58e045d9794612ce72a338f1bfe13fd5f1" => :lion
+  end
+
   mirror 'ftp://ftp.cwru.edu/pub/bash/bash-4.2.tar.gz'
   sha256 'a27a1179ec9c0830c65c6aa5d7dab60f7ce1a2a608618570f96bfa72e95ab3d8'
   version '4.2.45'
