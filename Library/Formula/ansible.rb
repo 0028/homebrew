@@ -5,6 +5,12 @@ class Ansible < Formula
   url 'https://github.com/ansible/ansible/archive/v1.4.5.tar.gz'
   sha1 '09f451e6634c6e7bb5705d26b9daab6efc0407c1'
 
+  bottle do
+    sha1 "1a9fa4fcd9cdceb77ae73cf2c519703ea7298423" => :mavericks
+    sha1 "593c39717746e03f9c6c0dc4e90bc5c608704989" => :mountain_lion
+    sha1 "1f5bf97f47a447005c59a00d66c58a84b99aa698" => :lion
+  end
+
   head 'https://github.com/ansible/ansible.git', :branch => 'devel'
 
   depends_on :python
