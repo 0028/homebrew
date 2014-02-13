@@ -17,6 +17,13 @@ class Ksh < Formula
   url  'http://www2.research.att.com/~astopen/download/tgz/ast-ksh.2012-08-01.tgz',
     :using => KshDownloadStrategy
   sha1 '316428e9937806183a134aa1669dea40c3a73695'
+  bottle do
+    cellar :any
+    sha1 "319ff38f52e892d7532e4d99eee751c556d16e43" => :mavericks
+    sha1 "6182bca6002a2c83663c0df79d9502d9256d29f6" => :mountain_lion
+    sha1 "6b5091d8170901786c42e719bb7777d72f38c48e" => :lion
+  end
+
   version '93u+' # Versioning scheme: + means "+ patches", - means "beta/alpha".
 
   resource 'init' do
