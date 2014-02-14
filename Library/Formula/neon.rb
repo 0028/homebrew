@@ -5,6 +5,13 @@ class Neon < Formula
   url 'http://www.webdav.org/neon/neon-0.30.0.tar.gz'
   sha1 '9e6297945226f90d66258b7ee05f757ff5cea10a'
 
+  bottle do
+    cellar :any
+    sha1 "d5281afb9e55f75fe0aecbd31fdfd506451bf34d" => :mavericks
+    sha1 "11dd44fa3c70eeca80a4480eaa148063184e4ab4" => :mountain_lion
+    sha1 "c41a4d807d95e869d5b7eac8b44658cca35560fa" => :lion
+  end
+
   keg_only :provided_by_osx,
             "Compiling newer versions of Subversion on 10.6 require this newer neon."
 
