@@ -5,6 +5,12 @@ class Compcert < Formula
   url "http://compcert.inria.fr/release/compcert-2.1.tgz"
   sha1 "1ec21e43c3ac778827522d385733e36d24c5f8d4"
 
+  bottle do
+    sha1 "e6e9664300ad72f436e9cc9292650abc03f94363" => :mavericks
+    sha1 "019d5ed695270c7458eb922c9243bfc4d929ed08" => :mountain_lion
+    sha1 "f72503a3c2959864b4911427bea4544e8de08405" => :lion
+  end
+
   depends_on "coq" => :build
   depends_on "objective-caml" => :build
   depends_on "camlp5" => :build
