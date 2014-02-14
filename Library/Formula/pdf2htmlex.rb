@@ -7,6 +7,12 @@ class Pdf2htmlex < Formula
 
   head 'https://github.com/coolwanglu/pdf2htmlEX.git'
 
+  bottle do
+    sha1 "0f75b115e145b7d226c687b879b020fb1a153779" => :mavericks
+    sha1 "62f49ebe04ea98afdcb72e76f1d5b69c00439dbb" => :mountain_lion
+    sha1 "300e914837647d803875878b753deafb789185a3" => :lion
+  end
+
   depends_on :macos => :lion
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build
