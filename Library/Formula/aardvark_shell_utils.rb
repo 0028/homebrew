@@ -5,6 +5,13 @@ class AardvarkShellUtils < Formula
   url 'http://downloads.laffeycomputer.com/current_builds/shellutils/aardvark_shell_utils-1.0.tar.gz'
   sha1 '8cee29059038ebec96c3a97978d18a5a4941da06'
 
+  bottle do
+    cellar :any
+    sha1 "f2222df547897558b6b534b29983cf9d2113a627" => :mavericks
+    sha1 "de380d890d908deca8e211cb15a57b11d21edcf9" => :mountain_lion
+    sha1 "3ef1e2319e249fd46be4d5e6afea81ddabc365fe" => :lion
+  end
+
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
