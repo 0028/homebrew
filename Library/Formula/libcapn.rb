@@ -6,6 +6,13 @@ class Libcapn < Formula
   sha1 'a53f7b382e683249ff55214b1effbae5f82c4ef2'
   head 'https://github.com/adobkin/libcapn.git'
 
+  bottle do
+    cellar :any
+    sha1 "6aae397b051cb4f0c89f3d31f100a6cb98db93da" => :mavericks
+    sha1 "55b3c1de694ef277c48b4bd0b8a9bcd64a8f3bfe" => :mountain_lion
+    sha1 "34dfb693e76941b30a67a5ea0de5255ef77fef2f" => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build
 
