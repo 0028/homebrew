@@ -5,6 +5,12 @@ class Fail2ban < Formula
   url 'https://github.com/fail2ban/fail2ban/archive/0.8.12.tar.gz'
   sha1 '32a6cab154ccf48f6ae914612118d7ed4695fb26'
 
+  bottle do
+    sha1 "39390d1c416faeba330ddc9ba7e8340ae03aa51c" => :mavericks
+    sha1 "97ee3d8be519a460cd093f27b19bc6129e233bc2" => :mountain_lion
+    sha1 "8872ab68acd5cb0be09e55b5a9d044055d459024" => :lion
+  end
+
   def install
     rm 'setup.cfg'
     inreplace 'setup.py' do |s|
