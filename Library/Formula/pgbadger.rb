@@ -5,6 +5,13 @@ class Pgbadger < Formula
   url 'http://downloads.sourceforge.net/project/pgbadger/5.0/pgbadger-5.0.tar.gz'
   sha1 'df374665eb5c2e6bbb3232ff728ad3bf22976903'
 
+  bottle do
+    cellar :any
+    sha1 "3b56212e7c3805365ca3de89975d2c2b24456912" => :mavericks
+    sha1 "50edaa27354eaa870253ea826008d25af622c777" => :mountain_lion
+    sha1 "fe2e37b4d87dc2e1a32b82b3259f8146f5e6cedd" => :lion
+  end
+
   def install
     system "perl", "Makefile.PL", "DESTDIR=."
     system "make"
