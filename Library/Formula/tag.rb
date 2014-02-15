@@ -6,6 +6,11 @@ class Tag < Formula
   sha1 'e1075a1068f6a4cb377144e162ee47c063a4a0d6'
   head 'https://github.com/jdberry/tag.git'
 
+  bottle do
+    cellar :any
+    sha1 "b1e268d6f2f599c7cb98fbc160eb7543dbcf1e94" => :mavericks
+  end
+
   depends_on :macos => :mavericks
 
   def install
