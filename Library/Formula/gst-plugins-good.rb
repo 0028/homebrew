@@ -5,6 +5,12 @@ class GstPluginsGood < Formula
 
   stable do
     url 'http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.2.3.tar.xz'
+  bottle do
+    sha1 "582a428bcbb85d2508ae9b02277370733746ef73" => :mavericks
+    sha1 "d04d66b930944d78057d375b1413797aeeb2316a" => :mountain_lion
+    sha1 "f5671da53349261f45db55630288d055138f45cd" => :lion
+  end
+
     mirror 'http://ftp.osuosl.org/pub/blfs/svn/g/gst-plugins-good-1.2.3.tar.xz'
     sha256 'bfb33536a515bdcc34482f64b8d9cc3e47c753878b254923b419bc2f7485e470'
 
