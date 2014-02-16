@@ -5,6 +5,13 @@ class Scrub < Formula
   url 'https://diskscrub.googlecode.com/files/scrub-2.5.2.tar.bz2'
   sha1 '863e5894e6acb3f922cb25f58e260f9c59b55c14'
 
+  bottle do
+    cellar :any
+    sha1 "c18f2713940d3bc3594265445e388cec3f511efa" => :mavericks
+    sha1 "191bf37032d7c9e442c79a65be6738d2d4f0a426" => :mountain_lion
+    sha1 "c39092e0ea1b24c336d04fba3878f3d564e31dc3" => :lion
+  end
+
   # in src/genrand.c:109 the `return;` statement should be `return 0;` for clang
   # in src/util.h we need <sys/types.h> to get off_t which is reported:
   # https://code.google.com/p/diskscrub/issues/detail?id=21
