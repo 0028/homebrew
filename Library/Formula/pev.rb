@@ -7,6 +7,13 @@ class Pev < Formula
 
   head 'https://github.com/merces/pev.git'
 
+  bottle do
+    cellar :any
+    sha1 "2db89c8fc7ce0c4c5ac2ef6068e5a355a0cca3e9" => :mavericks
+    sha1 "2d14b11d5243e30139e2e43bf42de796bc2da89f" => :mountain_lion
+    sha1 "29f04beab17f53015a76cba4a356392fdc7c94a8" => :lion
+  end
+
   depends_on 'pcre'
 
   def install
