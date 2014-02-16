@@ -8,6 +8,13 @@ class Minbif < Formula
   version '1.0.5'
   sha1 '5827df8954e29df80d1e81ee5df354b76c5fd86a'
 
+  bottle do
+    cellar :any
+    sha1 "c5e59d7b7ed55315bcdf6243ba1c845ffc497dd5" => :mavericks
+    sha1 "5d4ba47448ac04adfb2dc0fe8a5065073406a022" => :mountain_lion
+    sha1 "746ac2eaba2f0e726f29f19edd372a9eeed857be" => :lion
+  end
+
   option 'pam', 'Build with PAM support, patching for OSX PAM headers'
 
   depends_on 'pkg-config' => :build
