@@ -3,6 +3,12 @@ require 'formula'
 class GstPluginsBase < Formula
   homepage 'http://gstreamer.freedesktop.org/'
   url 'http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.2.3.tar.xz'
+  bottle do
+    sha1 "5f3c79b555579d23a4c992e93a72ca1d9ec858d8" => :mavericks
+    sha1 "2ee780e7df576c54095236b0650b74331621cb7e" => :mountain_lion
+    sha1 "4b556d5ff8a0962f0a19db7a7759581112a24dab" => :lion
+  end
+
   mirror 'http://ftp.osuosl.org/pub/blfs/svn/g/gst-plugins-base-1.2.3.tar.xz'
   sha256 '61edec35c270f86928bad434bd059da4efff865d1ef01bcc64ecbd903625dae1'
 
