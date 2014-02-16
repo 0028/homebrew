@@ -7,6 +7,12 @@ class Weechat < Formula
 
   head 'git://git.savannah.nongnu.org/weechat.git'
 
+  bottle do
+    sha1 "c99b02f1c2e08b5207008cef3bce22d8c1138c9e" => :mavericks
+    sha1 "bb24f88a90721c7f6435fb3bb35cfd792bdd16ab" => :mountain_lion
+    sha1 "c2a1cb66e7127d54f43420ea7cc1e05a990be474" => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on 'gnutls'
   depends_on 'libgcrypt'
