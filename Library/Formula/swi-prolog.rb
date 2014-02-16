@@ -5,6 +5,12 @@ class SwiProlog < Formula
   url 'http://www.swi-prolog.org/download/stable/src/pl-6.6.1.tar.gz'
   sha1 '94022f4c26d86761e3b998c21da400e0fce4acb3'
 
+  bottle do
+    sha1 "2de65c67beff0246172240a53435c2276f0dda81" => :mavericks
+    sha1 "28fe8030125af4ebf3906e31f47ada0abc0c63c1" => :mountain_lion
+    sha1 "37946cc05627525cada35dcdcce8def1e2a6feae" => :lion
+  end
+
   devel do
     url 'http://www.swi-prolog.org/download/devel/src/pl-7.1.8.tar.gz'
     sha1 'a6685e5598f11f1cf9127f0b9e281ba00070f047'
