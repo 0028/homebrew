@@ -3,6 +3,12 @@ require 'formula'
 class GstLibav < Formula
   homepage 'http://gstreamer.freedesktop.org'
   url 'http://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.2.3.tar.xz'
+  bottle do
+    sha1 "eba8703f0d407b56be6727fd4721d26a40741472" => :mavericks
+    sha1 "e396e364bd58524db9105b3c934bf451b52db986" => :mountain_lion
+    sha1 "dfc6e408611bd989eb5cc318ac00977a675fb06f" => :lion
+  end
+
   mirror 'http://ftp.osuosl.org/pub/blfs/svn/g/gst-libav-1.2.3.tar.xz'
   sha256 'ebc7fbe10955f40df6ccc4bf689075e7e296205fc7ecd8ff383d43c5cdf5bcd6'
 
