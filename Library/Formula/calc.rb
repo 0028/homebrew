@@ -5,6 +5,12 @@ class Calc < Formula
   url 'http://members.tip.net.au/%7Edbell/programs/calc-3.1.tar.gz'
   sha1 'befa3faf144827fd742bdde22d2e0c5aec50dd4c'
 
+  bottle do
+    sha1 "9ca823482ef2d2304ffe9927f46929d30edbefb8" => :mavericks
+    sha1 "5c25c2ecbf242d5afc71856ea9f0364b53ce5dc9" => :mountain_lion
+    sha1 "739aacacc36d743098a569c31ff04a9b500796f5" => :lion
+  end
+
   depends_on 'readline'
 
   def patches
