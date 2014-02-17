@@ -5,6 +5,12 @@ class Nsq < Formula
   url "https://github.com/bitly/nsq/archive/v0.2.27.tar.gz"
   sha1 "3d8a1d28d76e3ea8e788192b0e9a39800b112791"
 
+  bottle do
+    sha1 "6b5127989337aff15f72b3eab727806e2b4c913f" => :mavericks
+    sha1 "fe8accc1ff6eb9bb1e336cd90c444106393f384b" => :mountain_lion
+    sha1 "9ed1b91c2cccf1c2a0afd5ec76081075479bb93e" => :lion
+  end
+
   depends_on "go" => :build
   depends_on :hg # some package dependencies are mercurial repos
 
