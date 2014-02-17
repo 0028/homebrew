@@ -19,6 +19,16 @@ class Drake < Formula
   end
 
   test do
-    system bin/'drake', '--version'
+    # count the number of lines with 'drake' in all local files
+    (testpath/'Drakefile').write <<-EOS.undent
+      find_lines <- [shell]
+        grep -r 'drake' . > $OUTPUT
+
+      count_drakes_lines <- find_lines
+        cat $INPUT | wc -l > $OUTPUT
+    EOS
+
+    # force run (no user prompt) the full workflow
+    system bin/'drake', '--auto', '+...'
   end
 end
