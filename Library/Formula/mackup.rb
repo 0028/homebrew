@@ -7,6 +7,12 @@ class Mackup < Formula
 
   head 'https://github.com/lra/mackup.git'
 
+  bottle do
+    sha1 "dfac24b26716bce91a74fceba1842086a2c4f4c3" => :mavericks
+    sha1 "5ff033380b74de5c098985b54be877cafa07fea0" => :mountain_lion
+    sha1 "943325894a8fd7e98029fa6352240a4a663b5a1d" => :lion
+  end
+
   depends_on :python
 
   def install
