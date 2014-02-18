@@ -5,6 +5,12 @@ class Hbase < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=hbase/hbase-0.94.16/hbase-0.94.16.tar.gz'
   sha1 '32dd12ccf9ae46ec38e31b5a08900a0c576c874a'
 
+  bottle do
+    sha1 "fd9827073e8ab7c8648f1500dcb41bcd4cb3f681" => :mavericks
+    sha1 "0cf94effc040af1f7dddf46141cb7b4ce46e65b1" => :mountain_lion
+    sha1 "532ae6690ef215360b2c4fa8484b494e80605235" => :lion
+  end
+
   devel do
     url 'http://www.apache.org/dyn/closer.cgi?path=hbase/hbase-0.96.1.1/hbase-0.96.1.1-hadoop1-bin.tar.gz'
     sha1 'b0aba57e9b5a797ec2f9208457d4b02bbbecbb5a'
