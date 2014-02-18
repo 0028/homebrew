@@ -3,6 +3,12 @@ require 'formula'
 class Cython < Formula
   homepage 'http://cython.org'
   url 'http://cython.org/release/Cython-0.20.1.tar.gz'
+  bottle do
+    sha1 "ea970f2a509cebb0d538a31204646fe25912d35f" => :mavericks
+    sha1 "dfa2a226a05c0dd04726409ce6e5c86209828907" => :mountain_lion
+    sha1 "910fe717b3743866940804cf0eb00a86d780610e" => :lion
+  end
+
   mirror 'https://github.com/cython/cython/archive/0.20.1.tar.gz'
   sha1 'e0f2c2094722bada54f24c33f5c792411778ba4f'
 
