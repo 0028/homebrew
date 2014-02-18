@@ -5,6 +5,12 @@ class Freetds < Formula
   url 'http://mirrors.ibiblio.org/freetds/stable/freetds-0.91.tar.gz'
   sha1 '3ab06c8e208e82197dc25d09ae353d9f3be7db52'
 
+  bottle do
+    sha1 "fdfe2b758e57aa39fc151dd33dded0aeddd907a0" => :mavericks
+    sha1 "3375769ef7cc7b42368701b7513a7fd1f694bb56" => :mountain_lion
+    sha1 "81295e845fdb4cd55cc4f4dfbdfa9fca60a07d92" => :lion
+  end
+
   head do
     url 'https://git.gitorious.org/freetds/freetds.git'
 
