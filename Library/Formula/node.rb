@@ -35,6 +35,12 @@ class Node < Formula
   url 'http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz'
   sha1 '2340ec2dce1794f1ca1c685b56840dd515a271b2'
 
+  bottle do
+    sha1 "edfb66863868cc157f5a757b637be00c1830ef89" => :mavericks
+    sha1 "deee993a23bf3603d3cb095dd58b17d145ceb26c" => :mountain_lion
+    sha1 "de8f8d0c308bb21edbd86ffc4d5ae38b76f3ecf9" => :lion
+  end
+
   devel do
     url 'http://nodejs.org/dist/v0.11.11/node-v0.11.11.tar.gz'
     sha1 '65b257ec6584bf339f06f58a8a02ba024e13f283'
