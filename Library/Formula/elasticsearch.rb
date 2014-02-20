@@ -5,6 +5,12 @@ class Elasticsearch < Formula
   url 'https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.0.0.tar.gz'
   sha1 'f190f496502a6608373fca3e8faf65b13dbcc3cd'
 
+  bottle do
+    sha1 "b36020431aad5a21de80b0d8c3576fff4e5826d4" => :mavericks
+    sha1 "9ade9bac64ca58edd13675ba79f9c823a684a31b" => :mountain_lion
+    sha1 "13a9ef095a19042bbe5147dcff0a6c234533a070" => :lion
+  end
+
   head do
     url 'https://github.com/elasticsearch/elasticsearch.git'
     depends_on 'maven'
