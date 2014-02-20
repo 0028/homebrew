@@ -7,6 +7,13 @@ class Boot2docker < Formula
 
   head "https://github.com/boot2docker/boot2docker.git"
 
+  bottle do
+    cellar :any
+    sha1 "4ae8b77466d9826d186e6d52291c87382f6e4e4d" => :mavericks
+    sha1 "a4c5ccfa74fd92991da1d16d9e164786ae453208" => :mountain_lion
+    sha1 "0d070ad33a45821e3fda9aed2924911fd03cae17" => :lion
+  end
+
   depends_on "docker" => :recommended
 
   def install
