@@ -3,6 +3,12 @@ require 'formula'
 class Global < Formula
   homepage 'http://www.gnu.org/software/global/'
   url 'http://ftpmirror.gnu.org/global/global-6.2.10.tar.gz'
+  bottle do
+    sha1 "1ef174b61a46628792a52044402af111233d1c14" => :mavericks
+    sha1 "7ab46a39460ebe0168af6bdf6abac14fdabc4a11" => :mountain_lion
+    sha1 "0d2d82885f3938a17fb372d186e9336d144d4bf6" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/global/global-6.2.10.tar.gz'
   sha1 'aeaa31fec3ab693e75f659ff526c15da7c85c0f9'
 
