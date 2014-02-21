@@ -5,6 +5,12 @@ class Botan < Formula
   url 'http://botan.randombit.net/files/Botan-1.10.7.tbz'
   sha1 '2cb502e6d8ef4dfcccd28d0aca33c7e5e551e566'
 
+  bottle do
+    sha1 "21e692f5057166f62286e700434c82556fda772b" => :mavericks
+    sha1 "c871740e7ed737588935c324a5fe3c6999237cb3" => :mountain_lion
+    sha1 "63c9325bd14cccc4a97b019dbd38fa4efca198e6" => :lion
+  end
+
   option 'enable-debug', 'Enable debug build of Botan'
 
   # upstream ticket: https://bugs.randombit.net/show_bug.cgi?id=267
