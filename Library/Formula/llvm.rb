@@ -5,6 +5,12 @@ class Llvm < Formula
   url 'http://llvm.org/releases/3.4/llvm-3.4.src.tar.gz'
   sha1 '10b1fd085b45d8b19adb9a628353ce347bc136b8'
 
+  bottle do
+    sha1 "b8950e151bd0de298a944d0168309f6ddd6715bf" => :mavericks
+    sha1 "d02bc82957afddddb72ff4d1f40819bf7a74db9a" => :mountain_lion
+    sha1 "c205e0b7fd14e1c08130aafd1aa7a2c746a1378d" => :lion
+  end
+
   resource 'clang' do
     url 'http://llvm.org/releases/3.4/clang-3.4.src.tar.gz'
     sha1 'a6a3c815dd045e9c13c7ae37d2cfefe65607860d'
