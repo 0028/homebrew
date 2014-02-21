@@ -5,6 +5,13 @@ class Tmux < Formula
   url 'http://downloads.sourceforge.net/project/tmux/tmux/tmux-1.9/tmux-1.9.tar.gz'
   sha1 '43197e69716a0430a9e856c13df8ceae31783078'
 
+  bottle do
+    cellar :any
+    sha1 "e9fea637b34eca5a37b057b097d4da8ab38aa249" => :mavericks
+    sha1 "a3720aaacd133774ea6d273a955e639cf8707716" => :mountain_lion
+    sha1 "c942fe7a67593fcfd3f1abc5160a40f7b146639c" => :lion
+  end
+
   head do
     url 'git://git.code.sf.net/p/tmux/tmux-code'
 
