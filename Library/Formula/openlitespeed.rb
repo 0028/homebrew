@@ -6,6 +6,12 @@ class Openlitespeed < Formula
   sha1 "dbdfa1337caeabaca6814e2c12266f5570f14dd7"
   head "https://github.com/litespeedtech/openlitespeed.git"
 
+  bottle do
+    sha1 "34b70e113149ec0e7a3a1ca2a6acb30422102836" => :mavericks
+    sha1 "2b301e38da5f8632f3e32e2122e5fd92c3e05f4d" => :mountain_lion
+    sha1 "836c8dbeb98fa3036e236eb380f6c188b242774b" => :lion
+  end
+
   option "with-debug", 'Compile with support for debug log'
   option "with-spdy", 'Compile with support for SPDY module'
 
