@@ -6,6 +6,12 @@ require 'formula'
 class Cairo < Formula
   homepage 'http://cairographics.org/'
   url 'http://cairographics.org/releases/cairo-1.12.16.tar.xz'
+  bottle do
+    sha1 "fb623b0b06693dfb659c3dc87bd65d0285a9c0ed" => :mavericks
+    sha1 "ae417942cd2b091d183cc02fdb1f70c11d836090" => :mountain_lion
+    sha1 "d71a2ed86188601756a49c1dd7264636d90e3966" => :lion
+  end
+
   mirror 'https://downloads.sourceforge.net/project/machomebrew/mirror/cairo-1.12.16.tar.xz'
   sha256 '2505959eb3f1de3e1841023b61585bfd35684b9733c7b6a3643f4f4cbde6d846'
 
