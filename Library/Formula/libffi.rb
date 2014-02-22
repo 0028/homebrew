@@ -3,6 +3,13 @@ require 'formula'
 class Libffi < Formula
   homepage 'http://sourceware.org/libffi/'
   url 'http://mirrors.kernel.org/sources.redhat.com/libffi/libffi-3.0.13.tar.gz'
+  bottle do
+    cellar :any
+    sha1 "b6a9696c2a58f34f37cf2bca5a652ee6982c3c14" => :mavericks
+    sha1 "421a0108078e79a1e32ccebea8eeadce0d0533db" => :mountain_lion
+    sha1 "c2ad5c7f63e06566494d92baa1e31c0c2190ea05" => :lion
+  end
+
   mirror 'ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz'
   sha1 'f5230890dc0be42fb5c58fbf793da253155de106'
 
