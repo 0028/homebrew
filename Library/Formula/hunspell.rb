@@ -5,6 +5,12 @@ class Hunspell < Formula
   url 'http://downloads.sourceforge.net/hunspell/hunspell-1.3.2.tar.gz'
   sha1 '902c76d2b55a22610e2227abc4fd26cbe606a51c'
 
+  bottle do
+    sha1 "cf6b2dc1d378ca35fdc4c4a940ebbfd3b3b7dda1" => :mavericks
+    sha1 "a8486dc2a2da90721539f5c9381a0acbd16ee0ec" => :mountain_lion
+    sha1 "2385ff979fd749137bf4fceeaf8616742e3541bb" => :lion
+  end
+
   depends_on 'readline'
 
   def patches
