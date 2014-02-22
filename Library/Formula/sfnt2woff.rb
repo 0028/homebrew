@@ -6,6 +6,13 @@ class Sfnt2woff < Formula
   url "https://github.com/ppicazo/sfnt2woff/archive/1.0.tar.gz"
   sha1 "1707f3a1b16339fe5b5c4431d4988e628c184832"
 
+  bottle do
+    cellar :any
+    sha1 "25ee873a50ae1fe7a548ea0276ebfd8de545a61c" => :mavericks
+    sha1 "22a17e4fc19f6571b7e44ef862b31a22c9cd85d8" => :mountain_lion
+    sha1 "479015dcac9dff960a8a398ec26fe5b369f449a0" => :lion
+  end
+
   depends_on "cmake" => :build
 
   def install
