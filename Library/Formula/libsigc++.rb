@@ -5,6 +5,12 @@ class Libsigcxx < Formula
   url 'http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.3/libsigc++-2.3.1.tar.xz'
   sha256 '67d05852b31fdb267c9fdcecd40b046a11aa54d884435e99e3c60dd20cd60393'
 
+  bottle do
+    sha1 "4416b5622b4e2be628aa2a8870496da9960dffbd" => :mavericks
+    sha1 "378e856aaa48840c8da21465a3b1c5057567f113" => :mountain_lion
+    sha1 "a6f47bf5e7748deec2da533875dd507bd1452c35" => :lion
+  end
+
   depends_on 'xz' => :build
   option :cxx11
 
