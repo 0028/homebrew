@@ -5,6 +5,13 @@ class Libsndfile < Formula
   url 'http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz'
   sha1 'e95d9fca57f7ddace9f197071cbcfb92fa16748e'
 
+  bottle do
+    cellar :any
+    sha1 "6ead68a84371ac2bb9d3083a10ecd9c0c7e2183e" => :mavericks
+    sha1 "317d9ef9c1e392e6e40140557db0f6139587a9cf" => :mountain_lion
+    sha1 "28f1865acfe0e18e778b2ba8dcb1770f46f04325" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on :autoconf
   depends_on :automake
