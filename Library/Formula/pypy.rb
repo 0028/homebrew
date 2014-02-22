@@ -6,6 +6,12 @@ class Pypy < Formula
   version '2.2.1'
   sha1 'caf13d377fcdced4bfadd4158ba3d18d520396f3'
 
+  bottle do
+    sha1 "68348762bffe715b63c8382b6b567ce8ba0867cc" => :mavericks
+    sha1 "390a7e0c69bd71ee610432476a559bfd2003d777" => :mountain_lion
+    sha1 "10d77c59d9f6eb872f104de692474447514ba2ab" => :lion
+  end
+
   depends_on :arch => :x86_64
 
   resource 'setuptools' do
