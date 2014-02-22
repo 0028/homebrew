@@ -5,6 +5,13 @@ class Libsamplerate < Formula
   url 'http://www.mega-nerd.com/SRC/libsamplerate-0.1.8.tar.gz'
   sha1 'e5fe82c4786be2fa33ca6bd4897db4868347fe70'
 
+  bottle do
+    cellar :any
+    sha1 "e94ea4776f3da3b76c3c6e8da19b4a67a18f2b95" => :mavericks
+    sha1 "4c1c8fe9dc4e518503dcf4dba6a1dfddf26ce1e3" => :mountain_lion
+    sha1 "2ef6feed8e505e0d0650b870930069309c7c55ed" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'libsndfile' => :optional
   depends_on 'fftw' => :optional
