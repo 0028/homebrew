@@ -7,7 +7,9 @@ class Grenchman < Formula
 
   bottle do
     cellar :any
-    sha1 "a9e9a5fc87da881ee9c004a3468d1eb7fba69156" => :lion
+    sha1 "761c7423c51c4a4ce21cc5770bce7304147cfe4f" => :mavericks
+    sha1 "26f5fb25677ad891dd044542c451b5a50dc2e9ef" => :mountain_lion
+    sha1 "76480988b5a950b6dd03884b51621478ba22dc7d" => :lion
   end
 
   def install
