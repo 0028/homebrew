@@ -7,6 +7,13 @@ class Concurrencykit < Formula
 
   head 'git://git.concurrencykit.org/ck.git'
 
+  bottle do
+    cellar :any
+    sha1 "c1eb4c58bb0555e98936c7b0b22defcbc492f2e3" => :mavericks
+    sha1 "9429b0439a715fc034a92df852a81775d3521b74" => :mountain_lion
+    sha1 "59e30ab2778264917a732ce13bf3e5e3c1dcae7b" => :lion
+  end
+
   def install
     system "./configure", "--prefix=#{prefix}"
     system "make", "CC=#{ENV.cc}"
