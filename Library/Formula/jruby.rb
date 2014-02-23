@@ -5,6 +5,13 @@ class Jruby < Formula
   url 'http://jruby.org.s3.amazonaws.com/downloads/1.7.10/jruby-bin-1.7.10.tar.gz'
   sha1 '5ec267dd3ddaa6e27801692a7080204067662289'
 
+  bottle do
+    cellar :any
+    sha1 "b9faea937120f7d9cdf1ef76232148759985a033" => :mavericks
+    sha1 "4fd32e6d5212bc73765d8b984da23b12e28b39e9" => :mountain_lion
+    sha1 "a78e7a193212e3006676182a218b60219e335ec5" => :lion
+  end
+
   def install
     # Remove Windows files
     rm Dir['bin/*.{bat,dll,exe}']
