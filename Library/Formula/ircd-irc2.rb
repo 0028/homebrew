@@ -6,6 +6,12 @@ class IrcdIrc2 < Formula
   sha1 '1ab317daeac324cc3f10fe939588de04d52e47c5'
   version '2.11.2p3'
 
+  bottle do
+    sha1 "bc27bd7c34becc3d4deefece228d0d69cf628a46" => :mavericks
+    sha1 "31e2cf0b22c4466d609a4baf756ceca7515d7423" => :mountain_lion
+    sha1 "90276cdc57d6f9b2ff729ce7e16cddc2258109eb" => :lion
+  end
+
   def default_ircd_conf
     <<-EOS.undent
       # M-Line
