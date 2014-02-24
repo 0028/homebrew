@@ -6,6 +6,12 @@ class AndroidSdk < Formula
   version '22.3'
   sha1 '547ea51c4aa61d623a4823d0b635d3b66b6c9329'
 
+  bottle do
+    sha1 "297e9197ff01d1ea089d14e28774fd170f37475d" => :mavericks
+    sha1 "0e9d640ba2cf509a16a14bd4d0970afbac99d961" => :mountain_lion
+    sha1 "0c1f8a3ae309975f5834cdb10ce41758452fe132" => :lion
+  end
+
   conflicts_with 'android-platform-tools',
     :because => "the Platform-tools are be installed as part of the SDK."
 
