@@ -5,6 +5,13 @@ class Maven < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=maven/maven-3/3.2.1/binaries/apache-maven-3.2.1-bin.tar.gz'
   sha1 '40e1bf0775fd3ebcac1dbeb61153b871b86b894f'
 
+  bottle do
+    cellar :any
+    sha1 "dab8072b6b62be971ba47becba314abad72620a6" => :mavericks
+    sha1 "5ef7fd27b334699f3d66ca8f19c8bc3a813716c8" => :mountain_lion
+    sha1 "260b3a52f0ab5932e5101741e46f6a8596231a4d" => :lion
+  end
+
   def install
     # Remove windows files
     rm_f Dir["bin/*.bat"]
