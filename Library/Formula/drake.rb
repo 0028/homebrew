@@ -22,7 +22,7 @@ class Drake < Formula
   end
 
   test do
-    # count the number of lines with 'drake' in all local files
+    # count lines test
     (testpath/'Drakefile').write <<-EOS.undent
       find_lines <- [shell]
         echo 'drake' > $OUTPUT
