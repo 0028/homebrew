@@ -5,6 +5,13 @@ class Libmemcached < Formula
   url 'https://launchpad.net/libmemcached/1.0/1.0.17/+download/libmemcached-1.0.17.tar.gz'
   sha1 '1023bc8c738b1f5b8ea2cd16d709ec6b47c3efa8'
 
+  bottle do
+    cellar :any
+    sha1 "6488c6c7e9e2c6009601406eb7ada8fb116219c7" => :mavericks
+    sha1 "b88270eafad8b2cc85d7d9f37d46f83169e3972c" => :mountain_lion
+    sha1 "390559d8e49ac3ee790fafaedaa7df493b41c988" => :lion
+  end
+
   option 'with-sasl', "Build with sasl support"
 
   if build.with? "sasl"
