@@ -10,14 +10,14 @@ class Drake < Formula
 
   def install
     libexec.install Dir['*']
-    (bin + 'drake').write <<-EOS.undent
+    (bin/'drake').write <<-EOS.undent
       #!/usr/bin/env bash
       cmd='java'
       # use drip if available
       if [[ -x `which drip` ]]; then
         cmd='drip'
       fi
-      exec ${cmd} -jar #{libexec}/drake.jar "$*"
+      exec ${cmd} -jar #{libexec}/drake.jar "$@"
     EOS
   end
 
@@ -25,13 +25,13 @@ class Drake < Formula
     # count the number of lines with 'drake' in all local files
     (testpath/'Drakefile').write <<-EOS.undent
       find_lines <- [shell]
-        grep -r 'drake' . > $OUTPUT
+        echo 'drake' > $OUTPUT
 
       count_drakes_lines <- find_lines
         cat $INPUT | wc -l > $OUTPUT
     EOS
 
     # force run (no user prompt) the full workflow
-    system bin/'drake', '--auto', '+...'
+    system bin/'drake', '--auto', "--workflow=#{testpath/'Drakefile'}", '+...'
   end
 end
