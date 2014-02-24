@@ -2,20 +2,23 @@ require 'formula'
 
 class Drake < Formula
   homepage 'https://github.com/Factual/drake'
-  url 'https://api.github.com/repos/Factual/drake/tarball/7119b1c7ae6feeef919a74090da696005fd70875'
-  sha1 '353a08b2b0b1e135f07522e91e64e9839a4f742c'
-  version '0.1.4'
+  url 'https://github.com/Factual/drake/releases/download/v0.1.5/drake.jar'
+  sha1 '21d0db8e34ed1d8b406ed7c2793f8b6e0f6ce191'
+  version '0.1.5'
 
-  depends_on 'leiningen' => :build
   depends_on 'drip' => :optional
 
   def install
     libexec.install Dir['*']
-    bin.write_exec_script Dir["#{libexec}/bin/*"]
-
-    Dir.chdir(libexec) do
-      system 'lein uberjar'
-    end
+    (bin + 'drake').write <<-EOS.undent
+      #!/usr/bin/env bash
+      cmd='java'
+      # use drip if available
+      if [[ -x `which drip` ]]; then
+        cmd='drip'
+      fi
+      exec ${cmd} -jar #{libexec}/drake.jar "$*"
+    EOS
   end
 
   test do
