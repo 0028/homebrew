@@ -5,6 +5,12 @@ class GambitScheme < Formula
   url 'http://www.iro.umontreal.ca/~gambit/download/gambit/v4.7/source/gambc-v4_7_2.tgz'
   sha256 'c09597fa423602eb9d06b1ab3c1a63cd9c612b89f7f6d718f2c0a96da4d4ac1a'
 
+  bottle do
+    sha1 "561fdb8fb569f3dd12ef424aaeee915e867aaf68" => :mavericks
+    sha1 "ccc6e31cb79106cdbfcbac6a204f58efd31c507f" => :mountain_lion
+    sha1 "a853730a2b6e5f62e6f13f2516abffa58ae296f2" => :lion
+  end
+
   conflicts_with 'ghostscript', :because => 'both install `gsc` binaries'
   conflicts_with 'scheme48', :because => 'both install `scheme-r5rs` binaries'
 
