@@ -5,6 +5,13 @@ class Makensis < Formula
   url 'http://downloads.sourceforge.net/project/nsis/NSIS%202/2.46/nsis-2.46-src.tar.bz2'
   sha1 '2cc9bff130031a0b1d76b01ec0a9136cdf5992ce'
 
+  bottle do
+    cellar :any
+    sha1 "41331a6eb7a03bc141d8014bbfec6f50ec18875b" => :mavericks
+    sha1 "edc4f104f4eeb60b86ce1b7eb39174450a43154d" => :mountain_lion
+    sha1 "8c22efa0314e031ee3c84ab46804bad180d71a61" => :lion
+  end
+
   depends_on 'scons' => :build
 
   # scons appears to have no builtin way to override the compiler selection,
