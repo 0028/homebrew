@@ -6,6 +6,12 @@ class Mahout < Formula
   url 'http://apache.cs.utah.edu/mahout/0.9/mahout-distribution-0.9.tar.gz'
   sha1 'b0d192a33dcc3f00439bf2ffbc313c6ef47510c3'
 
+  bottle do
+    sha1 "dc5ea84dffc2292a0d937a79674038f25e8ea0b8" => :mavericks
+    sha1 "5f362de892e3443d78d236f58034b40f3fd0cd2e" => :mountain_lion
+    sha1 "7961be14ce3f15a7939a4fb815bec92e9f8ec858" => :lion
+  end
+
   depends_on 'maven' => :build
   depends_on 'hadoop'
 
