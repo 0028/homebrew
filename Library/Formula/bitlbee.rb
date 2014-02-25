@@ -5,6 +5,12 @@ class Bitlbee < Formula
   url 'http://get.bitlbee.org/src/bitlbee-3.2.1.tar.gz'
   sha1 '954471ab87206826c072f31b3def40a1be5a78f5'
 
+  bottle do
+    sha1 "f48ef6d2204dc2796ffefbc9ae78d1d9c7f9833a" => :mavericks
+    sha1 "3cf4d85b38cc335504860820c3782347e49959bb" => :mountain_lion
+    sha1 "f25b8b5b6c8913286d99ebd8c04b4c2ef71ff30f" => :lion
+  end
+
   option 'with-finch', "Use finch/libpurple for all communication with instant messaging networks"
   option 'with-libotr', "Build with otr (off the record) support"
 
