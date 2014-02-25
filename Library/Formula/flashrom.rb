@@ -7,6 +7,13 @@ class Flashrom < Formula
 
   head "svn://flashrom.org/flashrom/trunk"
 
+  bottle do
+    cellar :any
+    sha1 "dedb09849b3ce06354a7005c4a7db5e68581901a" => :mavericks
+    sha1 "d7b227f9fef703204deea0696dac0b6fab16ec75" => :mountain_lion
+    sha1 "82c09c6be50e8b59b7e5b921a537132bbf29acde" => :lion
+  end
+
   depends_on "libusb-compat"
   depends_on "libftdi0"
 
