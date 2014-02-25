@@ -20,10 +20,10 @@ class Qt < Formula
   head 'git://gitorious.org/qt/qt.git', :branch => '4.8'
 
   bottle do
-    revision 4
-    sha1 '446f9ee06721c227b7b86f7c82bb84ffeca00379' => :mavericks
-    sha1 '9014726e304c037401b788499fbc0e9bc1d332f8' => :mountain_lion
-    sha1 'bfd7b572a3889cf2e20491af82186d5d42740315' => :lion
+    revision 5
+    sha1 "3bdcd9ba157bee06b6ae64fa5afd2ece692f3afe" => :mavericks
+    sha1 "b08fa6e4dbc385ac0b31ce1f44f65441f73dabaf" => :mountain_lion
+    sha1 "e42e100512ea1e5bdb0e043e7abceb1b444c472e" => :lion
   end
 
   option :universal
