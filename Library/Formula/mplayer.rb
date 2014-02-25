@@ -5,6 +5,12 @@ class Mplayer < Formula
   url 'http://www.mplayerhq.hu/MPlayer/releases/MPlayer-1.1.1.tar.xz'
   sha1 'ba2f3bd1442d04b17b0143680850273d928689c1'
 
+  bottle do
+    sha1 "4eac263d8fa0c137f6556581fc5c317ea1bc7b5f" => :mavericks
+    sha1 "08f3f43c4fead52171cb85a96a95e9db3ac5db7f" => :mountain_lion
+    sha1 "092960f4d162c143385d595099999dd3ca9255bb" => :lion
+  end
+
   head 'svn://svn.mplayerhq.hu/mplayer/trunk', :using => StrictSubversionDownloadStrategy
 
   option 'with-x', 'Build with X11 support'
