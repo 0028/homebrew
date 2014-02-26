@@ -7,6 +7,12 @@ class Pce < Formula
 
   head 'git://git.hampa.ch/pce.git'
 
+  bottle do
+    sha1 "c89b06761c051588f1391ac4ac889c7a0c7dcb64" => :mavericks
+    sha1 "8f2b647133368c2fbbee7a5d3f23ece67308afaf" => :mountain_lion
+    sha1 "d1d203eebef7c8bdf7598eff59a646ef2b065a9d" => :lion
+  end
+
   devel do
     url 'http://www.hampa.ch/pub/pce/pre/pce-20140222-4b05f0c.tar.gz'
     sha1 '980bf6cf02c074d3a70b9dbb262358e0518461b8'
