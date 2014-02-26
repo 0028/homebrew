@@ -7,6 +7,12 @@ class Dub < Formula
 
   head 'https://github.com/rejectedsoftware/dub.git'
 
+  bottle do
+    sha1 "b3fe8357d14d28d5bccf28e13721b8b1955fd80e" => :mavericks
+    sha1 "523a8774055572b538b5b9bb66a12b631ae1baf6" => :mountain_lion
+    sha1 "5bf2eabebf6132d070834abdce8944ad80fbde24" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'dmd'  => :build
 
