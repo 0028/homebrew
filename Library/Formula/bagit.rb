@@ -5,6 +5,13 @@ class Bagit < Formula
   url 'https://github.com/LibraryOfCongress/bagit-java/releases/download/bagit-4.8.1/bagit-4.8.1-bin.zip'
   sha1 'a5f42372dcbe75f44d9181dd8edc8e6f18b68ec9'
 
+  bottle do
+    cellar :any
+    sha1 "24805792d9159134aaad7ed254d5edb24500223a" => :mavericks
+    sha1 "9173c6dccccd028e436ddb4515c6fea9b82d4cb3" => :mountain_lion
+    sha1 "385d92e8f9351eee6808499ff52dbd57971866c0" => :lion
+  end
+
   def install
     inreplace "conf/log4j.properties", "${app.home}/logs", "#{var}/log/bagit"
     (var/'log/bagit').mkpath
