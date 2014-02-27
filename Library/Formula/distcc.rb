@@ -15,6 +15,12 @@ class Distcc < Formula
   url 'http://distcc.googlecode.com/files/distcc-3.2rc1.tar.gz'
   sha1 '7cd46fe0926a3a859a516274e6ae59fa8ba0262d'
 
+  bottle do
+    sha1 "4b70df69584b1a5c7a75004c7d4c34bba2e6377e" => :mavericks
+    sha1 "e1dd182d5babd70d4e966f7744d4f57460788024" => :mountain_lion
+    sha1 "1d043b2f0c43310c10466d6ecbcb97fbb5f8cb1e" => :lion
+  end
+
   depends_on PythonWithoutPPC
 
   def install
