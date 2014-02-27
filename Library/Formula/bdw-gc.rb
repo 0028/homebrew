@@ -7,9 +7,10 @@ class BdwGc < Formula
 
   bottle do
     cellar :any
-    sha1 "267d3e346e5d8a9fff781ee58a7aa3b33e31b3db" => :mavericks
-    sha1 "a92904c2e10891252bb212eb4a438094a36de8c8" => :mountain_lion
-    sha1 "ecc4b3bded24d5a48255c4c4d5295680d5befcf2" => :lion
+    revision 1
+    sha1 "877a124051a0be37bce59d01f857ba4af54ec647" => :mavericks
+    sha1 "4980150d40f5bac20673400471f0ecd2872b5e85" => :mountain_lion
+    sha1 "b12bfa6d48c891fd25e8086aedb735fc3c93611e" => :lion
   end
 
   option :universal
