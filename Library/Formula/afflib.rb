@@ -5,6 +5,13 @@ class Afflib < Formula
   url 'https://github.com/simsong/AFFLIBv3/archive/v3.7.4.tar.gz'
   sha1 '589dae6f8439e97ab080026701cd0caa0636ac22'
 
+  bottle do
+    cellar :any
+    sha1 "a457e36be57fdf944e868698bcd0023dcd46c99d" => :mavericks
+    sha1 "5e2ef7725039ed849593a296ef5951319be50d4f" => :mountain_lion
+    sha1 "7f4502e9035397a67a33c5dbfb43c46bce7b870a" => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
   depends_on :libtool
