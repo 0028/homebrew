@@ -6,6 +6,12 @@ class Tg < Formula
   url 'https://github.com/vysheng/tg/archive/75194f4552406098ff09c761a8434849b38d8236.zip'
   sha1 '57da7dfc9c8596f49f0a07799eef4d067cf87378'
 
+  bottle do
+    sha1 "26aa553a69f0cb7eed5da2f74d5c0bd3c1ff108f" => :mavericks
+    sha1 "dc18ad27a1da16d06d8edda98934c28e74b56b05" => :mountain_lion
+    sha1 "cd223e6af5e2a2eff6432e850e93637d2e608342" => :lion
+  end
+
   head 'https://github.com/vysheng/tg.git', :branch => 'master'
 
   depends_on 'libconfig'
