@@ -5,6 +5,12 @@ class Solr < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=lucene/solr/4.7.0/solr-4.7.0.tgz'
   sha1 '5599a33f6d7c46251d87ff226709e759572ade4b'
 
+  bottle do
+    sha1 "e19ef67df64d23835f208486461e16fa01ece942" => :mavericks
+    sha1 "572d6d4aacdf3ce1ef7419ad97fb79e2667d112e" => :mountain_lion
+    sha1 "5620f224a64dae591333dcfaf4389943053f8961" => :lion
+  end
+
   def script; <<-EOS.undent
     #!/bin/sh
     if [ -z "$1" ]; then
