@@ -4,6 +4,13 @@ class Upx < Formula
   homepage 'http://upx.sourceforge.net'
   url 'http://upx.sourceforge.net/download/upx-3.91-src.tar.bz2'
   sha1 'da962c0affb27eae11aa9b6fbd751c3699717b36'
+  bottle do
+    cellar :any
+    sha1 "24261c6475aa2fabdeac173da0deb6ab438c3054" => :mavericks
+    sha1 "8af75a7682c42bb9f07f02265eb842e41189cf16" => :mountain_lion
+    sha1 "82794664e213be80fb0bf52276205dcd3b85670f" => :lion
+  end
+
   head 'https://www.pysol.org:4443/hg/upx.hg', :using => :hg
 
   depends_on 'ucl'
