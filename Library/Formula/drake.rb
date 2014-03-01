@@ -6,18 +6,13 @@ class Drake < Formula
   sha1 '21d0db8e34ed1d8b406ed7c2793f8b6e0f6ce191'
   version '0.1.5'
 
-  depends_on 'drip' => :optional
-
   def install
     libexec.install Dir['*']
+
     (bin/'drake').write <<-EOS.undent
       #!/usr/bin/env bash
-      cmd='java'
-      # use drip if available
-      if [[ -x `which drip` ]]; then
-        cmd='drip'
-      fi
-      exec ${cmd} -jar #{libexec}/drake.jar "$@"
+
+      java -jar #{libexec}/drake.jar "$@"
     EOS
   end
 
