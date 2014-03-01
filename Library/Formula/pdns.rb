@@ -6,6 +6,12 @@ class Pdns < Formula
   url 'http://downloads.powerdns.com/releases/pdns-3.3.1.tar.gz'
   sha1 '555862bf9635d1dcab2c4f3b7569bdd8212ef67f'
 
+  bottle do
+    sha1 "58434a842a19d4f3ecf70baea57b3817e813a8bb" => :mavericks
+    sha1 "b2939793ac9bf58c00cf3c45ac048fe6bb9909f2" => :mountain_lion
+    sha1 "41551644029d371c8686b8eb384581b2114a27ab" => :lion
+  end
+
   option 'pgsql', 'Enable the PostgreSQL backend'
 
   depends_on 'pkg-config' => :build
