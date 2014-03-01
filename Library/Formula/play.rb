@@ -6,6 +6,13 @@ class Play < Formula
   url 'http://downloads.typesafe.com/play/2.2.2/play-2.2.2.zip'
   sha1 '9a2fa3c6b9ee36375d814d775bec4335e427dcd2'
 
+  bottle do
+    cellar :any
+    sha1 "a732960915e95d05badcc5296626ccdfc808015b" => :mavericks
+    sha1 "9c2fc60def65e0f444e5e86bd5f18b1a91cd6fef" => :mountain_lion
+    sha1 "091d42394633ff4f4b0fc40e1a7f3a62f036547c" => :lion
+  end
+
   conflicts_with 'sox', :because => 'both install `play` binaries'
 
   devel do
