@@ -7,6 +7,13 @@ class Ifuse < Formula
 
   head 'http://cgit.sukimashita.com/ifuse.git'
 
+  bottle do
+    cellar :any
+    sha1 "8807b68ceed6630cc0b60145657660258ad8fc92" => :mavericks
+    sha1 "e2fb2d73734ed7050950f29b63035d547a0ec155" => :mountain_lion
+    sha1 "2ab650a8602ceff87b43199ee2ad1d4405506afd" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on :autoconf
   depends_on :automake
