@@ -6,6 +6,12 @@ class Drake < Formula
   sha1 '21d0db8e34ed1d8b406ed7c2793f8b6e0f6ce191'
   version '0.1.5'
 
+  bottle do
+    sha1 "31cbb1aed286c6d676edbd8e40989549f9c030e9" => :mavericks
+    sha1 "18269e967f16d8172163b5e6eb375ea95b189cb5" => :mountain_lion
+    sha1 "ef875f0d766da6ed8bbd5d885dc80159ffe39a8d" => :lion
+  end
+
   def install
     libexec.install Dir['*']
     bin.write_jar_script libexec/'drake.jar', 'drake'
