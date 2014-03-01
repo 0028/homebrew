@@ -8,12 +8,7 @@ class Drake < Formula
 
   def install
     libexec.install Dir['*']
-
-    (bin/'drake').write <<-EOS.undent
-      #!/usr/bin/env bash
-
-      java -jar #{libexec}/drake.jar "$@"
-    EOS
+    bin.write_jar_script libexec/'drake.jar', 'drake'
   end
 
   test do
