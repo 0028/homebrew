@@ -5,6 +5,12 @@ class Yafc < Formula
   url 'http://www.yafc-ftp.com/upload/yafc-1.3.2.tar.xz'
   sha1 'a4cd5518b84cd40c4503f2e022ba946a8bd5484a'
 
+  bottle do
+    sha1 "c913295ee0dc6472404282735b0e5f5e0ce690f3" => :mavericks
+    sha1 "92aecb7f0d26a338807169d3d439954cf21bfefa" => :mountain_lion
+    sha1 "f2edfbdb946ba7247fde08085005c81250270f0e" => :lion
+  end
+
   depends_on 'xz' => :build
   depends_on 'readline'
   depends_on 'libssh' => :recommended
