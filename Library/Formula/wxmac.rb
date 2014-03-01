@@ -18,6 +18,12 @@ class Wxmac < Formula
   url 'http://downloads.sourceforge.net/project/wxpython/wxPython/3.0.0.0/wxPython-src-3.0.0.0.tar.bz2'
   sha1 '48451763275cfe4e5bbec49ccd75bc9652cba719'
 
+  bottle do
+    sha1 "fc4343e5660bd0c913a0e151445187a804a2cb50" => :mavericks
+    sha1 "c4c60cf0b271263b256eadf78e88f181c0a709d8" => :mountain_lion
+    sha1 "09572a6cd0ebe026a2b2ebddc7f4e83715ecc241" => :lion
+  end
+
   depends_on :python => :recommended
   depends_on FrameworkPython if build.with? "python"
 
