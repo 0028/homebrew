@@ -11,10 +11,6 @@ class CsvFix < Formula
   end
 
   test do
-    IO.popen("#{bin}/csvfix trim", "w+") do |pipe|
-      pipe.write "foo , bar \n"
-      pipe.close_write
-      assert_equal %{"foo","bar"\n}, pipe.read
-    end
+    assert_equal %{"foo","bar"\n}, pipe("#{bin}/csvfix trim", "foo , bar \n")
   end
 end

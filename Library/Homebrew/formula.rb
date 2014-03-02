@@ -534,6 +534,8 @@ class Formula
   def test
     require 'test/unit/assertions'
     extend(Test::Unit::Assertions)
+    require 'formula_assertions'
+    extend(Homebrew::Assertions)
     # Adding the used options allows us to use `build.with?` inside of tests
     tab = Tab.for_name(name)
     tab.used_options.each { |opt| build.args << opt unless build.has_opposite_of? opt }
