@@ -6,6 +6,13 @@ class Jsmin < Formula
   version '2013-03-29'
   sha1 '8330fa182c283d5cc3fefcfb412bba662c0e2ee9'
 
+  bottle do
+    cellar :any
+    sha1 "2d29fc3d461203449e7ea7e22453990d9d375a86" => :mavericks
+    sha1 "02334ec57399c41e2fba122a4f0202ffb775b38f" => :mountain_lion
+    sha1 "bb64e9e36cc273aa5019e6f3d07ae5c987eaae2d" => :lion
+  end
+
   def install
     system ENV.cc, 'jsmin.c', '-o', 'jsmin'
     bin.install 'jsmin'
