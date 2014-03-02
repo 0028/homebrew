@@ -5,6 +5,13 @@ class Aamath < Formula
   url 'http://fuse.superglue.se/aamath/aamath-0.3.tar.gz'
   sha1 'dc68abaf2131c73ddb1a520c95d65596e30f1b0a'
 
+  bottle do
+    cellar :any
+    sha1 "6678a9772f694cb77de3cddc3dae37775855b1cc" => :mavericks
+    sha1 "c9f0ac8b14c633c837e19819c99bcdec72f237b9" => :mountain_lion
+    sha1 "a584be512c5f8a966e2c5c0719226079f9c8b99e" => :lion
+  end
+
   def patches; DATA; end
 
   def install
