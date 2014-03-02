@@ -6,6 +6,12 @@ class Hexchat < Formula
   sha1 'f19248e8d255cf463d5c0eba3e3df02a431f3911'
   head 'https://github.com/hexchat/hexchat.git'
 
+  bottle do
+    sha1 "d8a8847b01b408dffa78e352a5fbc94e72a86157" => :mavericks
+    sha1 "b204448c82d50479b968807f446673c4fd9ed6c9" => :mountain_lion
+    sha1 "0c2165775c60870a97ba8896b70038c40e7acea1" => :lion
+  end
+
   depends_on :macos => :lion
 
   depends_on 'pkg-config' => :build
