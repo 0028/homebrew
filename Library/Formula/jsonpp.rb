@@ -6,6 +6,13 @@ class Jsonpp < Formula
   version '1.2.0'
   sha1 '422d5b2cefa92923d2fbef9afe1324d72134509e'
 
+  bottle do
+    cellar :any
+    sha1 "85627d844425664ad4ae7169a7d6c13c6f0c6d80" => :mavericks
+    sha1 "423a581d2dfeb980bb565b266c8f8517b3735248" => :mountain_lion
+    sha1 "864955a7517816d9e5f1535674085c2d12346de0" => :lion
+  end
+
   def install
     bin.install 'jsonpp'
   end
