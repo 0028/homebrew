@@ -5,6 +5,13 @@ class Podofo < Formula
   url 'https://downloads.sourceforge.net/podofo/podofo-0.9.2.tar.gz'
   sha1 '8a6e27e17e0ed9f12e1a999cff66eae8eb97a4bc'
 
+  bottle do
+    cellar :any
+    sha1 "9f116439fbef7fd62706217f84de73e738f160ec" => :mavericks
+    sha1 "c100369badf3bc725e446d4dd04fed1a6fa85594" => :mountain_lion
+    sha1 "42b2ef80a03cf6525418d209c34b2ab298f4aa31" => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on :libpng
   depends_on :freetype
