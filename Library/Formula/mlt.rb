@@ -5,6 +5,12 @@ class Mlt < Formula
   url 'http://downloads.sourceforge.net/mlt/mlt/mlt-0.9.0.tar.gz'
   sha1 '76bf18f4442801fae963c5a676d6626e383d1617'
 
+  bottle do
+    sha1 "9915c559bd8b6d2610ebecbffc0b8e821d5abfef" => :mavericks
+    sha1 "69c75e496fc38bb23108aea857bb7443c7023866" => :mountain_lion
+    sha1 "e32e03465db58ca66f76dec993d1c99a03100198" => :lion
+  end
+
   depends_on 'pkg-config' => :build
 
   depends_on 'atk'
