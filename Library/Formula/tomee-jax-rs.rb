@@ -6,6 +6,13 @@ class TomeeJaxRs < Formula
   version '1.6.0'
   sha1 '1db7d705012f891e9ba7d6487be4fe93ea794ffb'
 
+  bottle do
+    cellar :any
+    sha1 "65f1efca466777bcca1199cf96c2951e727cea0e" => :mavericks
+    sha1 "58a3632dd8f1a0308a2af431cc1a96be5121d99d" => :mountain_lion
+    sha1 "7f4516dfb2dd88fa93d7a552fbbdae65697aff62" => :lion
+  end
+
   # Keep log folders
   skip_clean 'libexec'
 
