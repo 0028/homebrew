@@ -6,6 +6,13 @@ class TomeePlus < Formula
   version '1.6.0'
   sha1 'f6751c837c7dc7e60b72ea84b1f425f71d79b926'
 
+  bottle do
+    cellar :any
+    sha1 "4e76c81396a8b94f62f1a9b101421eace6d57bb9" => :mavericks
+    sha1 "4509cec0494ac05b3d0ff321243fb2a84758bf7f" => :mountain_lion
+    sha1 "6eb94af166961aa8be16501e7292a0c98b1b1df7" => :lion
+  end
+
   # Keep log folders
   skip_clean 'libexec'
 
