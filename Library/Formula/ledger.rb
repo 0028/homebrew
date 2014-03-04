@@ -5,6 +5,13 @@ class Ledger < Formula
 
   stable do
     url 'https://github.com/downloads/ledger/ledger/ledger-2.6.3.tar.gz'
+  bottle do
+    cellar :any
+    sha1 "b85580f4394f629a7ad232f45373f6fede1c036b" => :mavericks
+    sha1 "912c2f66732bb7166b12c220ddf8ce45e6fe3aae" => :mountain_lion
+    sha1 "485f7f0e0327a4e252cc6c2ae9de4a9981ca61a3" => :lion
+  end
+
     sha1 '5b8e7d8199acb116f13720a5a469fff1f14b4041'
 
     depends_on 'gettext'
