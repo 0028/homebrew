@@ -5,6 +5,12 @@ class Exim < Formula
   url 'http://ftp.exim.org/pub/exim/exim4/exim-4.82.tar.gz'
   sha1 'a473782ea9cd17e27798a2971c243973df999a71'
 
+  bottle do
+    sha1 "e3239bf5d71be0859d515d6e07cf5a3a0a450877" => :mavericks
+    sha1 "ddcd0c3cf453fd923ed14bb5aa8583ab25c91a88" => :mountain_lion
+    sha1 "770ef8ebc3861993b2cb82e0ea432a83c6e0c0e3" => :lion
+  end
+
   option 'support-maildir', 'Support delivery in Maildir format'
 
   depends_on 'pcre'
