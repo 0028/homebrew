@@ -5,6 +5,12 @@ class Openconnect < Formula
   url 'ftp://ftp.infradead.org/pub/openconnect/openconnect-5.03.tar.gz'
   sha1 '40344fc910a19c8781a79204808f1229acaee2a4'
 
+  bottle do
+    sha1 "14395e569e4bb130f6613adef2930b0cf079c311" => :mavericks
+    sha1 "3d6d1159c6e26813bb6ba7cdad05393f009297c6" => :mountain_lion
+    sha1 "cccbbe5028ad353dc5aa5082f1f5a88511a754e4" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'gettext'
 
