@@ -5,6 +5,12 @@ class Ruby < Formula
   url 'http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.1.tar.bz2'
   sha256 '96aabab4dd4a2e57dd0d28052650e6fcdc8f133fa8980d9b936814b1e93f6cfc'
 
+  bottle do
+    sha1 "555593b038a332d41432cc4fd585d1a1f4978fb9" => :mavericks
+    sha1 "53c15bd56910e513031608f8611bfd80de6af505" => :mountain_lion
+    sha1 "2b098922ec5a1f1af06dc85c0f833e0a5918a34d" => :lion
+  end
+
   head do
     url 'http://svn.ruby-lang.org/repos/ruby/trunk/'
     depends_on :autoconf
