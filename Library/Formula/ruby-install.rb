@@ -7,6 +7,13 @@ class RubyInstall < Formula
 
   head 'https://github.com/postmodern/ruby-install.git'
 
+  bottle do
+    cellar :any
+    sha1 "98a1c4be779f68aadf122b09ecd959e801d515ba" => :mavericks
+    sha1 "f9e6d2d9bc2bb0eed351ab8b1770d93e02336548" => :mountain_lion
+    sha1 "f6a9ad1bc65c7208975de72d6b9bde7906d2933c" => :lion
+  end
+
   def install
     system 'make', 'install', "PREFIX=#{prefix}"
   end
