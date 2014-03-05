@@ -5,6 +5,13 @@ class Libharu < Formula
   url 'http://libharu.org/files/libharu-2.2.1.tar.bz2'
   sha1 'bfea7d9df3fb6a112340d0d54731f62f53b26d2f'
 
+  bottle do
+    cellar :any
+    sha1 "6a258d688fcfb23e4073799d047e9e7333f9675b" => :mavericks
+    sha1 "11aa0f24e5ee7663a660e55383b37ba2532e007d" => :mountain_lion
+    sha1 "4f4e697af59a7d03994c20af9c05d21d04deb43c" => :lion
+  end
+
   depends_on :libpng
 
   def patches
