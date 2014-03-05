@@ -5,6 +5,12 @@ class Gdal < Formula
   url 'http://download.osgeo.org/gdal/1.10.1/gdal-1.10.1.tar.gz'
   sha1 'b4df76e2c0854625d2bedce70cc1eaf4205594ae'
 
+  bottle do
+    sha1 "54775afed20bef25da68fc99069fcf31319b308c" => :mavericks
+    sha1 "77f7807369a7c127ccab776fa6a93e1b978227d9" => :mountain_lion
+    sha1 "7c59ddf480720d944a1dd2d62e7a2673b8b75879" => :lion
+  end
+
   head do
     url 'https://svn.osgeo.org/gdal/trunk/gdal'
     depends_on 'doxygen' => :build
