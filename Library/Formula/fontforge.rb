@@ -5,6 +5,12 @@ class Fontforge < Formula
 
   stable do
     url "https://github.com/fontforge/fontforge/archive/2.0.20140101.tar.gz"
+  bottle do
+    sha1 "a38bccb0ed7f05c16facb3d3fb936fb489f27478" => :mavericks
+    sha1 "65a116f1806fcedc7d11d2009eea1d334d158936" => :mountain_lion
+    sha1 "217c3be8ed704c9427c33dfbedaf348f7c7eabe3" => :lion
+  end
+
     sha1 "abce297e53e8b6ff6f08871e53d1eb0be5ab82e7"
   end
 
