@@ -5,6 +5,13 @@ class Capstone < Formula
   url 'http://capstone-engine.org/download/2.1/capstone-2.1.tgz'
   sha1 '3e5fe91684cfc76d73caa857a268332ac9d40659'
 
+  bottle do
+    cellar :any
+    sha1 "36a9b4fd45beb7e9c87a9dbfa2dcca0a3b2bab68" => :mavericks
+    sha1 "44bb036c50cf586e477f1fc68415e972f2e28380" => :mountain_lion
+    sha1 "b2071f74797a90fc112c9afc886c9492f06c0e47" => :lion
+  end
+
   def patches
     # fix pkgconfig path
     DATA
