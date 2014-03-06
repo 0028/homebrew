@@ -5,6 +5,12 @@ class Pulseaudio < Formula
   url "http://freedesktop.org/software/pulseaudio/releases/pulseaudio-4.0.tar.xz"
   sha1 "9f0769dcb25318ba3faaa453fd2ed0c509fa9c5c"
 
+  bottle do
+    sha1 "56ad0143c28b4a7b949bde40e53b19019ba5a05c" => :mavericks
+    sha1 "dfe22863e4e9e0e9f53db5cea64d797a4ea81fb3" => :mountain_lion
+    sha1 "4c96720a7156e875bc881cbd744dfcdb125edd92" => :lion
+  end
+
   option "with-nls", "Build with native language support"
   option :universal
 
