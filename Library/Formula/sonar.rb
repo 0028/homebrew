@@ -5,6 +5,12 @@ class Sonar < Formula
   url 'http://dist.sonar.codehaus.org/sonarqube-4.1.2.zip'
   sha1 '96a584363ecb18e55ea9c9d951d86d56e3a6d7c5'
 
+  bottle do
+    sha1 "919eaffdfff1879a8e23e2ac02a7934362b9e7df" => :mavericks
+    sha1 "64d0727f6db1c3d50631430f8e34574f1ac23fd3" => :mountain_lion
+    sha1 "65cf68e7b2da0a48bd9e58f982489e49065d75fb" => :lion
+  end
+
   def install
     # Delete native bin directories for other systems
     rm_rf Dir['bin/{aix,hpux,linux,solaris,windows}-*']
