@@ -6,9 +6,10 @@ class Yajl < Formula
   sha256 '0e78f516dc53ecce7dc073f9a9bb0343186b58ef29dcd1dad74e5e853b216dd5'
 
   bottle do
-    sha1 "a02d27cc6b98912176bd636ee30aaca464a44ae8" => :mavericks
-    sha1 "1d8cec340ef78502d9e726a96c416c20ee7e85e1" => :mountain_lion
-    sha1 "1e7bbbf4f37b9a251c430b2438f3449cc62d5903" => :lion
+    revision 1
+    sha1 "d5d487907385d65dee008098c349568da10dd1e5" => :mavericks
+    sha1 "54eba6f5750ed8f5f50afbfa8050c57ba1cc5364" => :mountain_lion
+    sha1 "009a89024a9a4b2a13bb9e6b609e7fbcbb933116" => :lion
   end
 
   # Configure uses cmake internally
