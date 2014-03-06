@@ -5,6 +5,13 @@ class Scala < Formula
   url 'http://www.scala-lang.org/files/archive/scala-2.10.3.tgz'
   sha1 '04cd6237f164940e1e993a127e7cb21297f3b7ae'
 
+  bottle do
+    cellar :any
+    sha1 "bdc887ad3b39edb0ae2020a93564716cea6f6a72" => :mavericks
+    sha1 "f625033db43b382d91866ab74109ad1389b7c53e" => :mountain_lion
+    sha1 "ee0714d133ac3d60ed2a086c4df705b0b1bec1a4" => :lion
+  end
+
   devel do
     url 'http://downloads.typesafe.com/scala/2.11.0-RC1/scala-2.11.0-RC1.tgz'
     sha1 '1b8f9149015b4f017e1e295bd187ed726a416437'
