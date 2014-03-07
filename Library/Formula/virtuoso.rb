@@ -5,6 +5,12 @@ class Virtuoso < Formula
   url "https://downloads.sourceforge.net/project/virtuoso/virtuoso/7.1.0/virtuoso-opensource-7.1.0.tar.gz"
   sha1 "255d275d810bdb7cfa55fef46517724823c4c561"
 
+  bottle do
+    sha1 "8303743836733e4fa961e6a3c8ad3100c7261679" => :mavericks
+    sha1 "db4e1060378e4a82aee2f1185b1e5fe15a5170bd" => :mountain_lion
+    sha1 "d0850303025530d5372d04bb4e6917bbfc9c1e13" => :lion
+  end
+
   head do
     url 'https://github.com/openlink/virtuoso-opensource.git', :branch => 'stable/7'
 
