@@ -5,6 +5,13 @@ class Byobu < Formula
   url 'https://launchpad.net/byobu/trunk/5.73/+download/byobu_5.73.orig.tar.gz'
   sha1 'b7a27b41c7bc384394fabfe9e589ad2d0c4fcd89'
 
+  bottle do
+    cellar :any
+    sha1 "4530bb454670ac2f578856906b0a94198d9a270c" => :mavericks
+    sha1 "53ec97cb6cd9e04acbb2047da5dd5c724fed2262" => :mountain_lion
+    sha1 "9027e13e82d3490a51e1650ad3e861b0ae207ea2" => :lion
+  end
+
   depends_on 'coreutils'
   depends_on 'gnu-sed' # fails with BSD sed
   depends_on 'tmux'
