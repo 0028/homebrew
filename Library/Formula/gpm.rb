@@ -15,6 +15,13 @@ class Gpm < Formula
   url "https://github.com/pote/gpm/archive/v1.1.0.tar.gz"
   sha1 "feede16a13f50e762bd372a83aef6778c702726e"
 
+  bottle do
+    cellar :any
+    sha1 "b8f4d8213745c562c812477650d032c96d85b79e" => :mavericks
+    sha1 "ef34f6d892ede49da0232975c0ae67acb8fccf0c" => :mountain_lion
+    sha1 "f2da7a11e4609d4e52282e7ffc432acc61494e26" => :lion
+  end
+
   depends_on GoInstalled
 
   def install
