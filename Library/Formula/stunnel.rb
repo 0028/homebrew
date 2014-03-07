@@ -3,6 +3,12 @@ require 'formula'
 class Stunnel < Formula
   homepage 'http://www.stunnel.org/'
   url 'ftp://ftp.nluug.nl/pub/networking/stunnel/archive/4.x/stunnel-4.56.tar.gz'
+  bottle do
+    sha1 "a57bf098e1e59a69bf224587394c17f0af990599" => :mavericks
+    sha1 "30bfdf73c45766a0c9a1bed30d56a3badfbf4a83" => :mountain_lion
+    sha1 "7ee973485c12425ebd104e32baf413806dec38e3" => :lion
+  end
+
   mirror 'http://ftp.nluug.nl/pub/networking/stunnel/archive/4.x/stunnel-4.56.tar.gz'
   sha256 '9cae2cfbe26d87443398ce50d7d5db54e5ea363889d5d2ec8d2778a01c871293'
 
