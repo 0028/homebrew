@@ -5,6 +5,13 @@ class Jmeter < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=jmeter/binaries/apache-jmeter-2.11.tgz'
   sha1 'e9b24f8b5f34565831aafcb046e72bdfa9537386'
 
+  bottle do
+    cellar :any
+    sha1 "380a15259d1d44510993a4807da4ef29098401fb" => :mavericks
+    sha1 "a3f6665979080341dfcb5e76416c5f27f3afb1ae" => :mountain_lion
+    sha1 "dd9d96ab0002dc2d7ced36321f9b044a488b5f1a" => :lion
+  end
+
   resource "jmeterplugins-standard" do
     url "http://jmeter-plugins.org/downloads/file/JMeterPlugins-Standard-1.1.3.zip"
     sha1 "ceec5be5d5aef21f9af3b251637a97fdfde0ffd3"
