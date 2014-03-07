@@ -6,6 +6,13 @@ class Jetty < Formula
   version '9.1.3'
   sha1 '09cc96d187ad07bc86414b123475d0fe2d25e255'
 
+  bottle do
+    cellar :any
+    sha1 "9962b71d834416760552681aeaf2defcdc32e3c6" => :mavericks
+    sha1 "b12d9209c61e4b956d14642f16d18dd801616c52" => :mountain_lion
+    sha1 "d5aa1ae3f0d2126bc75b5af992ff775c0d4cbf48" => :lion
+  end
+
   def install
     rm_rf Dir['bin/*.{cmd,bat]}']
 
