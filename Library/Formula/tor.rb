@@ -5,6 +5,12 @@ class Tor < Formula
   url 'https://www.torproject.org/dist/tor-0.2.4.21.tar.gz'
   sha1 'b93b66e4d5162cefc711cb44f9167ed4799ef990'
 
+  bottle do
+    sha1 "013c74078a402809b0eef844bbd8e0988da44d13" => :mavericks
+    sha1 "2fc9e262d58b284f942b909bc77a31d275abbc36" => :mountain_lion
+    sha1 "12cdf8ce37bf3d79ac571772e33f73d649b2ab89" => :lion
+  end
+
   devel do
     url 'https://www.torproject.org/dist/tor-0.2.5.2-alpha.tar.gz'
     version '0.2.5.2-alpha'
