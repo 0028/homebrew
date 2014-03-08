@@ -3,6 +3,12 @@ require 'formula'
 class Shiboken < Formula
   homepage 'http://www.pyside.org/docs/shiboken'
   url 'http://download.qt-project.org/official_releases/pyside/shiboken-1.2.1.tar.bz2'
+  bottle do
+    sha1 "13593e2cb1feada50375fd03f44f8c1696e60f10" => :mavericks
+    sha1 "40d9e47c24a09d79409d69e500da865371f19072" => :mountain_lion
+    sha1 "ebd75c0eb492647e41187194fdbe82423ed5ead1" => :lion
+  end
+
   mirror 'https://distfiles.macports.org/py-shiboken/shiboken-1.2.1.tar.bz2'
   sha1 'f310ac163f3407109051ccebfd192bc9620e9124'
 
