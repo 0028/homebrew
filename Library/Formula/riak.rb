@@ -6,6 +6,12 @@ class Riak < Formula
   version '1.4.8'
   sha256 'e1bca241708ca64beb1626e0f640a22f545787365966f87e6cfd4a976682236c'
 
+  bottle do
+    cellar :any
+    sha1 "1b4782ee16c1538142b80abb7f453995619c120e" => :mavericks
+    sha1 "8ea9a4d153ab2294f1c63d23c65131bf4e9240f9" => :mountain_lion
+  end
+
   devel do
     url 'http://s3.amazonaws.com/downloads.basho.com/riak/2.0/2.0.0pre11/osx/10.8/riak-2.0.0pre11-OSX-x86_64.tar.gz'
     sha1 '555eaf744dffae1e205bb612ea90569144487a29'
