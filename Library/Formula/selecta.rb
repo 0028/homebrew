@@ -18,6 +18,11 @@ class Selecta < Formula
   url "https://github.com/garybernhardt/selecta/archive/v0.0.3.tar.gz"
   sha1 "0530f2145d5eb018ba9cf7108bd78d3e5bb03434"
 
+  bottle do
+    cellar :any
+    sha1 "1166931632a03f81b3db7477a5cd775246273cbe" => :mavericks
+  end
+
   depends_on Ruby19Dependency
 
   def install
