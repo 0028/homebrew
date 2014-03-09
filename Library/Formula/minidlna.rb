@@ -5,6 +5,12 @@ class Minidlna < Formula
   url 'https://downloads.sourceforge.net/project/minidlna/minidlna/1.1.2/minidlna-1.1.2.tar.gz'
   sha1 'ba03d691b9aa95b55ac822905571ab1127492344'
 
+  bottle do
+    sha1 "5f21e57a807bf0af7950bd6707b1531187b28676" => :mavericks
+    sha1 "e9066fbf04cc211519f927509f85c6dfe5803352" => :mountain_lion
+    sha1 "77009b819865a329a0aab9f2aae15631fa1bd5a2" => :lion
+  end
+
   depends_on 'libav'
   depends_on 'libexif'
   depends_on 'jpeg'
