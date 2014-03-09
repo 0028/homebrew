@@ -7,6 +7,13 @@ class Colormake < Formula
   sha1 '6c5ab4be23d60ec79ed4c43cbeb142bfd4a4e626'
   head 'https://github.com/pagekite/Colormake.git'
 
+  bottle do
+    cellar :any
+    sha1 "36d24e3b88b637b2932ec3f72b22fe02fd27a9a7" => :mavericks
+    sha1 "973590954b49aec68a67393429bd3856124c86c6" => :mountain_lion
+    sha1 "4d89eee21e23673cc00523d65cfb309241b143d2" => :lion
+  end
+
   def install
     inreplace "colormake", "colormake.pl", "#{libexec}/colormake.pl"
 
