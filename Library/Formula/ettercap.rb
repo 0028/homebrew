@@ -7,6 +7,12 @@ class Ettercap < Formula
 
   head "https://github.com/Ettercap/ettercap.git"
 
+  bottle do
+    sha1 "d8b06d38a8abbdd86d57ed4a1e6ac69ab468470f" => :mavericks
+    sha1 "7e5828d0855ec3bc2d9dcae5c423fa57de993359" => :mountain_lion
+    sha1 "3d98c35159a737c68996c05aa1a5d046076d1695" => :lion
+  end
+
   option "without-curses", "Install without curses interface"
   option "without-plugins", "Install without plugins support"
   option "with-ipv6", "Install with IPv6 support"
