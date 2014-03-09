@@ -7,6 +7,13 @@ class Vrpn < Formula
 
   head 'git://git.cs.unc.edu/vrpn.git'
 
+  bottle do
+    cellar :any
+    sha1 "f03033221bb75baba990448356737f188e919a1c" => :mavericks
+    sha1 "4fe78a1cc163b07719e337c38d708aed55ee3d48" => :mountain_lion
+    sha1 "2dd37dc8ba101caf0d304be92769b7f73c5161c4" => :lion
+  end
+
   option 'clients', 'Build client apps and tests'
   option 'docs', 'Build doxygen-based API documentation'
 
