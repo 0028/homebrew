@@ -7,6 +7,13 @@ class Zmap < Formula
 
   head 'https://github.com/zmap/zmap.git'
 
+  bottle do
+    cellar :any
+    sha1 "f761be1d71ac494430ce392e45fc0975879b82db" => :mavericks
+    sha1 "5b70e170bd6167ed84d4e5a09bdc2aa3e376f0c4" => :mountain_lion
+    sha1 "cc9c0f43e6cee653c28172b0c277ffe5aa87f5a1" => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on 'gengetopt' => :build
   depends_on 'byacc' => :build
