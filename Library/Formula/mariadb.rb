@@ -6,9 +6,10 @@ class Mariadb < Formula
   sha1 'a6091356ffe524322431670ad03d68c389243d04'
 
   bottle do
-    sha1 "46a842d51c95aa8e6463f373e7312d28c2d89192" => :mavericks
-    sha1 "40868bd7621732f92f998e13badc6b46399e3b43" => :mountain_lion
-    sha1 "61b9289369f12ba10edd77e2cbe2d54ab7fb8396" => :lion
+    revision 1
+    sha1 "6c8fd6c10c74cca39fe023fdfe3060cb213d6da2" => :mavericks
+    sha1 "81d3a35c31673bc6c9ff11c53b690a69d4e46b95" => :mountain_lion
+    sha1 "ea6035d9ee823e93241f7320c405c87fdb5e3606" => :lion
   end
 
   devel do
