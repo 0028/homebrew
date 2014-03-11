@@ -5,6 +5,13 @@ class Gpshell < Formula
   url "https://downloads.sourceforge.net/project/globalplatform/GPShell/GPShell-1.4.4/gpshell-1.4.4.tar.gz"
   sha1 "3efeb92263e881ff0886e73a7b790051a317df61"
 
+  bottle do
+    cellar :any
+    sha1 "5c9c2ffbb4859dea12960e64319c8576329b4fa6" => :mavericks
+    sha1 "e3f263f0f54238c41679b3dafe8496124bcf516d" => :mountain_lion
+    sha1 "a2d70db4c2d503bfefc2809b01cab07fa6add902" => :lion
+  end
+
   depends_on 'globalplatform'
   depends_on 'gppcscconnectionplugin'
 
