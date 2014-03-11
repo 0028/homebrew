@@ -5,6 +5,12 @@ class SeleniumServerStandalone < Formula
   url 'https://selenium-release.storage.googleapis.com/2.40/selenium-server-standalone-2.40.0.jar'
   sha1 '165f54ca53e5eefc6f27c26ac03d18bae99a544e'
 
+  bottle do
+    sha1 "f04e2da23718c098a2dfe89523fb03946a009ee6" => :mavericks
+    sha1 "27bbaf32535608011b440119de4750eef2e1b0e0" => :mountain_lion
+    sha1 "f8e95da7b54b156cedbc2041270a3724cabff412" => :lion
+  end
+
   def install
     libexec.install "selenium-server-standalone-#{version}.jar"
     bin.write_jar_script libexec/"selenium-server-standalone-#{version}.jar", "selenium-server"
