@@ -5,6 +5,13 @@ class Nanomsg < Formula
   url 'http://download.nanomsg.org/nanomsg-0.3-beta.tar.gz'
   sha1 '3ca5a9655a96bb3194648b0ab7530d15e0afdbae'
 
+  bottle do
+    cellar :any
+    sha1 "e66cd0d7db79813295e827fd010bb111893e0ef4" => :mavericks
+    sha1 "d8bf6a9ea752da61712a082c65f72e17eb3af3d9" => :mountain_lion
+    sha1 "6cb11ac2dbfc40788190013b55f48eaee8008486" => :lion
+  end
+
   head do
     url 'https://github.com/nanomsg/nanomsg.git'
 
