@@ -5,6 +5,13 @@ class Gppcscconnectionplugin < Formula
   url "https://downloads.sourceforge.net/project/globalplatform/GlobalPlatform%20Library/GlobalPlatform%20Library%206.0.0/gppcscconnectionplugin-1.1.0.tar.gz"
   sha1 "38eb3d739f1b75ba954f09a928a6e9db0178ea53"
 
+  bottle do
+    cellar :any
+    sha1 "9e656e65bdd1bf1044fe68cc80ca03ee5056b625" => :mavericks
+    sha1 "47eec86dcd130e211781f0887569c2095eb446bf" => :mountain_lion
+    sha1 "b087e71381093c6197446a999865e302732f747c" => :lion
+  end
+
   depends_on 'globalplatform'
 
   # ./configure doesn't recognize GlobalPlatform without this
