@@ -5,6 +5,13 @@ class Hive < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=hive/hive-0.12.0/hive-0.12.0-bin.tar.gz'
   sha1 '488f625a859facc89312320ef7e9802f1cc2531e'
 
+  bottle do
+    cellar :any
+    sha1 "a7a4e1039b5feaefc5b50a7024bfae51f0738dfb" => :mavericks
+    sha1 "96693fcbe9b671df881b2b850ec08e1d475f7d49" => :mountain_lion
+    sha1 "0e091623760e8b88b4d79b6f3a7b3691c40d8c70" => :lion
+  end
+
   depends_on 'hadoop'
 
   def install
