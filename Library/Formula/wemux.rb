@@ -9,9 +9,10 @@ class Wemux < Formula
 
   bottle do
     cellar :any
-    sha1 "519923d54faac98ebfc0772354a0c605e2566519" => :mavericks
-    sha1 "215e25340fc5fee5cd838668f928b530ad71a56f" => :mountain_lion
-    sha1 "01222b27c6a031f3a0ac1e01079b48664cc0c3af" => :lion
+    revision 1
+    sha1 "fd6b1faa6d452eaf4b6776635627b93acdafd976" => :mavericks
+    sha1 "e6c77c3d4cce9ced4216931aa399e256d49f198f" => :mountain_lion
+    sha1 "2154a78d97ef6a81b995a52900bd79d0c4edaa17" => :lion
   end
 
   depends_on 'tmux'
