@@ -10,9 +10,10 @@ class Libxml2 < Formula
   end
 
   bottle do
-    sha1 "1971dcb3cfb9a68555ee6eaff7c83d0dd8109442" => :mavericks
-    sha1 "558653754996428880b14123dac08baa639f97c3" => :mountain_lion
-    sha1 "93b5c4b98475f71cbf1915b2293df14d7621b262" => :lion
+    revision 1
+    sha1 "0b6a0b3f6c982a4ebb9c11e2cb3f4865f6418dca" => :mavericks
+    sha1 "bef96792622ab4381e2385b033f6019990a0d538" => :mountain_lion
+    sha1 "c6e7729f5a67139a81248bf079456dbfd454d6b6" => :lion
   end
 
   head do
