@@ -48,6 +48,9 @@ class Ansible < Formula
     ENV.prepend_create_path 'PYTHONPATH', libexec+'lib/python2.7/site-packages'
     install_args = [ "setup.py", "install", "--prefix=#{libexec}" ]
 
+    # workaround for XCode 5.1
+    ENV.append 'CFLAGS', '-Wunused-command-line-argument-hard-error-in-future'
+
     resource('pycrypto').stage { system "python", *install_args }
     resource('pyyaml').stage { system "python", *install_args }
     resource('paramiko').stage { system "python", *install_args }
