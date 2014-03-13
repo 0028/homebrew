@@ -5,6 +5,12 @@ class Aubio < Formula
   url 'http://aubio.org/pub/aubio-0.4.1.tar.bz2'
   sha1 '338ec9f633e82c371a370b9727d6f0b86b0ba376'
 
+  bottle do
+    sha1 "a0e55cda8e426cb1aef606f70420b6bdee3df921" => :mavericks
+    sha1 "b5af4945269230f2ef2600858c76ca3ac34848da" => :mountain_lion
+    sha1 "c1213db2fb8c1143f1bf8b45477cf2befca53f40" => :lion
+  end
+
   option :universal
 
   depends_on :macos => :lion
