@@ -6,6 +6,13 @@ class Cmigemo < Formula
   sha1 '25e279c56d3a8f1e82cbfb3526d1b38742d1d66c'
   head 'https://github.com/koron/cmigemo.git'
 
+  bottle do
+    cellar :any
+    sha1 "31319fc9edc07656c63943621bdb2dc0580ae493" => :mavericks
+    sha1 "a2dae0f471f0d1fde6259ebf54bbe2244461f4d4" => :mountain_lion
+    sha1 "9aa2fdc3fbf96e176994e86c51039cf99baeaac0" => :lion
+  end
+
   depends_on 'nkf' => :build
 
   # Patch per discussion at: https://github.com/Homebrew/homebrew/pull/7005
