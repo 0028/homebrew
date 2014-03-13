@@ -9,9 +9,10 @@ class Libqglviewer < Formula
 
   bottle do
     cellar :any
-    sha1 "6c20fb8bac46fad1829c90f07b1d80b4ba797799" => :mavericks
-    sha1 "c3abf90b9e9eaa835e5c5faa979670175e2715a2" => :mountain_lion
-    sha1 "0ef379d978e5277914f9887bbf6240aa7f81294a" => :lion
+    revision 1
+    sha1 "6169d8c40e9fb9d6b2c7973d737d539945c84307" => :mavericks
+    sha1 "1523eec7cddfd3ab4d0240b9750007aa6c561128" => :mountain_lion
+    sha1 "5c789d77e505c835ab12c8537e50af52c8314699" => :lion
   end
 
   option :universal
