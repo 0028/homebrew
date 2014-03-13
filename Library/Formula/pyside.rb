@@ -3,6 +3,12 @@ require 'formula'
 class Pyside < Formula
   homepage 'http://www.pyside.org'
   url 'https://download.qt-project.org/official_releases/pyside/pyside-qt4.8+1.2.1.tar.bz2'
+  bottle do
+    sha1 "f492b726c3297c2aa8fe105e733a0cdc7e22a1d2" => :mavericks
+    sha1 "87266d19942c2037a1ef31790f59f5b0a4ec2c1a" => :mountain_lion
+    sha1 "683ab8d947029c156e4fcb4f313be1c628746367" => :lion
+  end
+
   mirror 'https://distfiles.macports.org/py-pyside/pyside-qt4.8+1.2.1.tar.bz2'
   sha1 'eec5bed37647dd8d3d1c7a610ad913312dd55910'
 
