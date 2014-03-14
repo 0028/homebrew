@@ -14,9 +14,10 @@ class S3cmd < Formula
 
   bottle do
     cellar :any
-    sha1 "6504b103e65ce2dfdde9220a0f2b9033bf90bb5f" => :mavericks
-    sha1 "59fbbbfc85dba185128e69b03f2c73ec96653bf9" => :mountain_lion
-    sha1 "54e4d1c752eb3da312d05ce507d4979e8edb898f" => :lion
+    revision 1
+    sha1 "d88df0528690192723afb9059e5791da13ef9530" => :mavericks
+    sha1 "338bd627976e26a3ccb4881118a238eeff05e3f3" => :mountain_lion
+    sha1 "47b2632e5ca40c6f226bc655ce17c1a394e9780a" => :lion
   end
 
   def install
