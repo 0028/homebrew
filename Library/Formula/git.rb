@@ -69,6 +69,26 @@ class Git < Formula
                    "LDFLAGS=#{ENV.ldflags}",
                    "install"
 
+    # Patch remote-helper scripts' sys.path with bzr/hg libs that may not
+    # not have been installed into homebrew's site-packages.
+    inreplace 'contrib/remote-helpers/git-remote-bzr' do |s|
+      s.gsub! /^import\ bzrlib$/,
+        "import os, sys\n"\
+        "if os.path.exists('#{Formula['bazaar'].opt_prefix}/libexec'):\n"\
+        "    sys.path.append('#{Formula['bazaar'].opt_prefix}/libexec')\n"\
+        "del os, sys\n"\
+        "import bzrlib"
+    end
+
+    inreplace 'contrib/remote-helpers/git-remote-hg' do |s|
+      s.gsub! /^from\ mercurial\ import/,
+        "import os, sys\n"\
+        "if os.path.exists('#{Formula['mercurial'].opt_prefix}/lib/python2.7/site-packages'):\n"\
+        "    sys.path.append('#{Formula['mercurial'].opt_prefix}/lib/python2.7/site-packages')\n"\
+        "del os, sys\n"\
+        "from mercurial import"
+    end
+
     bin.install Dir["contrib/remote-helpers/git-remote-{hg,bzr}"]
 
     # Install the OS X keychain credential helper
