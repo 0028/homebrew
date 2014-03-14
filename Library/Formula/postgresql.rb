@@ -6,9 +6,10 @@ class Postgresql < Formula
   sha256 'e925d8abe7157bd8bece6b7c0dd0c343d87a2b4336f85f4681ce596af99c3879'
 
   bottle do
-    sha1 "299a72eac118abd9847379f2a247ed663e97cc64" => :mavericks
-    sha1 "6799c9ae3ae1f954e1b6c8b06818e2168ca2efe2" => :mountain_lion
-    sha1 "f44a9cf2fe073a8cce40bc8c2a8618553d826ac8" => :lion
+    revision 1
+    sha1 "92e2c7dfbb6c35a1b620066466f01e3371044248" => :mavericks
+    sha1 "36a089bf1eddddddb0577126baf6d589b32dc4cb" => :mountain_lion
+    sha1 "fc07cf6eeae775c0e5f3d22d0865061a1d6190f6" => :lion
   end
 
   option '32-bit'
