@@ -3,6 +3,13 @@ require 'formula'
 class Mercurial < Formula
   homepage 'http://mercurial.selenic.com/'
   url 'http://mercurial.selenic.com/release/mercurial-2.9.1.tar.gz'
+  bottle do
+    cellar :any
+    sha1 "d3cf2442987e54f998d09d4e4b0215275eafd76f" => :mavericks
+    sha1 "c39a7edb1dbf618fe7b537ca7b8b39cde4053914" => :mountain_lion
+    sha1 "a424937933b2b0b2987a2934dea2afa3909fdf70" => :lion
+  end
+
   mirror 'http://fossies.org/linux/misc/mercurial-2.9.1.tar.gz'
   sha1 '059f9e5d5c79e5cec032419d08d12f92ace8a5de'
 
