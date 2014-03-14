@@ -3,6 +3,12 @@ require 'formula'
 class Aspell < Formula
   homepage 'http://aspell.net/'
   url 'http://ftpmirror.gnu.org/aspell/aspell-0.60.6.1.tar.gz'
+  bottle do
+    sha1 "c8f5c8da6feffddd832822359a253127a77e2645" => :mavericks
+    sha1 "70ed69b9bdd01a770f9dd315a0ae88efce3dc832" => :mountain_lion
+    sha1 "3134aa68f21ed29525e63f027d37724b2c997e8d" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/aspell/aspell-0.60.6.1.tar.gz'
   sha1 'ff1190db8de279f950c242c6f4c5d5cdc2cbdc49'
 
