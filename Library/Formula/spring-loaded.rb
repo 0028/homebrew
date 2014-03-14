@@ -6,6 +6,13 @@ class SpringLoaded < Formula
   sha1 'abde10d9955f27d4a3141005c177012668565846'
   version '1.1.5'
 
+  bottle do
+    cellar :any
+    sha1 "91deba4a48c0d593b6ee302bc7d4f967b8ef491d" => :mavericks
+    sha1 "e10143aa4114cfa35c13390fa4706dcbd44415d2" => :mountain_lion
+    sha1 "6058db18f17563efc285eec578e98ee7ee4c576e" => :lion
+  end
+
   def install
     (share/'java').install 'springloaded-1.1.5.RELEASE.jar' => 'springloaded.jar'
   end
