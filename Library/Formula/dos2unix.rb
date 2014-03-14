@@ -5,6 +5,12 @@ class Dos2unix < Formula
   url 'http://waterlan.home.xs4all.nl/dos2unix/dos2unix-6.0.4.tar.gz'
   sha1 '93d73148c09908a42dcbf5339312c9aa1f18ba7c'
 
+  bottle do
+    sha1 "7ce8c4c31c842caa2e7f576042aafa5518a1e9ff" => :mavericks
+    sha1 "ddce204df82c4c00cd8d6e7044f39bc922b3153f" => :mountain_lion
+    sha1 "3bc36d71a3e5b4843131c87893d69172e4814de3" => :lion
+  end
+
   depends_on 'gettext'
 
   devel do
