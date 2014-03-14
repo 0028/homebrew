@@ -5,6 +5,12 @@ class Knot < Formula
   url "https://secure.nic.cz/files/knot-dns/knot-1.4.3.tar.gz"
   sha1 "c9b5598688cbd0b97efabe595244c3bf79273e3a"
 
+  bottle do
+    sha1 "8a23616a16eac20991d0ea1180ccba89e269f981" => :mavericks
+    sha1 "252d0e2c1b101caf767a0a85edbc72013d67d1b5" => :mountain_lion
+    sha1 "3112821255925797268e00a22e0b7da46a8bd390" => :lion
+  end
+
   depends_on "userspace-rcu"
   depends_on "openssl"
   depends_on "libidn"
