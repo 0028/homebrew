@@ -5,6 +5,12 @@ class Bmake < Formula
   url "http://www.crufty.net/ftp/pub/sjg/bmake-20140214.tar.gz"
   sha1 "844fc7ccf8219f8327f4f950b633b9d2bdac87b5"
 
+  bottle do
+    sha1 "520c13e4dc7fbc461066369d9a49e97a92c3094d" => :mavericks
+    sha1 "bd5c9778fb8de8a93796189eccd20fceb68d7f2a" => :mountain_lion
+    sha1 "a5ac6a0fbe900b066abbef283f122c62a405088a" => :lion
+  end
+
   def install
     # The first, an oversight upstream; the second, don't pre-roff cat pages.
     inreplace "bmake.1", ".Dt MAKE", ".Dt BMAKE"
