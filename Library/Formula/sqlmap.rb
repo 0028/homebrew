@@ -6,6 +6,13 @@ class Sqlmap < Formula
   sha1 "25d7c13fc6e8bb55a1b4d9ba60a7ebd558ad0374"
   head "https://github.com/sqlmapproject/sqlmap.git"
 
+  bottle do
+    cellar :any
+    sha1 "5a231ea397ec9eba71a92b79227cb3bd52cc2f70" => :mavericks
+    sha1 "31c5ac14bccd9f3a1adc9996992ed485a563ef07" => :mountain_lion
+    sha1 "90d273e983eeaf22d1f557e66417a9933fc5f182" => :lion
+  end
+
   option "with-db-modules", "Install with support for direct database manipulation (sqlmap -d)"
   option "with-impacket", "Install with support for ICMP tunneling out-of-band takeover"
   option "with-ntlm", "Install with support for NTLM authentication"
