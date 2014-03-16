@@ -6,6 +6,13 @@ class Watchman < Formula
   url 'https://github.com/facebook/watchman/archive/v2.9.5.tar.gz'
   sha1 'e8dd863c6239caf1ef2742c0ecbba2b3b9febaaa'
 
+  bottle do
+    cellar :any
+    sha1 "36390b5a55e998d2e5014593346abb954c1a0521" => :mavericks
+    sha1 "749d7aa1627b7d884da3f3672ca7ddaec68905e3" => :mountain_lion
+    sha1 "f7f3c759a0a7b999b72c5c38d28ee70d7e80bf11" => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
   depends_on 'pkg-config' => :build
