@@ -7,6 +7,12 @@ class Ansible < Formula
 
   head 'https://github.com/ansible/ansible.git', :branch => 'devel'
 
+  bottle do
+    sha1 "46bbca633a89023684e304b37b7804d4f1b5f13e" => :mavericks
+    sha1 "5a1499e74f8150a6dd27fa42d630df8a45ba5026" => :mountain_lion
+    sha1 "f7482b6f2e2d9349ca30685c4e8780d5b2cfb710" => :lion
+  end
+
   depends_on :python
   depends_on 'libyaml'
 
