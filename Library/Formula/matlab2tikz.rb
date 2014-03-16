@@ -7,6 +7,13 @@ class Matlab2tikz < Formula
 
   head 'https://github.com/nschloe/matlab2tikz.git'
 
+  bottle do
+    cellar :any
+    sha1 "d57e758c97af63296a78f32403aa415bc09a8c4c" => :mavericks
+    sha1 "8f7e42378c618b41f261b6dc43f1bc071ce9981b" => :mountain_lion
+    sha1 "503bb2c342a324e88ef1c634737633d6d052a91b" => :lion
+  end
+
   def install
     (share/'matlab2tikz').install Dir['src/*']
   end
