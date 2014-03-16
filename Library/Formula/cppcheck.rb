@@ -7,6 +7,12 @@ class Cppcheck < Formula
 
   head 'https://github.com/danmar/cppcheck.git'
 
+  bottle do
+    sha1 "6b9fd4a8b6e44a131cc2e3d0f09e356e5c74683b" => :mavericks
+    sha1 "469b300c14e497b3bb7e512b1a11ea6bb5d3de37" => :mountain_lion
+    sha1 "263e0f411d938ae8970fc3a5eca3b2366a3b554b" => :lion
+  end
+
   option 'no-rules', "Build without rules (no pcre dependency)"
   option 'with-gui', "Build the cppcheck gui (requires Qt)"
 
