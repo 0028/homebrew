@@ -7,6 +7,13 @@ class Cyassl < Formula
 
   head 'https://github.com/cyassl/cyassl.git'
 
+  bottle do
+    cellar :any
+    sha1 "2800e40f9ee455f91113d60c1f08c36272acdb41" => :mavericks
+    sha1 "e154229b44f4d58ef372f65c41d085d8bfd529ca" => :mountain_lion
+    sha1 "2532d62ef00deb8d42851940e7f95c21a95a214f" => :lion
+  end
+
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
   depends_on 'libtool' => :build
