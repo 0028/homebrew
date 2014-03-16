@@ -7,6 +7,13 @@ class RabbitmqC < Formula
 
   head 'https://github.com/alanxz/rabbitmq-c.git'
 
+  bottle do
+    cellar :any
+    sha1 "acca81ec77627f64ab589ae358617a243e70be12" => :mavericks
+    sha1 "b7189f6342b50d448116607f5e462ca80b441309" => :mountain_lion
+    sha1 "7b635e7190c6ca66a9fda3d115f9e3a2dc2059ac" => :lion
+  end
+
   option :universal
 
   depends_on 'pkg-config' => :build
