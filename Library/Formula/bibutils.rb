@@ -5,6 +5,13 @@ class Bibutils < Formula
   url 'https://downloads.sourceforge.net/project/bibutils/bibutils_5.3_src.tgz'
   sha1 'd592ff4fea53dfc5440dc182204b5955fedb9ea2'
 
+  bottle do
+    cellar :any
+    sha1 "c83324a145721bc29823223a46dd70f84dd861a0" => :mavericks
+    sha1 "2128fcef1e295e0d49ee76d0468676823f074a91" => :mountain_lion
+    sha1 "f51646e17c24786cbc532e8f3b9c6b057463b661" => :lion
+  end
+
   #fix uint not being defined clang error
   def patches; DATA; end
 
