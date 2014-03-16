@@ -8,6 +8,13 @@ class Libbtbb < Formula
 
   head "https://github.com/greatscottgadgets/libbtbb.git"
 
+  bottle do
+    cellar :any
+    sha1 "89716afa62e810ef38a3fb5cb737b62d45c7ec80" => :mavericks
+    sha1 "b6b8c8106e509de7968f8ac2fba44c6ae2d4098a" => :mountain_lion
+    sha1 "fdab9d4621521e2375eda665572c9e2a1feb6847" => :lion
+  end
+
   option :universal
 
   depends_on "cmake" => :build
