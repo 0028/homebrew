@@ -5,6 +5,12 @@ class Parrot < Formula
   url 'ftp://ftp.parrot.org/pub/parrot/releases/supported/6.0.0/parrot-6.0.0.tar.bz2'
   sha256 '6cb9223ee389a36588acf76ad8ac85e2224544468617412b1d7902e5eb8bd39b'
 
+  bottle do
+    sha1 "e28b1850bf5efb0d75116bb8bdee1415e762fd05" => :mavericks
+    sha1 "449c54f11e3ae33f9e046ffb41c41a63c29f2163" => :mountain_lion
+    sha1 "f972be35871034135402511db6dfd143c78a670c" => :lion
+  end
+
   devel do
     url 'ftp://ftp.parrot.org/pub/parrot/releases/devel/6.1.0/parrot-6.1.0.tar.bz2'
     sha256 'bb1294ad2a7d5b3c4688fc736fb775e94ecfe35fdc072a2631c2080eb5f366f7'
