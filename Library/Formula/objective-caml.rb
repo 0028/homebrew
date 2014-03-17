@@ -16,9 +16,9 @@ class ObjectiveCaml < Formula
 
   bottle do
     revision 2
-    sha1 "0e6d92ef4f7034033603838d4501955ade323b7d" => :mavericks
-    sha1 "56baaa3f8ae7f074d8b2c49f895d085e45352011" => :mountain_lion
-    sha1 "8c5d442779abdb051ff40471871c5c6185b0bb84" => :lion
+    sha1 "8dc7dc4e266c05309b042e40d517d7f1ae201067" => :mavericks
+    sha1 "fac47129995897afa4085a8284699aca4ee91ac7" => :mountain_lion
+    sha1 "7ffab3203e8c8a4ac374bab1600f02a63220fdcd" => :lion
   end
 
   def install
