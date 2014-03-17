@@ -5,6 +5,13 @@ class Zookeeper < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz'
   sha1 '2a9e53f5990dfe0965834a525fbcad226bf93474'
 
+  bottle do
+    cellar :any
+    sha1 "70438cec5f366bc08837e9de3762669a83fc9d87" => :mavericks
+    sha1 "ff1dfa4a8cd20fdb07e258db1980c0b70bf5ad86" => :mountain_lion
+    sha1 "fe85f18badb676f829e479e4c17238c778db8de8" => :lion
+  end
+
   head do
     url 'http://svn.apache.org/repos/asf/zookeeper/trunk'
 
