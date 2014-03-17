@@ -5,6 +5,12 @@ class Libproxy < Formula
   url "https://libproxy.googlecode.com/files/libproxy-0.4.11.tar.gz"
   sha1 "c037969434095bc65d29437e11a7c9e0293a5149"
 
+  bottle do
+    sha1 "36ed7fe4d1fcec1bf3661f185c6188cc3d6cc423" => :mavericks
+    sha1 "b13a70768ba77c5d586df1f4484049b11a6f5f53" => :mountain_lion
+    sha1 "417a934966cbc7806dd92504f4c04c7a1465abfb" => :lion
+  end
+
   depends_on "cmake" => :build
 
   def patches
