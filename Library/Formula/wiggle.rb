@@ -5,6 +5,13 @@ class Wiggle < Formula
   url 'http://neil.brown.name/wiggle/wiggle-0.9.tar.gz'
   sha1 '9091671b939559025d217b8830eaab4b313f6b44'
 
+  bottle do
+    cellar :any
+    sha1 "b047e1f03d23a1a08fb548f12d023415d7568c3b" => :mavericks
+    sha1 "5fb7fb70acd22616f2be71f5f61e4121a0069be3" => :mountain_lion
+    sha1 "dca002f1f6f6d6bb895c4b9410b141dd0b74c733" => :lion
+  end
+
   # Patches 1,2,4 are fixes for OSX in response to a report for Homebrew.
   # Patches 3 & 5 are unrelated but were added the day after 0.9 was released.
   # As all 5 patches are in HEAD, remove them after version 0.9.
