@@ -6,6 +6,13 @@ class Apollo < Formula
   version '1.7'
   sha1 '3bf6dba6396fe3814e56163249de80d8a20230d0'
 
+  bottle do
+    cellar :any
+    sha1 "8548a3349ee6b097c441d5ab96d5ccdebcf889ce" => :mavericks
+    sha1 "ea7cd2fb6481459433df22854a92e58d61cf4492" => :mountain_lion
+    sha1 "05064760d49fffb841340714c1c3627090700994" => :lion
+  end
+
   option "no-bdb", "Install without bdb store support"
   option "no-mqtt", "Install without MQTT protocol support"
 
