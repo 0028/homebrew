@@ -5,6 +5,12 @@ class Fltk < Formula
   url 'http://fossies.org/linux/misc/fltk-1.3.2-source.tar.gz'
   sha1 '25071d6bb81cc136a449825bfd574094b48f07fb'
 
+  bottle do
+    sha1 "6d4a80ab92b02ac59c76842bc6708e65b8ff46c5" => :mavericks
+    sha1 "8c42bdf5b8160a34165026e5f762246cd332157a" => :mountain_lion
+    sha1 "1d10989ef4b25554245d95f47ba1c89b421c803f" => :lion
+  end
+
   option :universal
 
   depends_on :libpng
