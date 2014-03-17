@@ -6,6 +6,13 @@ class Spin < Formula
   version '6.2.7'
   sha1 '26969c8aa6ad46df1ce38b5c239d26553817da36'
 
+  bottle do
+    cellar :any
+    sha1 "c4f270104d39406e3b7af7798edf20fd5ccc784a" => :mavericks
+    sha1 "8abee565c290abdad7e9911e52460dbc254d89d8" => :mountain_lion
+    sha1 "96f22efbbe40e7bfcbb34dbb9ee50826b61e2704" => :lion
+  end
+
   fails_with :llvm do
     build 2334
   end
