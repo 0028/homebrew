@@ -5,6 +5,13 @@ class Tcat < Formula
   url "https://github.com/marcomorain/tcat/archive/0.1.2.tar.gz"
   sha1 "faac576b32ddc99620fbe5f9fde7f01f5b4a4c28"
 
+  bottle do
+    cellar :any
+    sha1 "e3dce8f779921ce69ace5532cb710713de466eb9" => :mavericks
+    sha1 "4db8c67e163aa4c778946bbfb1011a5ce190d624" => :mountain_lion
+    sha1 "0f4632994be934afab4755489b304858fc189725" => :lion
+  end
+
   def install
     system "make"
     bin.install "tcat"
