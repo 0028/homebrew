@@ -5,6 +5,13 @@ class Cpuburn < Formula
   url "http://ftp.de.debian.org/debian/pool/main/c/cpuburn/cpuburn_1.4a.orig.tar.gz"
   sha1 "bdec2233b5f473735c47ca6150c244f33a1fd82b"
 
+  bottle do
+    cellar :any
+    sha1 "fde38b66779a14e532f69052c4b63fb43a7af12a" => :mavericks
+    sha1 "5a09008f5aad1955ddc2091642a3631fdae8abd9" => :mountain_lion
+    sha1 "d6c9dcb8fa264665f1a6a0127ab4ec439d66db62" => :lion
+  end
+
   patch do
     url "http://patch-tracker.debian.org/patch/series/dl/cpuburn/1.4a-3/01-variables.patch"
     sha1 "261dcf6d11aff9c2c315acf163b17f9fb3c8937d"
