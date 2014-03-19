@@ -4,6 +4,13 @@ class Kafka < Formula
   homepage "http://kafka.apache.org"
   head "http://git-wip-us.apache.org/repos/asf/kafka.git"
   url "http://mirrors.ibiblio.org/apache/kafka/0.8.1/kafka-0.8.1-src.tgz"
+  bottle do
+    cellar :any
+    sha1 "ded3334a0477152b53c019a9d7a87a92789b25f1" => :mavericks
+    sha1 "1f5e6f72a436bb4ec5ea04bf4d37e55cc846cfa0" => :mountain_lion
+    sha1 "a834648c26f088c959be2ed0978b5cf2eb9d39d4" => :lion
+  end
+
   mirror "http://mirror.sdunix.com/apache/kafka/0.8.1/kafka-0.8.1-src.tgz"
   sha1 "af88a986ef711f5fd30063a9cb3395e63884bf0b"
 
