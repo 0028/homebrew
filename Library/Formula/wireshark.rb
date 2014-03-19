@@ -5,6 +5,12 @@ class Wireshark < Formula
 
   stable do
     url 'http://wiresharkdownloads.riverbed.com/wireshark/src/wireshark-1.10.6.tar.bz2'
+  bottle do
+    sha1 "3290048c6400493a32255c82e0a47d9245c6e7b4" => :mavericks
+    sha1 "81356a0cbc199dfa0d8edbbf9a44a235a0e755e0" => :mountain_lion
+    sha1 "1ddcb9d8bddc73a6121cf408e1603eb74e31d51f" => :lion
+  end
+
     mirror 'http://www.wireshark.org/download/src/wireshark-1.10.6.tar.bz2'
     sha1 '081a2daf85e3257d7a2699e84a330712e3e5b9bb'
 
