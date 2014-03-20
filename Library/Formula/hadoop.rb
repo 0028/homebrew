@@ -5,6 +5,13 @@ class Hadoop < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=hadoop/core/hadoop-2.3.0/hadoop-2.3.0.tar.gz'
   sha1 '95ec2dbce2e1377682a74740f5280e536ce107d9'
 
+  bottle do
+    cellar :any
+    sha1 "cb07a5fec2167493ae744a243086e451710182a6" => :mavericks
+    sha1 "eaec9409324342b64d89e53814f1495f8639b555" => :mountain_lion
+    sha1 "d50d9175e75c488f08760e2002b225de8ab2b5fa" => :lion
+  end
+
   def install
     rm_f Dir["bin/*.cmd", "sbin/*.cmd", "libexec/*.cmd", "etc/hadoop/*.cmd"]
     libexec.install %w[bin sbin libexec share etc]
