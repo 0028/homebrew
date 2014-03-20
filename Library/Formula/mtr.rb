@@ -5,6 +5,11 @@ class Mtr < Formula
 
   stable do
     url "ftp://ftp.bitwizard.nl/mtr/mtr-0.85.tar.gz"
+  bottle do
+    cellar :any
+    sha1 "35bfbbded78089d988a66ba8748859483e00c28a" => :lion
+  end
+
     sha1 "6e79584265f733bea7f1b2cb13eeb48f10e96bba"
 
     patch do
