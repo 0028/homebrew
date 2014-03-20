@@ -5,6 +5,13 @@ class Blitzwave < Formula
   url 'https://github.com/oschulz/blitzwave/archive/v0.8.0.tar.gz'
   sha1 '16d96f28ba295659301ab6485782715786fd496e'
 
+  bottle do
+    cellar :any
+    sha1 "3bd07ed8fba15c13b3e09bd8a823a4f3a05c20ac" => :mavericks
+    sha1 "9abc0a45a0e92fdbdbc4137bf6e3c240d55e79af" => :mountain_lion
+    sha1 "7c9ea8408b09df0c226863d8ca5771faf9d306e4" => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
   depends_on :libtool
