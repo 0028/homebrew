@@ -3,6 +3,12 @@ require 'formula'
 class Emacs < Formula
   homepage 'http://www.gnu.org/software/emacs/'
   url 'http://ftpmirror.gnu.org/emacs/emacs-24.3.tar.gz'
+  bottle do
+    sha1 "bfa064dff43c991f7e095cd31ba705004a90cc68" => :mavericks
+    sha1 "e7483d2cd7a2c7b224bc9348a49a7e98e8f16db8" => :mountain_lion
+    sha1 "56a1c1d5341e74ea256d5084c8c311524c6245ac" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/pub/gnu/emacs/emacs-24.3.tar.gz'
   sha256 '0098ca3204813d69cd8412045ba33e8701fa2062f4bff56bedafc064979eef41'
 
