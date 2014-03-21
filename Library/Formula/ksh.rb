@@ -20,10 +20,10 @@ class Ksh < Formula
   version "93u+" # Versioning scheme: + means "+ patches", - means "beta/alpha".
 
   bottle do
-    cellar :any
-    sha1 "fa65a4bbcc9a9c57db96d00c64cd1e5439eba5e3" => :mavericks
-    sha1 "4f46403e57e4ed2668f760d4c4dea09f321f4278" => :mountain_lion
-    sha1 "973d02e45b84e79fd65e56ed46b8b813553bad79" => :lion
+    revision 1
+    sha1 "44faab9ab6aaf9fe87dfd16d7f14fe985d66cd23" => :mavericks
+    sha1 "28be269952e35c0e5acef9e5d918a73c5bb86fd4" => :mountain_lion
+    sha1 "a5c1f6146a48132771402e66e75728f8d2b8a969" => :lion
   end
 
   resource "init" do
