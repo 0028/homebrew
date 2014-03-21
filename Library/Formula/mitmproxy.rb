@@ -5,6 +5,13 @@ class Mitmproxy < Formula
   url 'http://mitmproxy.org/download/mitmproxy-0.10.tar.gz'
   sha1 'de30fe4744d66a072b225da05d28f89ab2020391'
 
+  bottle do
+    cellar :any
+    sha1 "0d5f1812c7d8673fb62f0ecff643a8a4afba4ffd" => :mavericks
+    sha1 "f81a66717c69ad7b1d6cad7dcfaeb32501ad2198" => :mountain_lion
+    sha1 "fc3d90cc99f8c94bc9c2544dbd9b821c94420ce6" => :lion
+  end
+
   option 'with-pyamf', 'Enable action message format (AMF) support for python'
   option 'with-cssutils', 'Enable beautification of CSS responses'
 
