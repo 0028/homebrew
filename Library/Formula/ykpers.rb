@@ -5,6 +5,13 @@ class Ykpers < Formula
   url 'http://yubico.github.io/yubikey-personalization/releases/ykpers-1.14.1.tar.gz'
   sha1 '5ecc0d6bf9c58bdf825c2d8d158361fc61852ff8'
 
+  bottle do
+    cellar :any
+    sha1 "0f40047cc2e6ef8e807c91d27bb5bb0cf7e1c886" => :mavericks
+    sha1 "91638670b22b50497d261ae42b35b87a8262872b" => :mountain_lion
+    sha1 "88ff4e842d344a2b6ad75b5b99ecdb23b98177f7" => :lion
+  end
+
   option :universal
 
   depends_on 'libyubikey'
