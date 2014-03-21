@@ -5,6 +5,13 @@ class Hbase < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=hbase/hbase-0.98.0/hbase-0.98.0-hadoop2-bin.tar.gz'
   sha1 '95cbaf1703a3f4719f67ff0e2d3247155b49fccc'
 
+  bottle do
+    cellar :any
+    sha1 "268a0a44107a0872b1c0e3c7eeeae2c87e0266e2" => :mavericks
+    sha1 "11fe400379127e3391ecd008e04e30be4b427ff6" => :mountain_lion
+    sha1 "b846fc66a2549973a90d03840e8fe65ef05a772d" => :lion
+  end
+
   depends_on 'hadoop'
 
   def install
