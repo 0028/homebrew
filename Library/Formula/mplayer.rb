@@ -5,6 +5,12 @@ class Mplayer < Formula
 
   stable do
     url "http://www.mplayerhq.hu/MPlayer/releases/MPlayer-1.1.1.tar.xz"
+  bottle do
+    sha1 "be8521ea3b2b9d8d251c8c9cdb1e5b91d6b8948b" => :mavericks
+    sha1 "3c699d4eab2f19f260b7c0564599b3143763b05b" => :mountain_lion
+    sha1 "10fd1a8ceb97a554df39f18dba3542fadc7db8ca" => :lion
+  end
+
     sha1 "ba2f3bd1442d04b17b0143680850273d928689c1"
 
     # Fix compilation on 10.9, adapted from upstream revision r36500
