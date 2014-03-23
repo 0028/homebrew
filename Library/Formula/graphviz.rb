@@ -6,9 +6,9 @@ class Graphviz < Formula
   sha1 'a41e9f1cbcc9a24651e14dd15a4cda3d912d7d19'
 
   bottle do
-    sha1 "43edebeebd741085c814109b4a5721b382728968" => :mavericks
-    sha1 "9d459eabc0adb2ff85ae02b6677ffe8d26d5d895" => :mountain_lion
-    sha1 "994b048a99b041cd5c111ca33ccc370f3ca000dc" => :lion
+    sha1 "593be8aa485bde737036b6b66a274d7d52eb25b6" => :mavericks
+    sha1 "19572fd522a6de5ac612680a54b0cf46c19e596b" => :mountain_lion
+    sha1 "64f30bd5593af138ab5fb145ffa5048758e4622d" => :lion
   end
 
   # To find Ruby and Co.
