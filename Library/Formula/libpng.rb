@@ -7,9 +7,9 @@ class Libpng < Formula
 
   bottle do
     cellar :any
-    sha1 "405736a4cd656764b5bea9ec0b11efb2daddaac0" => :mavericks
-    sha1 "ff19f63cc4e5225f199adb981e0e1d54dede4d2b" => :mountain_lion
-    sha1 "48f94cb7f6a1417f506cc552fd990e7bd2684dec" => :lion
+    sha1 "2b2d8eb191f8594258a53b8d0b806d344f2422db" => :mavericks
+    sha1 "d201d4795bcb3b09981e481ce5235813e45bb4fe" => :mountain_lion
+    sha1 "342448c83cef71c98f66ba068271129acab204fc" => :lion
   end
 
   keg_only :provided_pre_mountain_lion
