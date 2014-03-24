@@ -7,6 +7,12 @@ class Jenkins < Formula
 
   head 'https://github.com/jenkinsci/jenkins.git'
 
+  bottle do
+    sha1 "de56d4e91f04aa135f5f5e8a31e323ae4e1bea1e" => :mavericks
+    sha1 "b9a0f3592aa97af951c48a2c4293d35d923c1c8c" => :mountain_lion
+    sha1 "f94d197784790e5bf4d09e8f46028aceb66d9b73" => :lion
+  end
+
   def install
     if build.head?
       system "mvn clean install -pl war -am -DskipTests"
