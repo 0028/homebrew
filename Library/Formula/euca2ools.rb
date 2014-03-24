@@ -6,6 +6,13 @@ class Euca2ools < Formula
   sha1 "73e235e7e6b17c8d1fb064c14aa24a3de36640e7"
   head "https://github.com/eucalyptus/euca2ools.git", :branch => "master"
 
+  bottle do
+    cellar :any
+    sha1 "4e2bd485d6c5d0991199e04e6e6ac4a6648ac065" => :mavericks
+    sha1 "3c40d8fb5be7620841428693b6c5d37eff884f3a" => :mountain_lion
+    sha1 "6bf44ca5e47edc1ae07a210927a38710a81899d4" => :lion
+  end
+
   depends_on :python
 
   resource "requestbuilder" do
