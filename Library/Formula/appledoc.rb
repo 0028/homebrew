@@ -7,6 +7,12 @@ class Appledoc < Formula
 
   head 'https://github.com/tomaz/appledoc.git', :branch => 'master'
 
+  bottle do
+    sha1 "d75c85aec207abdd045b33da089cafc89d5676e5" => :mavericks
+    sha1 "753284b30a42318dc3cf146862abe95e394f8595" => :mountain_lion
+    sha1 "e27be43033f2a3bbda89aa754135226377d67110" => :lion
+  end
+
   depends_on :xcode
   depends_on :macos => :lion
 
