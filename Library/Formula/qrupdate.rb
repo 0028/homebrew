@@ -5,6 +5,13 @@ class Qrupdate < Formula
   url 'https://downloads.sourceforge.net/qrupdate/qrupdate-1.1.2.tar.gz'
   sha1 'f7403b646ace20f4a2b080b4933a1e9152fac526'
 
+  bottle do
+    cellar :any
+    sha1 "8029bdb00c4823cacfd784d2302db22423210f73" => :mavericks
+    sha1 "ed72a63f71a552f875302ed3a898ddcc5df0578d" => :mountain_lion
+    sha1 "b0ca70fa2739021e6163b8643a4e8ac0deb1af85" => :lion
+  end
+
   depends_on :fortran
   depends_on "homebrew/science/openblas" => :optional
 
