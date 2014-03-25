@@ -3,6 +3,12 @@ require 'formula'
 class GstPluginsUgly < Formula
   homepage 'http://gstreamer.freedesktop.org/'
   url 'http://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.2.3.tar.xz'
+  bottle do
+    sha1 "9a5bc7589cd14458e02172f7a852a4414ab02882" => :mavericks
+    sha1 "2a93709e8c61d4ecaac1f6f1d67c3593e0247e53" => :mountain_lion
+    sha1 "c25350cc1b439d4db68675c9b0b529a62def411e" => :lion
+  end
+
   mirror 'http://ftp.osuosl.org/pub/blfs/svn/g/gst-plugins-ugly-1.2.3.tar.xz'
   sha256 '537b0a7607eee499026388bb705b5b68985a3fd59fe22ee09accaf8cdf57eb3b'
 
