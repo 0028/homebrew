@@ -5,6 +5,12 @@ class OpenBabel < Formula
   url 'https://downloads.sourceforge.net/project/openbabel/openbabel/2.3.2/openbabel-2.3.2.tar.gz'
   sha1 'b8831a308617d1c78a790479523e43524f07d50d'
 
+  bottle do
+    sha1 "f383e47230bded017f1890f1e05be4856408accb" => :mavericks
+    sha1 "d422173125f4ffa5f7238e2e79d5a32ffb72e342" => :mountain_lion
+    sha1 "1fba9879a0bfdc547c73375008cda3c37632a30d" => :lion
+  end
+
   option 'with-cairo',  'Support PNG depiction'
   option 'with-java',   'Compile Java language bindings'
 
