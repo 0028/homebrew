@@ -7,7 +7,10 @@ class Gringo < Formula
 
   bottle do
     cellar :any
-    sha1 "1dc4996fd4469e987a5aab9c205cf157c3460c01" => :mavericks
+    revision 1
+    sha1 "76c04377dac344fb8e277dd88a53d675a75d897c" => :mavericks
+    sha1 "c4ec7feca189df21bf1d642140ab68d7f859fd71" => :mountain_lion
+    sha1 "7de741da8cd2d2c845021797f895b29c74ca3629" => :lion
   end
 
   depends_on 're2c'  => :build
