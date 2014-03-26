@@ -6,6 +6,13 @@ class ClozureCl < Formula
   version '1.9'
   sha1 '589b94093fc356c458ab288aceb5a3d5d9d7b829'
 
+  bottle do
+    cellar :any
+    sha1 "59e8fb15fe3753b2174dbbcffce92389c08e85f6" => :mavericks
+    sha1 "3486dedf74c7789cca68f485c034b7731f8b30a8" => :mountain_lion
+    sha1 "394f5b5b6ebfad22fff90e30f306b9e7d9222946" => :lion
+  end
+
   conflicts_with 'cclive', :because => 'both install a ccl binary'
 
   def install
