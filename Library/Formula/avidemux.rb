@@ -10,9 +10,10 @@ class Avidemux < Formula
   revision 1
 
   bottle do
-    sha1 "0f2b3d5a4a496458809204a3c126505f6473394e" => :mavericks
-    sha1 "6bc4a7c54fb50b836d653c4c076467c579123e94" => :mountain_lion
-    sha1 "5a39c8fff4e620975d2d70d7fd51e85e8dec24e6" => :lion
+    revision 1
+    sha1 "1786de05c2ee17ffe23416b9fec1031f01468cab" => :mavericks
+    sha1 "10963f4316cb42d1e0293a35742093828b6e5c36" => :mountain_lion
+    sha1 "447ceeca1cdb95f109db8318d8b14d6f0998a468" => :lion
   end
 
   option 'with-debug', 'Enable debug build.'
