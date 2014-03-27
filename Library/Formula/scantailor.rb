@@ -22,6 +22,12 @@ class Scantailor < Formula
 
   homepage 'http://scantailor.sourceforge.net/'
   url 'https://downloads.sourceforge.net/project/scantailor/scantailor/0.9.11.1/scantailor-0.9.11.1.tar.gz'
+  bottle do
+    sha1 "8aea44981eccf664203780f4beb865aa52e66ae0" => :mavericks
+    sha1 "e27d8a0c2c2b255c51d9c90273dfb2c8adb1e608" => :mountain_lion
+    sha1 "6d049e43c2e7c3e1e55b788140c70410ddf497d7" => :lion
+  end
+
   version '0.9.11.1' => Version
   sha1 '80970bbcd65fbf8bc62c0ff0cb7bcb78c86961c3'
 
