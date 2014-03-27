@@ -7,6 +7,12 @@ class CheckPostgres < Formula
 
   head "https://github.com/bucardo/check_postgres.git"
 
+  bottle do
+    sha1 "b0f3e2aa8e42d3e47fa62905225f41e4caad935f" => :mavericks
+    sha1 "f8a00038a7a377a5cd117d2a72d9e71db218986c" => :mountain_lion
+    sha1 "a9211edfcead60a87f1eb4803db5ec3d9f989569" => :lion
+  end
+
   option "with-tests", "run tests"
 
   if build.with? "tests"
