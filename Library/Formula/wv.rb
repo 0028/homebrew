@@ -5,6 +5,12 @@ class Wv < Formula
   url 'http://abisource.com/downloads/wv/1.2.9/wv-1.2.9.tar.gz'
   sha1 'db4717a151742dbdb492318f104504a92075543a'
 
+  bottle do
+    sha1 "c80c8b68ed09bdea3f437583666fdb6b0c704772" => :mavericks
+    sha1 "e0d2d6b2eea4cf0aaad1dffbc72102a69f39e40d" => :mountain_lion
+    sha1 "c881f98fcab13687c717d31ccf63acd974c81b77" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'glib'
   depends_on 'libgsf'
