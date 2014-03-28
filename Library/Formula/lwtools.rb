@@ -5,6 +5,13 @@ class Lwtools < Formula
   url "http://lwtools.projects.l-w.ca/releases/lwtools/lwtools-4.9.tar.gz"
   sha1 "a9191d9f7a2148757526f8f14166f483feb3e560"
 
+  bottle do
+    cellar :any
+    sha1 "eec0ed3d45a835915cef94d7aead11de105036d6" => :mavericks
+    sha1 "a7315eb52748b6fa7f775623e815857138bf1968" => :mountain_lion
+    sha1 "0611bbd5553e1c9927a89079cab633b244e93478" => :lion
+  end
+
   def install
     system "make"
     system "make", "install", "INSTALLDIR=#{bin}"
