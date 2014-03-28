@@ -8,10 +8,10 @@ class Cloog < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha1 '38afdce382abcd3c46fb94af7eb72e87d87859d4' => :mavericks
-    sha1 'd6984ce335cf7b8eb482cdd4f0301c6583b00073' => :mountain_lion
-    sha1 'fd707268c3e5beafa9b98a768f7064d5b9699178' => :lion
+    revision 2
+    sha1 "13980420dad9252ed68278ca211c637c84609dc4" => :mavericks
+    sha1 "58e5806938326fc084460dc09318a73452201112" => :mountain_lion
+    sha1 "c03564075c1f3936b952eed278fd8fa0522c260a" => :lion
   end
 
   depends_on 'pkg-config' => :build
