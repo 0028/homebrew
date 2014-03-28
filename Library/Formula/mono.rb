@@ -6,9 +6,10 @@ class Mono < Formula
   sha1 "d58403caec82af414507cefa58ce74bbb792985a"
 
   bottle do
-    sha1 "24b6d8979f74a645f6c9e479cd37c175f146f428" => :mavericks
-    sha1 "f64f94d411755ae039244bb47862c5f8196acf10" => :mountain_lion
-    sha1 "c2b73e639254287efc5a88ef9d07bf08d12b4d37" => :lion
+    revision 1
+    sha1 "2df45a64b7e88c4508cfec29d9d5691b951dbb08" => :mavericks
+    sha1 "9e78905c994be690be625aa02cce596c895bd747" => :mountain_lion
+    sha1 "302765dfbd535a47eb6e7222ed566e8983ad86f4" => :lion
   end
 
   resource "monolite" do
