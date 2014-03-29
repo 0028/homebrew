@@ -5,6 +5,13 @@ class Pmd < Formula
   url "https://downloads.sourceforge.net/project/pmd/pmd/5.1.0/pmd-src-5.1.0.zip"
   sha1 "5dff0c4ca2853c464ce4634079809bdf54918923"
 
+  bottle do
+    cellar :any
+    sha1 "8188853398502d56b583ff6c10ec9a5fc03a68af" => :mavericks
+    sha1 "fb63552d96526ee7fb077cea6b77728756d6dd74" => :mountain_lion
+    sha1 "af5ac104a17bd2059e4256de4dd8b50bf2433375" => :lion
+  end
+
   def install
     rm Dir["bin/*.{bat,cmd,dll,exe}"]
 
