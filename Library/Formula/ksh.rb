@@ -21,9 +21,10 @@ class Ksh < Formula
 
   bottle do
     cellar :any
-    sha1 "fa65a4bbcc9a9c57db96d00c64cd1e5439eba5e3" => :mavericks
-    sha1 "4f46403e57e4ed2668f760d4c4dea09f321f4278" => :mountain_lion
-    sha1 "973d02e45b84e79fd65e56ed46b8b813553bad79" => :lion
+    revision 1
+    sha1 "649bf66723605eea8c4b985f1d55bd74a1aeea93" => :mavericks
+    sha1 "f467ff01f2e6a93bd9c8a94e996f70feed3fac36" => :mountain_lion
+    sha1 "2715244f46c56f7df1f6cd908d61a21f600334a6" => :lion
   end
 
   resource "init" do
