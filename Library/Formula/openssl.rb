@@ -7,9 +7,10 @@ class Openssl < Formula
   sha256 '6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a'
 
   bottle do
-    sha1 "2687c0abb5e23d765bbd0024a010e36b05a8939e" => :mavericks
-    sha1 "dcaee2f1e51e8d0da7614e6dab4fc334f736d0de" => :mountain_lion
-    sha1 "4fabb39f5db46e8e62bf0b05e0133cd7e717860a" => :lion
+    revision 1
+    sha1 "f1a26a0759ade5eedb8f8f825e46bdbf6b8938ba" => :mavericks
+    sha1 "c3544b606e3f6b832d9915e66cb7c5e0ef3cc74b" => :mountain_lion
+    sha1 "4307404fd9c18c9d51ef2fbd5d7853f64670de38" => :lion
   end
 
   depends_on "makedepend" => :build if MacOS.prefer_64_bit?
