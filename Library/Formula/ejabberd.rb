@@ -5,6 +5,12 @@ class Ejabberd < Formula
   url "http://www.process-one.net/downloads/ejabberd/13.12/ejabberd-13.12.tgz"
   sha1 "3aedb5012fab49181961ff24bad3af581f4b30ee"
 
+  bottle do
+    sha1 "a427eaa49b9a732f738e2e2a6ec7a46259bf92da" => :mavericks
+    sha1 "6f812dd83fef91b758f43a82a57164e7fd34de9d" => :mountain_lion
+    sha1 "25be2da7f2a98482d1fd0be5fa473f76a03fa934" => :lion
+  end
+
   depends_on "openssl"
   depends_on "erlang"
   depends_on "libyaml"
