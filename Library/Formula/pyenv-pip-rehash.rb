@@ -7,6 +7,13 @@ class PyenvPipRehash < Formula
 
   head 'https://github.com/yyuu/pyenv-pip-rehash.git'
 
+  bottle do
+    cellar :any
+    sha1 "5d43120bdaf5614c2c8011c99629a3465fc25d07" => :mavericks
+    sha1 "2188b5ffaac40d066c9a5d226e68a78a4ea86861" => :mountain_lion
+    sha1 "918449b6ed161fb8befd222fc4a7ba57b5c1bb21" => :lion
+  end
+
   depends_on 'pyenv'
 
   def install
