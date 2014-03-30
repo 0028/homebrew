@@ -3,6 +3,12 @@ require 'formula'
 class Vim < Formula
   homepage 'http://www.vim.org/'
   head 'https://vim.googlecode.com/hg/'
+  bottle do
+    sha1 "3daf307d40d96e38b6522f82eda31b78c6ffc2d5" => :mavericks
+    sha1 "9a52c8c349e90f12955280a327870245f58a738d" => :mountain_lion
+    sha1 "dec24f02cc6e0ed07ab09bd1149c767606809d0e" => :lion
+  end
+
   # This package tracks debian-unstable: http://packages.debian.org/unstable/vim
   url 'http://ftp.debian.org/debian/pool/main/v/vim/vim_7.4.225.orig.tar.gz'
   sha1 '674fafec19e24f75113c9f5a8440a85e8e636c3e'
