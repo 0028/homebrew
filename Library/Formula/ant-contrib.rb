@@ -6,6 +6,13 @@ class AntContrib < Formula
   sha1 "05b74808d51f501a993457fb9b7871484acba901"
   version "1.0b3"
 
+  bottle do
+    cellar :any
+    sha1 "1eacd1255e4c7b3e69a2ab8c4d5aeb2d9b718733" => :mavericks
+    sha1 "214aea3f173ddb9c1aec7b26742601d970954153" => :mountain_lion
+    sha1 "21c6367c57e1ae7eb90c660acb52d4eb0bbfc60c" => :lion
+  end
+
   depends_on "ant"
 
   def install
