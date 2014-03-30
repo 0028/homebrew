@@ -5,6 +5,12 @@ class Bind < Formula
   url 'http://ftp.isc.org/isc/bind9/9.9.5/bind-9.9.5.tar.gz'
   sha1 'f3fe8000628ec57f332aec1ad9587b767208a38f'
 
+  bottle do
+    sha1 "e1e53c30ff38a6dfd58210a3cabc269120b8cd48" => :mavericks
+    sha1 "c569623469ce3b0fcbf1a16f06a9dab74a26fc96" => :mountain_lion
+    sha1 "74fdfe7c052dda9ac9a576b1b66a6e63f0fe5c8c" => :lion
+  end
+
   depends_on "openssl"
 
   def install
