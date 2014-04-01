@@ -7,9 +7,10 @@ class Glib < Formula
   sha256 "0d27f195966ecb1995dcce0754129fd66ebe820c7cd29200d264b02af1aa28b5"
 
   bottle do
-    sha1 "85f199d88dd10459de8752a42bd25a6092046d14" => :mavericks
-    sha1 "6c7aada5d49452943a59949ae71a51a8dce627b3" => :mountain_lion
-    sha1 "ab9fe14888599a51f45afc91a4af007f1311a67c" => :lion
+    revision 1
+    sha1 "c156adacf402460b7d8d901ac520d1e29f2de397" => :mavericks
+    sha1 "56d08c736af54e3460000bd46a97d5eabe1d8a45" => :mountain_lion
+    sha1 "54e29dea72383197ec878c29bf9ccd6c2e883b97" => :lion
   end
 
   option :universal
