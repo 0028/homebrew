@@ -5,6 +5,13 @@ class Tinyxml < Formula
   url 'https://downloads.sourceforge.net/project/tinyxml/tinyxml/2.6.2/tinyxml_2_6_2.tar.gz'
   sha1 'cba3f50dd657cb1434674a03b21394df9913d764'
 
+  bottle do
+    cellar :any
+    sha1 "3d0bd56c6ae0ebc5b868f4242e0b97e15b7d2bdf" => :mavericks
+    sha1 "a5cb941cd9b7c18e2b43236e80d4ecb0a0ad3e9f" => :mountain_lion
+    sha1 "533ea7856dd1519eaf01a5655f6991d2563fdcd1" => :lion
+  end
+
   option :universal
 
   depends_on 'cmake' => :build
