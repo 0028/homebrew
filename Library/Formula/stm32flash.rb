@@ -7,6 +7,13 @@ class Stm32flash < Formula
   version "0.3beta2"
   head "git://gitorious.org/stm32flash/stm32flash.git"
 
+  bottle do
+    cellar :any
+    sha1 "62931c62f369ecfa01237e0e4c189d4137f57626" => :mavericks
+    sha1 "196b3e551e50e8a55ce8d436d44221b908767618" => :mountain_lion
+    sha1 "c9fae0eb10bf7567b749b6680bb7236144a15163" => :lion
+  end
+
   stable do
     # Create manual page folder in Makefile install target
     patch do
