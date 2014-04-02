@@ -5,6 +5,13 @@ class AppEnginePython < Formula
   url 'https://commondatastorage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.1.zip'
   sha1 'fd1f0973733fcc3def77d48847d33ae529589d9c'
 
+  bottle do
+    cellar :any
+    sha1 "2b85ed27c323ad7c0f666b1b4d980fc8e40031bf" => :mavericks
+    sha1 "c97f94a623cbdc252fe5ddd292c5ad1b8479f8c4" => :mountain_lion
+    sha1 "375c63eaafc0a43d2756f70ffaf0c8e1730c8ff5" => :lion
+  end
+
   def install
     cd '..'
     share.install 'google_appengine' => name
