@@ -5,6 +5,13 @@ class Awscli < Formula
   url "https://pypi.python.org/packages/source/a/awscli/awscli-1.3.6.tar.gz"
   sha1 "5971db1f8a19e87c9dd798a0233490114bb1d9ac"
 
+  bottle do
+    cellar :any
+    sha1 "039a7c84f906c956e0dfb5e480fe35cd2a2c9968" => :mavericks
+    sha1 "536a512b67604c81561eb5a2cc1601510deca1b0" => :mountain_lion
+    sha1 "536d0fec87f7dd80544db896a4bfc47cbb57075c" => :lion
+  end
+
   head do
     url "https://github.com/aws/aws-cli.git", :branch => :develop
 
