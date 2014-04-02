@@ -5,6 +5,12 @@ class Stan < Formula
   url "https://github.com/stan-dev/stan/archive/v2.2.0.tar.gz"
   sha1 "4c9be875f3627bb5e1089fd24600aa4fa4f862f3"
 
+  bottle do
+    cellar :any
+    sha1 "fd14f75da180a93e09485674a5ef5650a472c886" => :mavericks
+    sha1 "b77601ff04012645d3cbc0261b692a9dfb8a2f57" => :mountain_lion
+  end
+
   depends_on :macos => :mountain_lion
   depends_on :xcode
 
