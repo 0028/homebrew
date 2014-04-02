@@ -7,6 +7,13 @@ class Postgis < Formula
 
   head 'http://svn.osgeo.org/postgis/trunk/'
 
+  bottle do
+    cellar :any
+    sha1 "f15396e8337bd6a72de545651cef3e9fa32a2b93" => :mavericks
+    sha1 "a235d4718bc5dfe48b2cded17da29c1ee8fc0d26" => :mountain_lion
+    sha1 "ed6d15391ea05db28bbf96581f3a8a2e5fbbcf34" => :lion
+  end
+
   option 'with-gui', 'Build shp2pgsql-gui in addition to command line tools'
 
   depends_on :autoconf
