@@ -4,6 +4,13 @@ class Mapserver < Formula
   homepage 'http://mapserver.org/'
   url 'http://download.osgeo.org/mapserver/mapserver-6.2.1.tar.gz'
   sha1 'bbe4234a4dcc179812c6598f68fe59a3dae63e44'
+  bottle do
+    cellar :any
+    sha1 "651943a608c5a3c5167ec0a2479a440b091ef096" => :mavericks
+    sha1 "f9630b62c66aa84e71d9170b91764e09078173ab" => :mountain_lion
+    sha1 "621f4b2bddb7db714c670b3463d158a902597b8b" => :lion
+  end
+
   revision 2
 
   option "with-fastcgi", "Build with fastcgi support"
