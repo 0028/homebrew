@@ -6,9 +6,10 @@ class Xplanet < Formula
   sha1 "7c5208b501b441a0184cbb334a5658d0309d7dac"
 
   bottle do
-    sha1 "e22172b3ee5a08cba075846194fc7f7f21c01ffc" => :mavericks
-    sha1 "35dc45eedc379c7fc91bb129e513e4c8e27d5f9e" => :mountain_lion
-    sha1 "50b7295df967c9418ebcca392e4c424a3f00c8a4" => :lion
+    revision 1
+    sha1 "8e5e76e0f0ee58aea65f93b5b058155fc8add2b5" => :mavericks
+    sha1 "ab54fbb2a34c1a6e32db0df5fc97044dd2f8c699" => :mountain_lion
+    sha1 "e47df882da00bd9b49c4fffbc218e632ab51c0a8" => :lion
   end
 
   revision 1
