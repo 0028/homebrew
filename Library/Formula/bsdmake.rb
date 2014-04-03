@@ -5,6 +5,12 @@ class Bsdmake < Formula
   url 'http://opensource.apple.com/tarballs/bsdmake/bsdmake-24.tar.gz'
   sha1 '9ce3c3fc01e0eb47d82827b1eb227eb371fefd5c'
 
+  bottle do
+    sha1 "10fd94012e8992f54531d6f09fa215f3ebd123b8" => :mavericks
+    sha1 "f7afdd3df7ed02e41a815092dc349f7647411226" => :mountain_lion
+    sha1 "8f80cd332fe83e9986fbf7187b1816af88241c25" => :lion
+  end
+
   keg_only :provided_until_xcode43
 
   # MacPorts patches to make bsdmake play nice with our prefix system
