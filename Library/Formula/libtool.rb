@@ -10,10 +10,11 @@ class Libtool < Formula
   sha1 '22b71a8b5ce3ad86e1094e7285981cae10e6ff88'
 
   bottle do
-    revision 2
-    sha1 '860a75329b31aa8729d71438d6a696fd453a85e4' => :mavericks
-    sha1 'd97af1451dd547b5857bddfa8e5f241fd78d7c9d' => :mountain_lion
-    sha1 '6873a7b72e86f369f43125c0e29ae5cdbc2d67c1' => :lion
+    cellar :any
+    revision 3
+    sha1 "e221b9f09d9e06517a08143d0b5475eeda6493c9" => :mavericks
+    sha1 "2030ab09726443274ccf92ddde322396456494b6" => :mountain_lion
+    sha1 "5158db75a6187ab147236eaf1f09e97f6c38eb1b" => :lion
   end
 
   keg_only :provided_until_xcode43
