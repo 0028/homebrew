@@ -7,6 +7,13 @@ class Libltc < Formula
   url "https://github.com/x42/libltc/releases/download/v1.1.3/libltc-1.1.3.tar.gz"
   sha1 "7a5ed324c4a8f87ae1165d8484a153efce18f803"
 
+  bottle do
+    cellar :any
+    sha1 "84181bad2146ad427d21237297019c60b7906552" => :mavericks
+    sha1 "f54511b5bbdeb1d1148ea79b9dc326f3437c7889" => :mountain_lion
+    sha1 "db2720bf8906c837dc46ce860e3c0fa8f3be54ca" => :lion
+  end
+
 # This patch has been fixed in the master branch not released yet (https://github.com/x42/libltc/commit/b98e5d4094fbbc637fc83fe25d8348e41c325cf8)
   patch :DATA
 
