@@ -6,10 +6,10 @@ class Mongodb < Formula
   sha1 '3aa495cf32769a09ee9532827391892d96337d6b'
 
   bottle do
-    revision 2
-    sha1 "5447af6e8f6a2870306e03d318351f1d8efecb1f" => :mavericks
-    sha1 "8b40016996e9dd42bbef3657d3a3c9357bd5d5ea" => :mountain_lion
-    sha1 "e9686685cf1fdbd65109ea8e9979169f0ce728b6" => :lion
+    revision 3
+    sha1 "2c209465a19c5b88cdc9aecac3b6acbda5977e36" => :mavericks
+    sha1 "237cc10a6f9842655bd4e464b2e74ee870f5b1a5" => :mountain_lion
+    sha1 "b7928b58efc18f98633117b75572bca0767a3292" => :lion
   end
 
   stable do
