@@ -5,6 +5,12 @@ class Pow < Formula
   url 'http://get.pow.cx/versions/0.4.3.tar.gz'
   sha1 '7e1faf3c33588bc3e73fb3583265e050a48718b0'
 
+  bottle do
+    sha1 "9985731a640ab9658c9a2ea7c3c53d64ce97c58e" => :mavericks
+    sha1 "098b95c9a3415008fad30a94ff12b35fad3a19fb" => :mountain_lion
+    sha1 "cf556412a870562da669886b27afd25bf309214d" => :lion
+  end
+
   depends_on 'node'
 
   def install
