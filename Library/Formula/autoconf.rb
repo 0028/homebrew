@@ -7,10 +7,10 @@ class Autoconf < Formula
   sha1 '562471cbcb0dd0fa42a76665acf0dbb68479b78a'
 
   bottle do
-    revision 1
-    sha1 "319a4ac05d83b5b3db37dcc629a46a412ec1989b" => :mavericks
-    sha1 "83184a596d69f3a868e6780c1c8fba309ea28fb2" => :mountain_lion
-    sha1 "7d31f63e5ddd1bbbf0397b0b70df1ff9e70f998b" => :lion
+    revision 2
+    sha1 "23c2c2d0dbc6edc49fb31dfe2d167c6a9548f962" => :mavericks
+    sha1 "ea08219b1754b3e7c665f1fcee313ea0b2951770" => :mountain_lion
+    sha1 "c4f0e5b54c6773948928bb104f0464d676556698" => :lion
   end
 
   keg_only :provided_until_xcode43
