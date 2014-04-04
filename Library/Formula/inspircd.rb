@@ -7,6 +7,12 @@ class Inspircd < Formula
 
   head 'https://github.com/inspircd/inspircd.git'
 
+  bottle do
+    sha1 "eb8130177b6d8ecc56eed84a281d78ab92b5d510" => :mavericks
+    sha1 "a7d06bd2a096e3199dfeff924ef8a92322638749" => :mountain_lion
+    sha1 "9755ad59119406d015676a556dbec3789a3be5f8" => :lion
+  end
+
   skip_clean 'data'
   skip_clean 'logs'
 
