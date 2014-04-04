@@ -7,6 +7,12 @@ class Pyenv < Formula
 
   head 'https://github.com/yyuu/pyenv.git'
 
+  bottle do
+    sha1 "dbdab9948eec4c53d3e25c4b0419cde5d8761fc2" => :mavericks
+    sha1 "7b8457af81809ea175a96758c1b4e42c92a887b7" => :mountain_lion
+    sha1 "fb779636fec0f59c29dac1540e00d8f7e894d3fb" => :lion
+  end
+
   depends_on 'autoconf' => [:recommended, :run]
   depends_on 'pkg-config' => [:recommended, :run]
 
