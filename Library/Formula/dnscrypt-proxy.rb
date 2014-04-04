@@ -5,6 +5,12 @@ class DnscryptProxy < Formula
   url 'http://download.dnscrypt.org/dnscrypt-proxy/dnscrypt-proxy-1.3.3.tar.bz2'
   sha256 'd9aca5253b9fe0fd0bb756201e837d3b723c091e5be0eb3a81cf5432cedaec47'
 
+  bottle do
+    sha1 "f264f1bc6b44ec6b58ee9131362fe4b497ea9f32" => :mavericks
+    sha1 "7b313eb3a85c9fd1357287ce25fcb138ff298012" => :mountain_lion
+    sha1 "cb2f1356d7af64ccb5cfb77d184359954e4e98ac" => :lion
+  end
+
   head do
     url 'https://github.com/opendns/dnscrypt-proxy.git', :branch => 'master'
 
