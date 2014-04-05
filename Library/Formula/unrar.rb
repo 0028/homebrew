@@ -5,6 +5,13 @@ class Unrar < Formula
   url 'http://www.rarlab.com/rar/unrarsrc-5.1.2.tar.gz'
   sha1 'e815bbed1e3feceec77e1e33f685dd558cdcc9dd'
 
+  bottle do
+    cellar :any
+    sha1 "9475d1111c85d2be8780b5ce56e6ef782a25d569" => :mavericks
+    sha1 "a91bfc3c7aab2fee42b377ab29d1bc1d952ab687" => :mountain_lion
+    sha1 "3510f88c8d6caaaa1ecbef7020dfd53072f7eb12" => :lion
+  end
+
   def install
     system "make"
     bin.install 'unrar'
