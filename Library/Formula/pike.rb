@@ -4,6 +4,12 @@ class Pike < Formula
   homepage 'http://pike.lysator.liu.se'
   url 'http://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v7.8.700.tar.gz'
   sha1 '877bd50d2bb202aa485d1f7c62398922d60696c7'
+  bottle do
+    sha1 "7f7263a5c61e8bf4a6bd1cef0d5bc8f3dc5f52d8" => :mavericks
+    sha1 "033e6274c4ed205927bb2b84958f0b7b454db02a" => :mountain_lion
+    sha1 "9420b19779f2d250075a0f4d19c7f76d654be032" => :lion
+  end
+
   revision 1
 
   depends_on "nettle"
