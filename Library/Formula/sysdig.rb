@@ -7,6 +7,12 @@ class Sysdig < Formula
 
   head 'https://github.com/draios/sysdig.git', :branch => 'master'
 
+  bottle do
+    sha1 "f82324e614e3c0ae32fd90711cefd7bdeae5b575" => :mavericks
+    sha1 "62a9e132a99e6f1d47e458f04ca1477d8626bc52" => :mountain_lion
+    sha1 "be0c1e746ecb5f72c76a3b3c4d8b51d627108798" => :lion
+  end
+
   depends_on "cmake" => :build
 
   def install
