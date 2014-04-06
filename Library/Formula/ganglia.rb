@@ -5,6 +5,12 @@ class Ganglia < Formula
   url 'https://downloads.sourceforge.net/project/ganglia/ganglia%20monitoring%20core/3.6.0/ganglia-3.6.0.tar.gz'
   sha1 'b06529ac49deb1f1c65c6215b8d2d13c3f3fa23f'
 
+  bottle do
+    sha1 "bdbf2dc5937b05fe722de080e6049b0820be6f0f" => :mavericks
+    sha1 "97244d29687ce8918ec38626fd33c90cb06e98fa" => :mountain_lion
+    sha1 "0b9b4eeaee965e67a6ceb6feda22adda6c5437a2" => :lion
+  end
+
   conflicts_with 'coreutils', :because => 'both install `gstat` binaries'
 
   depends_on 'pkg-config' => :build # to find APR
