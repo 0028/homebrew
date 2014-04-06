@@ -6,6 +6,13 @@ class Sqlmap < Formula
   sha1 "25d7c13fc6e8bb55a1b4d9ba60a7ebd558ad0374"
   head "https://github.com/sqlmapproject/sqlmap.git"
 
+  bottle do
+    cellar :any
+    sha1 "fc322ef1bce66f6d9b3273d345dcfa7747a76022" => :mavericks
+    sha1 "66d1306f8beb99c11e72a6a1d396e2a1cff5c8d4" => :mountain_lion
+    sha1 "aa1c82d0a74e768e5f2d2c39e90e0509b1508be1" => :lion
+  end
+
   option "with-python", "Build with Homebrew Python"
   option "with-mysql", "Install with support for direct connection to MySQL"
   option "with-postgresql", "Install with support for direct connection to PostgreSQL"
