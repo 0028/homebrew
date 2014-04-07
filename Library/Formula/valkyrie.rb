@@ -7,6 +7,12 @@ class Valkyrie < Formula
 
   head 'svn://svn.valgrind.org/valkyrie/trunk'
 
+  bottle do
+    sha1 "c6297e6a54ae360f86c8731fd342de7b6889c5fc" => :mavericks
+    sha1 "f2b5f5ece09c8a1aedf76a13021e7d17cc6634f1" => :mountain_lion
+    sha1 "ad1af80fe6b91f95194423ea061b7718dd532a48" => :lion
+  end
+
   depends_on 'qt'
   depends_on 'valgrind'
 
