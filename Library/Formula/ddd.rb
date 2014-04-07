@@ -3,6 +3,12 @@ require 'formula'
 class Ddd < Formula
   homepage 'http://www.gnu.org/s/ddd/'
   url 'http://ftpmirror.gnu.org/ddd/ddd-3.3.12.tar.gz'
+  bottle do
+    sha1 "2d25bed240220c51804953d0bad64e98636eedec" => :mavericks
+    sha1 "a6ff02ca708948d69647290acb48a9fc217fcff0" => :mountain_lion
+    sha1 "74e829f541dfc7c72d258acd0c3988c80672b5c4" => :lion
+  end
+
   mirror 'http://ftp.gnu.org/gnu/ddd/ddd-3.3.12.tar.gz'
   sha1 'b91d2dfb1145af409138bd34517a898341724e56'
 
