@@ -22,9 +22,10 @@ class X264 < Formula
 
   bottle do
     cellar :any
-    sha1 "7a35f1da2e78eedb2be6d8f44d4bd1bc2a62339d" => :mavericks
-    sha1 "1b55c37b83f95a589b1832ccab7d8dae3700f5dc" => :mountain_lion
-    sha1 "19c9d9a6df12cbc4a6201c044215d2be609e6844" => :lion
+    revision 1
+    sha1 "73e94b61a9043544baffddab6afa686b7d8bb9d9" => :mavericks
+    sha1 "ea4425d37f34aed9bc7102472ef8ea31562cc39b" => :mountain_lion
+    sha1 "fc9a0bf0f8ddc80378235f20f964a9e5fb78605f" => :lion
   end
 
   depends_on 'yasm' => :build
