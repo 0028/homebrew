@@ -7,6 +7,13 @@ class Postgis < Formula
 
   head 'http://svn.osgeo.org/postgis/trunk/'
 
+  bottle do
+    cellar :any
+    sha1 "d21a1902218c0b65ce944e4411a62605e19f8e38" => :mavericks
+    sha1 "ac212192756e25723f82d5fd19b12ddd482e5042" => :mountain_lion
+    sha1 "86c6c2c648c705bca4ea31ca9f00ab0d8dd896c9" => :lion
+  end
+
   option 'with-gui', 'Build shp2pgsql-gui in addition to command line tools'
   option 'without-gdal', 'Disable postgis raster support'
 
