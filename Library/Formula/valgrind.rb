@@ -5,6 +5,12 @@ class Valgrind < Formula
 
   stable do
     url 'http://valgrind.org/downloads/valgrind-3.9.0.tar.bz2'
+  bottle do
+    sha1 "dbb79e700a81af799f7cd4185b81e69c2e5353ec" => :mavericks
+    sha1 "c101c81e61a4513c8931562b58bea7fc1f9c57d2" => :mountain_lion
+    sha1 "e5256efae155706745b392cb858d3f0001a1ab1b" => :lion
+  end
+
     sha1 '9415e28933de9d6687f993c4bb797e6bd49583f1'
 
     if MacOS.version == :mavericks
