@@ -7,6 +7,12 @@ class Sphinx < Formula
 
   head 'http://sphinxsearch.googlecode.com/svn/trunk/'
 
+  bottle do
+    sha1 "6510899ee55234f949d28abc9073131a9fddade4" => :mavericks
+    sha1 "ed63bbe98c8354345bc7c1c22c866c77dde8c245" => :mountain_lion
+    sha1 "75ade9d0ae8ae4f57bf3debb388eebd2e4e4f6af" => :lion
+  end
+
   devel do
     url 'http://sphinxsearch.com/files/sphinx-2.2.2-beta.tar.gz'
     sha1 '6a63111c5f2fcd93915d114845f2375b031ff9da'
