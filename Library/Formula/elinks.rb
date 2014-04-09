@@ -6,10 +6,10 @@ class Elinks < Formula
   sha1 'd13edc1477d0ab32cafe7d3c1f3a23ae1c0a5c54'
 
   bottle do
-    revision 1
-    sha1 "a79d42beb1bb9f775d18a03dc625103a9b1bb857" => :mavericks
-    sha1 "ae13670b20cd68276113c516ab11558a422e2718" => :mountain_lion
-    sha1 "fdaa632b87faed30cbeb923d65d0e453b6601637" => :lion
+    revision 2
+    sha1 "1ef57c86ad83614b0fabcd141162b6f08eb8d926" => :mavericks
+    sha1 "5221bc55f0b6cbc41b3d52c8b609cfaa6ce1da9f" => :mountain_lion
+    sha1 "d23f596254f09b0f497113a5238ca4ba47be368d" => :lion
   end
 
   devel do
