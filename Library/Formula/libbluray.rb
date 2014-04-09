@@ -5,6 +5,13 @@ class Libbluray < Formula
   url "ftp://ftp.videolan.org/pub/videolan/libbluray/0.5.0/libbluray-0.5.0.tar.bz2"
   sha1 "1a9c61daefc31438f9165e7681c563d0524b2d3e"
 
+  bottle do
+    cellar :any
+    sha1 "77399f6340402094f2553b641f0b76a052d14338" => :mavericks
+    sha1 "0b88b31fb9f7a6ed161f1b89c37693db2aa5afbf" => :mountain_lion
+    sha1 "c37a14f192e6f640591262920b11855682d58fef" => :lion
+  end
+
   head do
     url "git://git.videolan.org/libbluray.git"
 
