@@ -6,9 +6,10 @@ class Ejabberd < Formula
   sha1 "3aedb5012fab49181961ff24bad3af581f4b30ee"
 
   bottle do
-    sha1 "6483132bdf79af21c0d4e7fc84ec25b4698d0ec7" => :mavericks
-    sha1 "55f409c6d9a10a2b1c687050ff80d6247b8db06b" => :mountain_lion
-    sha1 "572ed4bc18a5ca6d316e71af3c8b138fc7ffdc8c" => :lion
+    revision 1
+    sha1 "d392bc7794858a89e135bf39c803cd4d2fcbf647" => :mavericks
+    sha1 "03ee29873b893fc0f4166714141d60d5e1b85d60" => :mountain_lion
+    sha1 "dda9fc4a0e09127cf5201ba9f354ce21dac42158" => :lion
   end
 
   depends_on "openssl"
