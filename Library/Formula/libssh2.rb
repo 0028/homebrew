@@ -7,10 +7,10 @@ class Libssh2 < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha1 "77561b594fe158e8ce1d9abf8e4aac2534008438" => :mavericks
-    sha1 "09c45c7ad01aba94465be34c390ca6547a92ef88" => :mountain_lion
-    sha1 "12f1f78301ce481c34eed2abca5c79d11798dd1d" => :lion
+    revision 2
+    sha1 "ec807afff0a6a9403efee259ea22f0b90d3dee84" => :mavericks
+    sha1 "17ccc8d9e64d30593ad0b8f6ee0501f5c5702b5d" => :mountain_lion
+    sha1 "e04631ce2c0668cb8202b5cb2ddc5a385640885f" => :lion
   end
 
   depends_on "openssl"
