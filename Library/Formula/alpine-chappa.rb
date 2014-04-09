@@ -5,6 +5,12 @@ class AlpineChappa < Formula
   url "http://patches.freeiz.com/alpine/release/src/alpine-2.11.tar.xz"
   sha1 "656556f5d2e5ec7e3680d1760cd02aa3a0072c46"
 
+  bottle do
+    sha1 "9169b8947a5d90d2f9a0b418621fc445c9f9eeff" => :mavericks
+    sha1 "a5679867ca0542019f0c867f7c4c7c9452a88d51" => :mountain_lion
+    sha1 "d67493fb2aff1176e76aaf93ed4e2f59d5322181" => :lion
+  end
+
   depends_on "openssl"
 
   conflicts_with "alpine", :because => "both install an `alpine` binary"
