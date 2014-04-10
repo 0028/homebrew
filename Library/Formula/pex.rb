@@ -10,7 +10,7 @@ class Pex < Formula
 
   def install
     system "make", "install"
-    system "pex", "init"
+    system "pex", "init" unless File.directory?(`pex --repo`.strip)
   end
 
   test do
