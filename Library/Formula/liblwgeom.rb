@@ -5,6 +5,13 @@ class Liblwgeom < Formula
 
   stable do
     url "http://download.osgeo.org/postgis/source/postgis-2.1.1.tar.gz"
+  bottle do
+    cellar :any
+    sha1 "222c662b18e0f8682a545fd924b6f5446951a9c2" => :mavericks
+    sha1 "918ba2b824b202f0fb9eff14f3f4dae1c3b2b5d7" => :mountain_lion
+    sha1 "8c047d21560626ddd88e76923a0b38a69b204ee5" => :lion
+  end
+
     sha1 "eaff009fb22b8824f89e5aa581e8b900c5d8f65b"
 
       # Strip all the PostgreSQL functions from PostGIS configure.ac, to allow
