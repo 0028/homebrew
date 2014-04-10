@@ -5,6 +5,13 @@ class LibtorrentRasterbar < Formula
   url 'https://downloads.sourceforge.net/project/libtorrent/libtorrent/libtorrent-rasterbar-0.16.16.tar.gz'
   sha1 'de8faed5cbc09baddb2748cb7b75edd07ab0addc'
 
+  bottle do
+    cellar :any
+    sha1 "7545ed9f3aab887ce711e532f519ffc46289782f" => :mavericks
+    sha1 "56b52529f8432410a082771d16b2233e6fa5a859" => :mountain_lion
+    sha1 "5c338e3a35f2202cc2fea73a8605603529493237" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'boost'
   depends_on 'openssl' if MacOS.version <= :snow_leopard # Needs a newer version of OpenSSL on Snow Leopard
