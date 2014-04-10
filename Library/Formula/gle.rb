@@ -6,6 +6,12 @@ class Gle < Formula
   version '4.2.4c'
   sha1 '5528528dfe54c74f69bfad174105d55a3dd90e49'
 
+  bottle do
+    sha1 "e7ca10d97aa70e5b51e61ee6dd4d5c5e45fa1aad" => :mavericks
+    sha1 "cd5e8aed4c52ca4d853de52ca42626f054ec528e" => :mountain_lion
+    sha1 "03fd063296b4cbd1a671089227fb03bea84cda24" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on :x11
   depends_on 'jpeg' => :optional
