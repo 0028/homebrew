@@ -5,6 +5,13 @@ class Thrift < Formula
 
   stable do
     url "http://archive.apache.org/dist/thrift/0.9.1/thrift-0.9.1.tar.gz"
+  bottle do
+    cellar :any
+    sha1 "7ce92c3eb2f7811337c67b5827a8558a6ba0ab29" => :mavericks
+    sha1 "aec710158bd10c4d7e7072b17a193ba7ac173883" => :mountain_lion
+    sha1 "cb3e986d3f9e232c1bf3e314d900689e960739d9" => :lion
+  end
+
     sha1 "dc54a54f8dc706ffddcd3e8c6cd5301c931af1cc"
 
     # These patches are 0.9.1-specific and can go away once a newer version is released
