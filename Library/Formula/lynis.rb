@@ -5,6 +5,13 @@ class Lynis < Formula
   url 'http://cisofy.com/files/lynis-1.5.0.tar.gz'
   sha1 '082c1ff1cac36af4548d5626d7dc4f0d263f8d11'
 
+  bottle do
+    cellar :any
+    sha1 "1899d9a39cd8696fc3cdafebbd20f34ee096c503" => :mavericks
+    sha1 "a1ea430e384afd096a6a79191863e9054d519afe" => :mountain_lion
+    sha1 "1480fe2e99c5b5df27c90a0015030e931f6b2bcc" => :lion
+  end
+
   def install
     inreplace 'lynis' do |s|
       s.gsub! 'tINCLUDE_TARGETS="/usr/local/include/lynis /usr/local/lynis/include /usr/share/lynis/include ./include"', 'tINCLUDE_TARGETS="' + (prefix/'include') + '"'
