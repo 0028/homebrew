@@ -4,6 +4,13 @@ class Zbar < Formula
   homepage 'http://zbar.sourceforge.net'
   url 'https://downloads.sourceforge.net/project/zbar/zbar/0.10/zbar-0.10.tar.bz2'
   sha1 '273b47c26788faba4325baecc34063e27a012963'
+  bottle do
+    cellar :any
+    sha1 "99c10e86df21dfea593cccbbc8877a3135870426" => :mavericks
+    sha1 "1d03e82a6c4cb56f906fd501ed44cdaa0615a766" => :mountain_lion
+    sha1 "adccd1fae5cfb47743d0f02592f90f89c059c97a" => :lion
+  end
+
   revision 1
 
   depends_on :x11
