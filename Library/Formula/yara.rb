@@ -5,6 +5,13 @@ class Yara < Formula
   url 'https://github.com/plusvic/yara/archive/2.1.0.tar.gz'
   sha1 '8289c281a44c933e11de25953f3910fe9f8ee82e'
 
+  bottle do
+    cellar :any
+    sha1 "3d19ccd5ee9512689972148e3a1defbb811b55a5" => :mavericks
+    sha1 "8608ebf846e5cfa62dbdec2c34391f2016961268" => :mountain_lion
+    sha1 "9191325f92c19094b3f22565596acd4610b114fe" => :lion
+  end
+
   depends_on 'pcre'
   depends_on 'libtool' => :build
   depends_on 'autoconf' => :build
