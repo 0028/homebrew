@@ -5,6 +5,12 @@ class Freerdp < Formula
 
   stable do
     url "https://github.com/FreeRDP/FreeRDP/archive/1.0.2.tar.gz"
+  bottle do
+    sha1 "6f2733ce1a372bbb93b2fb0761ce85614771a7b6" => :mavericks
+    sha1 "6a925d3f28444806ab8446fbdf088987bbaf05d3" => :mountain_lion
+    sha1 "f8c2cf21e0b0c6def44225be688802cac438f39b" => :lion
+  end
+
     sha1 "aa521fc9b0610df6c03c2297c1230348805b0010"
 
     patch do
