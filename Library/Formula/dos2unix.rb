@@ -5,6 +5,12 @@ class Dos2unix < Formula
   url 'http://waterlan.home.xs4all.nl/dos2unix/dos2unix-6.0.4.tar.gz'
   sha1 '93d73148c09908a42dcbf5339312c9aa1f18ba7c'
 
+  bottle do
+    sha1 "58b58c2fce8b3f37e654ad31418cb3adb8c1d39f" => :mavericks
+    sha1 "9140bd892b71580ed193d5e23a3b5766faa0f338" => :mountain_lion
+    sha1 "4a5fb1357c28e46fe500aad5ef2c738431057b0e" => :lion
+  end
+
   patch do
     url 'http://waterlan.home.xs4all.nl/dos2unix/dos2unix-pod-encoding.patch'
     sha1 '01601899597dcb361ba0b499f537588145ec08a9'
