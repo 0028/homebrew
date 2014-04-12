@@ -5,6 +5,13 @@ class Lzip < Formula
   url 'http://download.savannah.gnu.org/releases/lzip/lzip-1.15.tar.gz'
   sha1 'a79d062d72071b5bb2bb7ef50dda6ac408c24192'
 
+  bottle do
+    cellar :any
+    sha1 "86019423051fe878371e416448300efb585270d9" => :mavericks
+    sha1 "3a23a3dfe34e1e182857a90500c35180965b3c4e" => :mountain_lion
+    sha1 "8215afe3d058ef96552fcf7d2519653835a5fca3" => :lion
+  end
+
   def install
     system "./configure", "--prefix=#{prefix}",
                           "CXX=#{ENV.cxx}",
