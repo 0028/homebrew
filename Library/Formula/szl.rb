@@ -5,6 +5,13 @@ class Szl < Formula
   url 'https://szl.googlecode.com/files/szl-1.0.tar.gz'
   sha1 'e4c6d4aec1afc025257d41dd77b8f5c25ea120d4'
 
+  bottle do
+    cellar :any
+    sha1 "56e7f8d38c264790c6d7ebc6bbeb178c746ca47e" => :mavericks
+    sha1 "7878b2e9c4180858698ae7cceb3313e24aab175c" => :mountain_lion
+    sha1 "8f3822db20672080fc574054a5db7244fda07f7d" => :lion
+  end
+
   depends_on 'binutils' # For objdump
   depends_on 'icu4c'
   depends_on 'protobuf'
