@@ -5,6 +5,12 @@ class Dict < Formula
   url 'http://en.sourceforge.jp/frs/g_redir.php?m=jaist&f=%2Fdict%2Fdictd%2Fdictd-1.9.15%2Fdictd-1.9.15.tar.gz'
   sha1 '081ea97a4a6a936855af30d9c2a31f5733985822'
 
+  bottle do
+    sha1 "7e5e73437fb3174f0a4cbb6f08540b9b684ae51f" => :mavericks
+    sha1 "690368047c4a4435d023863c722a6f16ccf5c3e2" => :mountain_lion
+    sha1 "1bbb190e55c4add8e25557a8fd75307b9dfeec3a" => :lion
+  end
+
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
