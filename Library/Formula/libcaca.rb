@@ -6,6 +6,13 @@ class Libcaca < Formula
   version '0.99b18'
   sha1 '0cbf8075c01d59b53c3cdfec7df9818696a41128'
 
+  bottle do
+    cellar :any
+    sha1 "636e8adad265625e45f198b3b7928afc856dd989" => :mavericks
+    sha1 "922396224e03432b6f4d34104bd08f8131265a59" => :mountain_lion
+    sha1 "aacaa2a5d54405af98579a693a33c478638b124e" => :lion
+  end
+
   option 'with-imlib2', 'Build with Imlib2 support'
 
   depends_on :x11 if build.with? "imlib2"
