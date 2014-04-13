@@ -6,6 +6,8 @@ class Ghc < Formula
   sha1 "fe86ae790b7e8e5b4c78db7a914ee375bc6d9fc3"
 
   bottle do
+    sha1 "0b05bfe99f10d8668271317b60b55be9ed5a5f46" => :mavericks
+    sha1 "cacd2c6dca4f29ab183c81a024e5b29735f80536" => :mountain_lion
   end
 
   option "tests", "Verify the build using the testsuite."
