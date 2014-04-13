@@ -5,6 +5,13 @@ class Libdisasm < Formula
   url "https://downloads.sourceforge.net/project/bastard/libdisasm/0.23/libdisasm-0.23.tar.gz"
   sha1 "ff5e2ffb726d1c28396b21e0abbe10bae5d4a846"
 
+  bottle do
+    cellar :any
+    sha1 "cd13cf997cbce91563ba03d4f16da2032f582e91" => :mavericks
+    sha1 "0d4edc27ed0ad94a6a6df9dc6779b99336404423" => :mountain_lion
+    sha1 "859e603dfbac6774e56f2d16ad34d160fb69435c" => :lion
+  end
+
   depends_on :python => :optional
   depends_on 'swig' if build.with? 'python'
 
