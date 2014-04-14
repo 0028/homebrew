@@ -6,6 +6,13 @@ class Sbt < Formula
   version '0.13.2'
   sha1 'd3237161dc38afd796d9e84ff202f8418cff98e2'
 
+  bottle do
+    cellar :any
+    sha1 "92fed07345e9b98cb2e9a180ac6fbece490b5d62" => :mavericks
+    sha1 "d28c84d8003db0748709093e73ac4dee590bc6dc" => :mountain_lion
+    sha1 "5cd4485db24c2ebb93b38a2be8b996fce5d10f29" => :lion
+  end
+
   devel do
     url 'http://repo.typesafe.com/typesafe/ivy-snapshots/org.scala-sbt/sbt-launch/0.13.5-20140412-061917/sbt-launch.jar'
     version '0.13.5-20140412-061917'
