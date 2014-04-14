@@ -7,6 +7,13 @@ class Mess < Formula
 
   head 'svn://dspnet.fr/mame/trunk'
 
+  bottle do
+    cellar :any
+    sha1 "1036758f5b13b7d600e8acaf6570fce60dcb5f44" => :mavericks
+    sha1 "060d0b673484d6eefb24ec02435a5c9d6bbf6ae3" => :mountain_lion
+    sha1 "ccad517a5b31e2108e93af80f0c2c32d2ead843c" => :lion
+  end
+
   depends_on 'sdl'
 
   # Fixes finding OpenGL headers, already patched upstream
