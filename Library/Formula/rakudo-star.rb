@@ -6,9 +6,10 @@ class RakudoStar < Formula
   sha256 '6b285fb3fbbfa22f5986a2890cd0ca29de8efb3a60b2d60e948140c24320a994'
 
   bottle do
-    sha1 "8713766c33d97f16eba1764e3a89137d58fa4ee3" => :mavericks
-    sha1 "cd24cf9b2b76949f3bba68f404ee8574da524639" => :mountain_lion
-    sha1 "ad7b50e1e85f2552f89f1e5fbdf2741659b8763b" => :lion
+    revision 1
+    sha1 "30914a34bdf365c562a3a69ed84d5fd19b180ca6" => :mavericks
+    sha1 "b3b357c728293d1d6dfc76df5fe693c57cd9c442" => :mountain_lion
+    sha1 "2bae5212156c55cb9bd7f65ceca5a783db0f1f05" => :lion
   end
 
   option 'with-jvm', 'Build also for jvm as an alternate backend.'
