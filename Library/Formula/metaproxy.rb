@@ -5,6 +5,13 @@ class Metaproxy < Formula
   url "http://ftp.indexdata.dk/pub/metaproxy/metaproxy-1.4.8.tar.gz"
   sha1 "0f361a6b7e1a5eb666ac477dcaa47d82b5e5acbd"
 
+  bottle do
+    cellar :any
+    sha1 "d4c474e92cc9088408bbcc8e47496e8bb8389028" => :mavericks
+    sha1 "7bdcabcb74f3f0e492e53d12516e6373e9a70c74" => :mountain_lion
+    sha1 "2554038a9c72dc659ef8c44cf1b7b1dacf281c4e" => :lion
+  end
+
   depends_on "pkg-config" => :build
   depends_on "yazpp"
   depends_on "boost"
