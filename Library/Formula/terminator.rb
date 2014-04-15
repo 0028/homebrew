@@ -5,6 +5,13 @@ class Terminator < Formula
   url 'http://launchpad.net/terminator/trunk/0.97/+download/terminator-0.97.tar.gz'
   sha1 'aa92a6cacd572f6a834ac1de88ae699c7b7dee69'
 
+  bottle do
+    cellar :any
+    sha1 "5f91a61131f77eb586a1140a9d9d4cab76baaf4b" => :mavericks
+    sha1 "4fae2647f230f79572f4c4f80fc004fd6d18d35c" => :mountain_lion
+    sha1 "0dae0bb82bfeb2ccf65eb9d4aaf5e7e0f99cfad9" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'intltool' => :build
   depends_on :python
