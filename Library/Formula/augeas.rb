@@ -5,6 +5,12 @@ class Augeas < Formula
   url 'http://download.augeas.net/augeas-1.2.0.tar.gz'
   sha1 'ab63548ae5462d7b3dc90e74311b8e566ba22485'
 
+  bottle do
+    sha1 "bf081ec33e7e82eff3e734d15a812b907500963c" => :mavericks
+    sha1 "54b66171a0204796a325f95dbba3315470a6acca" => :mountain_lion
+    sha1 "9ad8dd5614a5f4c400ae3fa53df6f286ab2a6359" => :lion
+  end
+
   head do
     url 'https://github.com/hercules-team/augeas.git'
 
