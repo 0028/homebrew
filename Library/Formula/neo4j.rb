@@ -6,6 +6,13 @@ class Neo4j < Formula
   sha1 '7ac10aa3cb327580ed3abb7b42921070ffc1ca09'
   version '2.0.2'
 
+  bottle do
+    cellar :any
+    sha1 "52d31450396ff31dd7638b0c109dacff6f5ba387" => :mavericks
+    sha1 "68ed816619f43f258424e0415c70a30a7322b830" => :mountain_lion
+    sha1 "eb3e815cd74c1bf60f7ea8cec83d0fc4ea0a5750" => :lion
+  end
+
   def install
     # Remove windows files
     rm_f Dir["bin/*.bat"]
