@@ -5,6 +5,13 @@ class Aldo < Formula
   url 'http://savannah.nongnu.org/download/aldo/aldo-0.7.7.tar.bz2'
   sha1 'c37589f8cb0855d33814b7462b3e5ded21caa8ea'
 
+  bottle do
+    cellar :any
+    sha1 "e2ca3e89556ec592e119e442e7e612ca7699fc3e" => :mavericks
+    sha1 "fb8cef297d5281c3c20340d06d7e03326a29e876" => :mountain_lion
+    sha1 "17793ee003afb8dbb4a67ea13bc231997c8ef18c" => :lion
+  end
+
   depends_on 'libao'
 
   patch :DATA
