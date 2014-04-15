@@ -7,6 +7,12 @@ class Quassel < Formula
 
   head 'https://github.com/quassel/quassel.git'
 
+  bottle do
+    sha1 "84ff574e01e1533fd7a54dc0c08b26873f004744" => :mavericks
+    sha1 "b655b04792c316ca7025126d311185848dfcbf3f" => :mountain_lion
+    sha1 "f4ffdd840409d7dfc044ff92355e8f5b9fc54123" => :lion
+  end
+
   depends_on 'cmake' => :build
   depends_on 'qt'
 
