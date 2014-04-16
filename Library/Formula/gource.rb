@@ -6,6 +6,11 @@ class Gource < Formula
   url 'https://github.com/acaudwell/Gource/releases/download/gource-0.41/gource-0.41.tar.gz'
   sha1 '75aa1e2c5afc2f91b54629d086f2a80bf3b553e5'
 
+  bottle do
+    sha1 "4d32e3df2dc5f20a19a76c5c5fcdee32875f4c30" => :mavericks
+    sha1 "01f807eedb74fe1c9617a29f325afae11435e883" => :mountain_lion
+  end
+
   head do
     url 'https://github.com/acaudwell/Gource.git'
 
