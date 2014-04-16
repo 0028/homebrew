@@ -6,6 +6,13 @@ class Nxcomp < Formula
   sha1 'b68e144845836fe8d10caedb54b3fffff2756433'
   version '3.5.0.22-lite'
 
+  bottle do
+    cellar :any
+    sha1 "e07f7a14d5680b932455edeaf7df338051f715db" => :mavericks
+    sha1 "a9cb291702e35993464bed15b58969b6330ff6e6" => :mountain_lion
+    sha1 "8b9e7e15e60706ad23176d5563869f884b697b42" => :lion
+  end
+
   depends_on :autoconf
   depends_on :automake
   depends_on :x11
