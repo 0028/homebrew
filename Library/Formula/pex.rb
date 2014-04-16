@@ -22,7 +22,15 @@ class Pex < Formula
 
   def install
     system "make", "install", "prefix=#{prefix}", "mandir=#{man}"
-    system pex(bin), "init" unless File.directory?(pex_repo(bin))
+  end
+
+  def caveats; <<-EOS.undent
+    After installation you need to perform a
+
+    pex --init
+
+    in order to setup the necessary directory structure.
+    EOS
   end
 
   test do
