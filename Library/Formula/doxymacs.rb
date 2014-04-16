@@ -5,6 +5,12 @@ class Doxymacs < Formula
   url 'https://downloads.sourceforge.net/project/doxymacs/doxymacs/1.8.0/doxymacs-1.8.0.tar.gz'
   sha1 'b2aafb4f2d20ceb63614c2b9f06d79dd484d8e2e'
 
+  bottle do
+    sha1 "290959b5a4a946a8e9316e1b2cf818f8918d5cb6" => :mavericks
+    sha1 "99df76ae1642dd054e9e3703471a917fb0ee0c0c" => :mountain_lion
+    sha1 "2dccf98f5e990ca70bb436a64f928a19e391b3c1" => :lion
+  end
+
   head do
     url 'git://git.code.sf.net/p/doxymacs/code'
     depends_on :autoconf => :build
