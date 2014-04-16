@@ -3,7 +3,7 @@ require "formula"
 class Pex < Formula
   homepage "https://github.com/petere/pex"
   url "https://github.com/petere/pex/archive/1.20140409.tar.gz"
-  sha1 "3288c90946392257400fcf909432f9a50db5fae6"
+  sha1 "7cc652cd89bc6c6bf2488c8eb1ee91588053262a"
   version "1.0"
 
   depends_on :postgresql
