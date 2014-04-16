@@ -5,6 +5,13 @@ class NanopbGenerator < Formula
   url "http://koti.kapsi.fi/~jpa/nanopb/download/nanopb-0.2.7.tar.gz"
   sha1 "7dce0b9e1f9e5d0614697a8ea1678cee76f14858"
 
+  bottle do
+    cellar :any
+    sha1 "f8ae28d4a4089f84a5611137d2e1a26612a5c747" => :mavericks
+    sha1 "f8aa6297c03ff5c2ddbaabec2886b9af3783c472" => :mountain_lion
+    sha1 "5b9c83f85c7e9d89ffe028e18a241b67a5fc8df2" => :lion
+  end
+
   depends_on :python
   depends_on "protobuf"
 
