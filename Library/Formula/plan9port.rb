@@ -5,6 +5,12 @@ class Plan9port < Formula
   url "https://plan9port.googlecode.com/files/plan9port-20140306.tgz"
   sha1 "b778a96558e2b67be28ae80cab4482ef3082ec0e"
 
+  bottle do
+    sha1 "1a0361d82e1a26dc7822931efe1d9f4f40a43c10" => :mavericks
+    sha1 "b70f18ab1aaac5d28b79ee339fba49f1b3e08d65" => :mountain_lion
+    sha1 "80f47c95f975c075778396feadecc4e419737890" => :lion
+  end
+
   def install
     ENV["PLAN9_TARGET"] = libexec
     system "./INSTALL"
