@@ -8,13 +8,24 @@ class Pex < Formula
 
   depends_on :postgresql
 
+  def pex(bin=nil)
+    if bin
+      "#{bin}/pex"
+    else
+      "pex"
+    end
+  end
+
+  def pex_repo(bin=nil)
+    `#{pex(bin)} --repo`.strip
+  end
+
   def install
-    system "make", "install"
-    system "pex", "init" unless File.directory?(`pex --repo`.strip)
+    system "make", "install", "prefix=#{prefix}", "mandir=#{man}"
+    system pex(bin), "init" unless File.directory?(pex_repo(bin))
   end
 
   test do
-    extensions = `pex --repo`
-    assert_match /share\/pex\/packages/, extensions
+    assert_match /share\/pex\/packages/, pex_repo
   end
 end
