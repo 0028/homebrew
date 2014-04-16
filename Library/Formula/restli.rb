@@ -5,6 +5,13 @@ class Restli < Formula
   url "http://rest.li/releases/restli-tool/0.0.1/restli-0.0.1.tar.gz"
   sha1 "38078f768fe463f39db2f69f896fa428ea7b4123"
 
+  bottle do
+    cellar :any
+    sha1 "0c7741b928a926de46029353ef4a91d3b1300df8" => :mavericks
+    sha1 "61401d57750cd744efa0c47af4a4e65238a90a0b" => :mountain_lion
+    sha1 "228c645248dd76d76aa2e6c21d8eff786cb64f9c" => :lion
+  end
+
   depends_on "giter8"
 
   def install
