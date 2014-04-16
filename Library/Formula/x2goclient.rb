@@ -6,6 +6,12 @@ class X2goclient < Formula
   sha1 '37b946b5b6d0a072a6d1fee98ae43bef929f2abd'
   head 'http://code.x2go.org/git/x2goclient.git'
 
+  bottle do
+    sha1 "874407ea3a0270d62fc2b817c1061441dd1103cb" => :mavericks
+    sha1 "c21f3beb8af06b982fab0ca0c6d4de90b404512f" => :mountain_lion
+    sha1 "7d9a400fa64a6c86cc53bb8e4b703e9149f8d853" => :lion
+  end
+
   depends_on :x11
   depends_on :libpng
   depends_on 'jpeg'
