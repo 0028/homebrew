@@ -5,6 +5,11 @@ class AppscaleTools < Formula
   url "https://github.com/AppScale/appscale-tools/archive/1.14.0.tar.gz"
   sha1 "ee2363bf6b8f464f0a7847d965e5fce2e143acd2"
 
+  bottle do
+    cellar :any
+    sha1 "ab01a4d3ab80c4a01d9057852c749f9aac99acb2" => :mavericks
+  end
+
   depends_on :python
   depends_on 'libyaml'
 
