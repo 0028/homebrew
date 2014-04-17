@@ -6,6 +6,13 @@ class Xplanetfx < Formula
   sha1 "7f82fd31d39c3edbc729c7e778e4e364edde56a0"
   version "2.5.25"
 
+  bottle do
+    cellar :any
+    sha1 "386730abb28c52f43e5ff7dbc628d1a9fab8067c" => :mavericks
+    sha1 "8aaa96aad25daa641523a552751b9360d5d9f0a1" => :mountain_lion
+    sha1 "7af1df17ff6b6aaa8910b46a0cc866d2b03c305d" => :lion
+  end
+
   option "without-perlmagick", "Build without PerlMagick support - used to check cloud map downloads"
   option "without-gui", "Build to run xplanetFX only from the command-line"
 
