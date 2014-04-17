@@ -5,6 +5,13 @@ class Alure < Formula
   url 'http://kcat.strangesoft.net/alure-releases/alure-1.2.tar.bz2'
   sha1 'f033f0820c449ebff7b4b0254a7b1f26c0ba485b'
 
+  bottle do
+    cellar :any
+    sha1 "09da19f3f4b377e266978c4b54ac36db28637a13" => :mavericks
+    sha1 "cf8db8ce48d0ec8770ac3516c0433ed5d2baf796" => :mountain_lion
+    sha1 "aca00ea0b81422cf1182742e03a4c0f5b2e80e88" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'cmake' => :build
   depends_on 'flac'       => :optional
