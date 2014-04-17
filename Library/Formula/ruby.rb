@@ -13,9 +13,10 @@ class Ruby < Formula
   end
 
   bottle do
-    sha1 "ca1a24ea84766ad60d736242fe9c09fa20bcb751" => :mavericks
-    sha1 "f00a62a246a3b391ac9f8a80d5b1b774ba54a324" => :mountain_lion
-    sha1 "037357e4b75e55425789a918179f719657bba340" => :lion
+    revision 1
+    sha1 "1062ed76c18b48a2a5a5175b91a6e2288f56c7db" => :mavericks
+    sha1 "9ce1c7a1e072ddbadb4074d50d00490621aa185b" => :mountain_lion
+    sha1 "c64b7c0da59cb97074270d3ae8044713a5f26c71" => :lion
   end
 
   head do
