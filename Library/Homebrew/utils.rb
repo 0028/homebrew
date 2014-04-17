@@ -149,7 +149,7 @@ def curl *args
 end
 
 def puts_columns items, star_items=[]
-  return if items.empty?
+  return if items.nil? or items.empty?
 
   if star_items && star_items.any?
     items = items.map{|item| star_items.include?(item) ? "#{item}*" : item}
