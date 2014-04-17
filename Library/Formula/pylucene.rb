@@ -5,6 +5,13 @@ class Pylucene < Formula
   url "http://www.apache.org/dyn/closer.cgi?path=lucene/pylucene/pylucene-4.6.1-1-src.tar.gz"
   sha1 "eb9c2fce26cdfbe5991f08197486a6b578f022a0"
 
+  bottle do
+    cellar :any
+    sha1 "529ecb97a04545e436ff67fe88f735fee1592650" => :mavericks
+    sha1 "02e911989b37765f8783ce070ea6c0f9dd687558" => :mountain_lion
+    sha1 "f8e597e6ff22a459ea1532a6d22a8295081fa245" => :lion
+  end
+
   devel do
     url "http://people.apache.org/~vajda/staging_area/pylucene-4.7.2-1-src.tar.gz"
     sha1 "dd9bb535ef96e719030f9a7d00a4cf259748e228"
