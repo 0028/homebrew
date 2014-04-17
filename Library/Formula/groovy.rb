@@ -5,6 +5,13 @@ class Groovy < Formula
   url 'http://dl.bintray.com/groovy/maven/groovy-binary-2.2.2.zip'
   sha1 'af74f5e08c089ac6baf4bca99eeb9df209340368'
 
+  bottle do
+    cellar :any
+    sha1 "0ccbb0e9263016327a9bff6de0ce8d41692e81ea" => :mavericks
+    sha1 "2a8b9b8d7bec00b1817e5fe1c3f7056cabb61b37" => :mountain_lion
+    sha1 "8c2e67335b1a83dff1406f0154868dca0fb68112" => :lion
+  end
+
   option 'invokedynamic', "Install the InvokeDynamic version of Groovy (only works with Java 1.7+)"
 
   devel do
