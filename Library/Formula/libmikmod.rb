@@ -5,6 +5,13 @@ class Libmikmod < Formula
   url 'https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.6/libmikmod-3.3.6.tar.gz'
   sha256 '3f363e03f7b1db75b9b6602841bbd440ed275a548e53545f980df8155de4d330'
 
+  bottle do
+    cellar :any
+    sha1 "785d0206e7e27a47672b62791abcc7e8ece02267" => :mavericks
+    sha1 "42318a03bf96284298eef7040e8740f2440b5d5c" => :mountain_lion
+    sha1 "906c9880063922d770cec178c50ad70875d54fbc" => :lion
+  end
+
   option 'with-debug', 'Enable debugging symbols'
 
   def install
