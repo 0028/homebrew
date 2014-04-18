@@ -7,6 +7,12 @@ class Libmongoclient < Formula
 
   head 'https://github.com/mongodb/mongo-cxx-driver.git', :branch => "26compat"
 
+  bottle do
+    sha1 "98a1bd98ca83de3092dcaed287eef99f2cb9e8dd" => :mavericks
+    sha1 "fd77062048787edb479ace8ab9a11a7c5e464be2" => :mountain_lion
+    sha1 "39437aad6921d20e6a00a80c005a26beeed79510" => :lion
+  end
+
   depends_on 'scons' => :build
   depends_on 'boost' => :build
 
