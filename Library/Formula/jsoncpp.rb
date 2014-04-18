@@ -5,6 +5,13 @@ class Jsoncpp < Formula
   url "https://downloads.sourceforge.net/project/jsoncpp/jsoncpp/0.6.0-rc2/jsoncpp-src-0.6.0-rc2.tar.gz"
   sha1 "a14eb501c44e610b8aaa2962bd1cc1775ed4fde2"
 
+  bottle do
+    cellar :any
+    sha1 "97d782ecfe7435274a0f122c642997b1d3c76332" => :mavericks
+    sha1 "09ebd80c7fe40a4673462e57012e3101f38b7190" => :mountain_lion
+    sha1 "55652d129361a96628dcca9df66156e9c1f2e181" => :lion
+  end
+
   depends_on "scons" => :build
 
   def patches
