@@ -7,6 +7,12 @@ class Yarp < Formula
 
   head 'https://yarp0.svn.sourceforge.net/svnroot/yarp0/trunk/yarp2'
 
+  bottle do
+    sha1 "46baa808063961610176e36d0c6f8e481b9e0b03" => :mavericks
+    sha1 "055407597bac011e350fccf168b1359721c58f98" => :mountain_lion
+    sha1 "b6bc4ce49e466d28773150edbc2a546954ec42a1" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'cmake' => :build
   depends_on 'ace'
