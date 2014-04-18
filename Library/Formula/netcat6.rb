@@ -5,6 +5,12 @@ class Netcat6 < Formula
   url "http://ftp.debian.org/debian/pool/main/n/nc6/nc6_1.0.orig.tar.gz"
   sha1 "50b1a3f7bfa610a2016727e5741791ad3a88bd07"
 
+  bottle do
+    sha1 "180158f62eb6692501e1b603fc9ec32e4098b19c" => :mavericks
+    sha1 "2354b437102920927aa2b60f0ab760d225bb1aba" => :mountain_lion
+    sha1 "e010b072b5767517307338b6367d5c4bf21dc562" => :lion
+  end
+
   patch :p0, :DATA
 
   def install
