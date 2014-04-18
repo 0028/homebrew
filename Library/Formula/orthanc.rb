@@ -5,6 +5,12 @@ class Orthanc < Formula
   url "https://github.com/jodogne/Orthanc/releases/download/0.7.4/Orthanc-0.7.4.tar.gz"
   sha1 "eca9892d73b9ef31519a755f31057046b7f70822"
 
+  bottle do
+    sha1 "13ce62d8db1211e94f48c3336b03b0373e8dcf2c" => :mavericks
+    sha1 "7d39195d593b626dc2ba581449d50cf4cc6a3f18" => :mountain_lion
+    sha1 "a2e654c7d698dd1263d0b557f9d0ab7ffbe47c35" => :lion
+  end
+
   depends_on "cmake" => :build
   depends_on "glog"
   depends_on "boost"
