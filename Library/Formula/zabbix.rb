@@ -5,6 +5,12 @@ class Zabbix < Formula
   url 'https://downloads.sourceforge.net/project/zabbix/ZABBIX%20Latest%20Stable/2.2.3/zabbix-2.2.3.tar.gz'
   sha1 '23a7363e3af1d44cd74f22cdd90d16f7f235b14d'
 
+  bottle do
+    sha1 "6567e247aa1708a9bfafcbf18604c16639e4bc45" => :mavericks
+    sha1 "b7851d566fd12ab02633b1e7506f5d266a3decd8" => :mountain_lion
+    sha1 "c2fe43f3b4ebcd5ab9768dc4f704147ffcd8038e" => :lion
+  end
+
   option 'with-mysql', 'Use Zabbix Server with MySQL library instead PostgreSQL.'
   option 'agent-only', 'Install only the Zabbix Agent without Server and Proxy.'
 
