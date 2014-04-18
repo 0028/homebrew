@@ -5,6 +5,12 @@ class Rdesktop < Formula
   url 'https://downloads.sourceforge.net/project/rdesktop/rdesktop/1.8.1/rdesktop-1.8.1.tar.gz'
   sha1 '57bb41f98ddf9eeef875c613d790fee37971d0f8'
 
+  bottle do
+    sha1 "7503b0afd2056a55fee08e90c435ec00fb22d60e" => :mavericks
+    sha1 "dcc95f37440112ae17eed8c5c83e9473c2773d05" => :mountain_lion
+    sha1 "0e4d95af4376e8e2285431a04731071734c4d309" => :lion
+  end
+
   depends_on :x11
 
   patch :DATA
