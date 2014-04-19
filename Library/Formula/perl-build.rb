@@ -7,6 +7,13 @@ class PerlBuild < Formula
 
   head 'https://github.com/tokuhirom/perl-build.git'
 
+  bottle do
+    cellar :any
+    sha1 "a4f9a1098260a78200f4604425eb3a530a65afcb" => :mavericks
+    sha1 "7594ad5c2c882a4955626b00b4a9802132bbe2f9" => :mountain_lion
+    sha1 "bfff4778a642eee17c6ce89a5e6a9147f434a232" => :lion
+  end
+
   def install
     bin.install "perl-build", "bin/plenv-install", "bin/plenv-uninstall"
   end
