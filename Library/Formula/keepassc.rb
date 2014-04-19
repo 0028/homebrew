@@ -5,6 +5,13 @@ class Keepassc < Formula
   url "https://github.com/raymontag/keepassc/archive/1.6.0.tar.gz"
   sha1 "a8d7d1456149bf798f4e5a5087c250883425bb9d"
 
+  bottle do
+    cellar :any
+    sha1 "cc989837579662e1018b65c4d838fe29352762cc" => :mavericks
+    sha1 "40f776a96f7a1f729eae37ffdac25ee8af842a19" => :mountain_lion
+    sha1 "5df5cb133eed24c7238d596479b843df66df7777" => :lion
+  end
+
   depends_on :python3
 
   resource "pycrypto" do
