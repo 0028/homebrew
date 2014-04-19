@@ -6,6 +6,13 @@ class Avian < Formula
   url 'https://github.com/ReadyTalk/avian/archive/v0.7.1.1.tar.gz'
   sha1 '326f127f146f46a5b35567b1717ea4a5b13833fd'
 
+  bottle do
+    cellar :any
+    sha1 "1ba199675fff55e4df478f813f216abfd6a16454" => :mavericks
+    sha1 "884b6e2c757b7456c1449e8ef487a3bfd1e22982" => :mountain_lion
+    sha1 "675a403a39df8cb0e29bb60afaec8fe1a9af9928" => :lion
+  end
+
   depends_on :macos => :lion
 
   # Fix build with clang; already upstream
