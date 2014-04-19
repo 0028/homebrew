@@ -7,6 +7,12 @@ class Lnav < Formula
 
   head 'https://github.com/tstack/lnav.git'
 
+  bottle do
+    sha1 "8a6f66c027913823bb6cbf274fec3fddf3c6e99d" => :mavericks
+    sha1 "1d6bdddc7b5fb2675566bf010b8d22367fe7d91c" => :mountain_lion
+    sha1 "de2529bcfcc57b8f244076b3a32082fec75c7648" => :lion
+  end
+
   depends_on 'readline'
   depends_on 'pcre'
 
