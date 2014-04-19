@@ -15,6 +15,12 @@ class Saltstack < Formula
   url 'https://github.com/saltstack/salt/archive/v2014.1.3.tar.gz'
   sha256 'cc3e21c6cd333f2058a4f0c78db5103a07a7301f6237644b5eee6a55f9793e24'
 
+  bottle do
+    sha1 "b03a2d8eeb2911c858c2a3f98bdbb8e3d6f00573" => :mavericks
+    sha1 "c72d20b465414f1cde25434b059e86ca9b825c28" => :mountain_lion
+    sha1 "5b25f0ef527677a06cb6e8e1d6cbc681a9970c7e" => :lion
+  end
+
   head 'https://github.com/saltstack/salt.git', :branch => 'develop',
     :using => SaltHeadDownloadStrategy, :shallow => false
 
