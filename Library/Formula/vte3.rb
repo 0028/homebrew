@@ -5,6 +5,12 @@ class Vte3 < Formula
   url 'http://ftp.gnome.org/pub/gnome/sources/vte/0.32/vte-0.32.2.tar.xz'
   sha1 'a58569a99ac06a240bdda3ec7353f2626145852d'
 
+  bottle do
+    sha1 "3737c55a596732b9c253b61c356979b2a1fed7df" => :mavericks
+    sha1 "4812e128aaf8efcbabd83d69e7345e0371f50b4f" => :mountain_lion
+    sha1 "443c0b24b8dc4ca5b883e3d45413990c692aebbc" => :lion
+  end
+
   depends_on 'pkg-config' => :build
   depends_on 'intltool' => :build
   depends_on 'gettext'
