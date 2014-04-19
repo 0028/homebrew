@@ -7,6 +7,13 @@ class Pngquant < Formula
 
   head 'https://github.com/pornel/pngquant.git'
 
+  bottle do
+    cellar :any
+    sha1 "47bc1e5c4b73b02317d8e41f93efaeaf4cd77df8" => :mavericks
+    sha1 "5dad5fb056755f90e6774c515f7194fba28db007" => :mountain_lion
+    sha1 "26c8d324867373518dc48b2f93c75bf0b08b4b9d" => :lion
+  end
+
   depends_on 'libpng'
 
   def install
