@@ -5,6 +5,12 @@ class Nikto < Formula
   url "https://www.cirt.net/nikto/nikto-2.1.5.tar.bz2"
   sha1 "9fafa51f630ce241aff58b217882e514d577939f"
 
+  bottle do
+    sha1 "b1b702254441161e2a45e91a27d3dd9fccefae6b" => :mavericks
+    sha1 "4db75c8ef27df4644419c9d525ab6754f1856ffe" => :mountain_lion
+    sha1 "6517e12fa5e613b23920d81940dd304a5e82f0a1" => :lion
+  end
+
   def install
     # adjust default paths in perl script
     inreplace 'nikto.pl' do |s|
